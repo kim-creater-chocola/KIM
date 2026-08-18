@@ -102,6 +102,11 @@ export async function getUnitQuestions(unitKey: string): Promise<Question[]> {
   return shuffle((data ?? []) as unknown as Question[]);
 }
 
+/**
+ * 模擬試験用の出題。特定の単元に偏らないよう、単元ごとに
+ * ほぼ均等（50問÷14単元 ≒ 1単元3〜4問）に振り分けてから抽出する。
+ * どの単元が4問になるかは毎回ランダムに変わる。
+ */
 export async function getMockQuestions(
   examType: string,
   count = 50,
@@ -112,7 +117,29 @@ export async function getMockQuestions(
     .select(QUESTION_COLUMNS)
     .eq("exam_type", examType);
   if (error) throw error;
-  return shuffle((data ?? []) as unknown as Question[]).slice(0, count);
+  const all = (data ?? []) as unknown as Question[];
+
+  const byUnit = new Map<string, Question[]>();
+  for (const q of all) {
+    const list = byUnit.get(q.unit_key) ?? [];
+    list.push(q);
+    byUnit.set(q.unit_key, list);
+  }
+
+  const unitKeys = shuffle([...byUnit.keys()]);
+  if (unitKeys.length === 0) return [];
+
+  const base = Math.floor(count / unitKeys.length);
+  const remainder = count % unitKeys.length;
+
+  const picked: Question[] = [];
+  unitKeys.forEach((key, i) => {
+    const quota = base + (i < remainder ? 1 : 0);
+    const pool = shuffle(byUnit.get(key) ?? []);
+    picked.push(...pool.slice(0, quota));
+  });
+
+  return shuffle(picked);
 }
 
 export async function getReviewQuestions(): Promise<Question[]> {
