@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSupabaseAdmin } from "@/lib/supabase";
+import { getCurrentRole } from "@/lib/session";
 
 interface AnswerPayload {
   question_id: string;
@@ -31,6 +32,12 @@ export async function POST(request: NextRequest) {
 
   if (rows.length === 0) {
     return NextResponse.json({ error: "invalid payload" }, { status: 400 });
+  }
+
+  const role = await getCurrentRole();
+  if (role === "preview") {
+    // プレビューモード（確認用ログイン）では結果を保存しない
+    return NextResponse.json({ ok: true, saved: 0, preview: true });
   }
 
   const supabase = getSupabaseAdmin();

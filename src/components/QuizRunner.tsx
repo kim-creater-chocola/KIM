@@ -15,9 +15,11 @@ interface AnsweredEntry {
 export function QuizRunner({
   questions,
   passThreshold,
+  isPreview,
 }: {
   questions: Question[];
   passThreshold?: number;
+  isPreview?: boolean;
 }) {
   const router = useRouter();
   const [index, setIndex] = useState(0);
@@ -101,12 +103,20 @@ export function QuizRunner({
               {passed ? "合格ライン突破！" : `不合格（合格ラインは${passThreshold}点）`}
             </p>
           )}
-          {saveError && (
-            <p className="mt-2 text-xs text-red-500">
-              結果の保存に失敗しました。通信状況を確認してください。
+          {isPreview ? (
+            <p className="mt-2 text-xs text-amber-600">
+              プレビューモードのため、この結果は保存されていません。
             </p>
+          ) : (
+            <>
+              {saveError && (
+                <p className="mt-2 text-xs text-red-500">
+                  結果の保存に失敗しました。通信状況を確認してください。
+                </p>
+              )}
+              {saving && <p className="mt-2 text-xs text-slate-400">保存中...</p>}
+            </>
           )}
-          {saving && <p className="mt-2 text-xs text-slate-400">保存中...</p>}
         </div>
 
         <div className="mt-6 space-y-3">

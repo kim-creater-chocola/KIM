@@ -2,19 +2,21 @@ import Link from "next/link";
 import { Header } from "@/components/ui/Header";
 import { UnitStatCard } from "@/components/ui/UnitStatCard";
 import { getOverallStat, getUnitStats, getWrongQuestionIds } from "@/lib/data";
+import { getCurrentRole } from "@/lib/session";
 
 export const dynamic = "force-dynamic";
 
 export default async function DashboardPage() {
-  const [overall, unitStats, wrongIds] = await Promise.all([
+  const [overall, unitStats, wrongIds, role] = await Promise.all([
     getOverallStat(),
     getUnitStats(),
     getWrongQuestionIds(),
+    getCurrentRole(),
   ]);
 
   return (
     <div className="pb-10">
-      <Header title="仮免学科試験対策" />
+      <Header title="仮免学科試験対策" isPreview={role === "preview"} />
 
       <main className="mx-auto max-w-md space-y-6 px-4 py-6">
         <section className="rounded-2xl bg-white p-5 text-center shadow-sm ring-1 ring-slate-200">
