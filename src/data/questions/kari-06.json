@@ -1,52 +1,602 @@
 [
-  { "question_text": "交差点で左折するときは、あらかじめできる限り道路の左端に寄り、徐行しながら曲がらなければならない。", "correct_answer": true, "explanation": "左折時はあらかじめ道路の左端に寄り、徐行しながら曲がるのが原則である。", "image_key": null },
-  { "question_text": "交差点で左折するときは、道路の中央に寄って大回りしながら曲がらなければならない。", "correct_answer": false, "explanation": "左折時は道路の左端に寄って小回りするのが原則である。", "image_key": null },
-  { "question_text": "交差点で右折するときは、あらかじめできる限り道路の中央に寄り、交差点の中心のすぐ内側を徐行しながら曲がらなければならない。", "correct_answer": true, "explanation": "右折時はあらかじめ道路の中央に寄り、交差点の中心のすぐ内側を徐行しながら曲がるのが原則である。", "image_key": null },
-  { "question_text": "交差点で右折するときは、道路の左端に寄って徐行しながら曲がらなければならない。", "correct_answer": false, "explanation": "右折時は道路の中央に寄るのが原則であり、左端に寄るのは左折の方法である。", "image_key": null },
-  { "question_text": "一方通行の道路で右折するときは、あらかじめできる限り道路の右端に寄って徐行しながら曲がる。", "correct_answer": true, "explanation": "一方通行路での右折はあらかじめ道路の右端に寄って徐行しながら曲がるのが原則である。", "image_key": null },
-  { "question_text": "一方通行の道路で右折するときも、対面通行の道路と同様に道路の中央に寄らなければならない。", "correct_answer": false, "explanation": "一方通行路では対向車がないため、右折時は道路の右端に寄るのが原則である。", "image_key": null },
-  { "question_text": "右左折するときは、その方向に向かって直進や左折をしようとする自転車などの進行を妨げてはならない。", "correct_answer": true, "explanation": "右左折時は同方向に進行する自転車などの通行を妨げてはならない。", "image_key": null },
-  { "question_text": "右左折するときに自転車が近くにいても、自動車が先に曲がり終えることができれば自転車の進行を妨げてもかまわない。", "correct_answer": false, "explanation": "自動車が先に曲がり終えられる場合であっても、自転車の進行を妨げてはならない。", "image_key": null },
-  { "question_text": "交通整理の行われていない交差点で交差する道路の幅がほぼ同じときは、左方から進行してくる車は右方から進行してくる車の進行を妨げてはならない。", "correct_answer": true, "explanation": "同幅員の交差点では右方から進行してくる車が優先される。", "image_key": null },
-  { "question_text": "交通整理の行われていない交差点では、道路の幅にかかわらず、常に左方から進行してくる車が優先される。", "correct_answer": false, "explanation": "同幅員の交差点では右方の車が優先され、左方の車が優先されるわけではない。", "image_key": null },
-  { "question_text": "交通整理の行われていない交差点で、明らかに広い道路を通行している車は、狭い道路から進入しようとする車より優先して進行できる。", "correct_answer": true, "explanation": "明らかに広い道路を通行する車は狭い道路からの車より優先される。", "image_key": null },
-  { "question_text": "交通整理の行われていない交差点では、道路の幅の違いにかかわらず、必ず右方の車が優先される。", "correct_answer": false, "explanation": "道路の幅に明らかな差がある場合は、広い道路を通行する車が優先される。", "image_key": null },
-  { "question_text": "狭い道路から広い道路に入ろうとするときは、徐行しなければならない。", "correct_answer": true, "explanation": "狭い道路から広い道路に入るときは徐行する義務がある。", "image_key": null },
-  { "question_text": "狭い道路から広い道路に入るときであっても、徐行する必要はない。", "correct_answer": false, "explanation": "狭い道路から広い道路に入るときは徐行しなければならない。", "image_key": null },
-  { "question_text": "優先道路を通行している車は、交通整理の行われていない交差点で徐行する義務はない。", "correct_answer": true, "explanation": "優先道路を通行している車には交差点での徐行義務が課されていない。", "image_key": null },
-  { "question_text": "優先道路を通行していれば、見通しの悪い交差点であっても徐行する必要は一切ない。", "correct_answer": false, "explanation": "優先道路を通行していても、見通しの悪い場所では他の交通に注意して安全な速度で進行する必要がある。", "image_key": null },
-  { "question_text": "車両通行帯が片側3つ以上ある道路の交差点で右折しようとする原動機付自転車は、道路標識による指定がなくても二段階右折をしなければならない。", "correct_answer": true, "explanation": "片側3車線以上ある道路の交差点では、標識の指定がなくても原動機付自転車は二段階右折の方法によらなければならない。", "image_key": null },
-  { "question_text": "車両通行帯が片側2つの道路の交差点であれば、道路標識による指定がなくても原動機付自転車は必ず二段階右折をしなければならない。", "correct_answer": false, "explanation": "片側2車線の交差点では、道路標識により二段階右折が指定されていない限り、通常の方法で右折してよい。", "image_key": null },
-  { "question_text": "踏切の直前では、一時停止して目と耳で左右の安全を確認してから進行しなければならない。", "correct_answer": true, "explanation": "踏切の直前では一時停止し、目と耳で安全を確認してから進行するのが原則である。", "image_key": null },
-  { "question_text": "踏切の直前では、周囲に電車が見えなければ一時停止せずに通過してもよい。", "correct_answer": false, "explanation": "踏切の直前では電車が見えるかどうかにかかわらず一時停止しなければならない。", "image_key": null },
-  { "question_text": "踏切に信号機が設けられている場合、その信号が青色を表示していれば、一時停止せずに進行することができる。", "correct_answer": true, "explanation": "踏切用の信号機が青色を表示しているときは一時停止せずに進行できる。", "image_key": null },
-  { "question_text": "踏切に信号機が設けられている場合であっても、その信号にかかわらず必ず一時停止しなければならない。", "correct_answer": false, "explanation": "信号機が青色を表示しているときは一時停止せずに進行することができる。", "image_key": null },
-  { "question_text": "踏切の遮断機が下り始めているときは、その踏切に入ってはならない。", "correct_answer": true, "explanation": "遮断機が下り始めているときは踏切に入ってはならない。", "image_key": null },
-  { "question_text": "踏切の遮断機がまだ完全に下りきっていなければ、多少急いで通過してもよい。", "correct_answer": false, "explanation": "遮断機が下り始めている時点で踏切に入ることは禁止されている。", "image_key": null },
-  { "question_text": "踏切の警報機が鳴っているときは、遮断機が下りていなくてもその踏切に入ってはならない。", "correct_answer": true, "explanation": "警報機が鳴っているときは遮断機の状態にかかわらず踏切に入ってはならない。", "image_key": null },
-  { "question_text": "踏切の警報機が鳴っていても、遮断機が下りていなければ通過してもよい。", "correct_answer": false, "explanation": "警報機が鳴っている時点で踏切に入ることは禁止されている。", "image_key": null },
-  { "question_text": "踏切の向こう側が混雑していて渡りきれないおそれがあるときは、たとえ遮断機が上がっていても踏切内に入ってはならない。", "correct_answer": true, "explanation": "踏切内で停止するおそれがあるときは進入してはならない。", "image_key": null },
-  { "question_text": "踏切の向こう側が混雑していても、遮断機さえ上がっていれば踏切内に入ってもよい。", "correct_answer": false, "explanation": "踏切内で立ち往生するおそれがあるときは、遮断機が上がっていても進入してはならない。", "image_key": null },
-  { "question_text": "踏切を通過するときは、変速操作(ギアチェンジ)をしないで一気に通過するのが基本である。", "correct_answer": true, "explanation": "踏切内でのエンストを防ぐため、変速操作をせずに一気に通過するのが基本である。", "image_key": null },
-  { "question_text": "踏切を通過するときは、途中で変速操作をしながらゆっくり進むのがよい。", "correct_answer": false, "explanation": "踏切内での変速操作はエンストの原因となるため避けるべきである。", "image_key": null },
-  { "question_text": "踏切内で車両の動きが取れなくなったときは、非常ボタンを押すなどして列車の運転士等に知らせなければならない。", "correct_answer": true, "explanation": "踏切内で動けなくなったときは非常ボタン等で列車に異常を知らせる必要がある。", "image_key": null },
-  { "question_text": "踏切内で車両が動かなくなったときは、まず自分で修理を試みてから周囲に助けを求めるべきである。", "correct_answer": false, "explanation": "まず非常ボタンなどで列車に知らせ、乗員を安全な場所に避難させることが優先される。", "image_key": null },
-  { "question_text": "複線の踏切で一方の電車が通過した後も、反対側から別の電車が来ないか再度安全を確認しなければならない。", "correct_answer": true, "explanation": "複数の線路がある踏切では反対方向の電車にも注意しなければならない。", "image_key": null },
-  { "question_text": "複線の踏切で一方の電車が通過すれば、反対側の安全確認をしなくても進行してよい。", "correct_answer": false, "explanation": "一方の電車が通過した後も反対側の安全を確認する必要がある。", "image_key": null },
-  { "question_text": "踏切の直前に停止線が設けられているときは、その停止線の直前で一時停止しなければならない。", "correct_answer": true, "explanation": "停止線がある場合はその直前で一時停止するのが原則である。", "image_key": null },
-  { "question_text": "踏切の直前に停止線が設けられていても、踏切のすぐ手前まで進んでから止まればよい。", "correct_answer": false, "explanation": "停止線がある場合はその直前で一時停止しなければならない。", "image_key": null },
-  { "question_text": "前の車に続いて踏切を通過する場合であっても、自分の目と耳で安全を確認しなければならない。", "correct_answer": true, "explanation": "前の車が安全に通過したことは自分の安全確認の代わりにはならない。", "image_key": null },
-  { "question_text": "前の車が安全に通過したのを見れば、自分で安全確認をしなくても踏切を通過してよい。", "correct_answer": false, "explanation": "前の車の通過にかかわらず、自分自身で安全を確認する必要がある。", "image_key": null },
-  { "question_text": "交通整理の行われていない交差点に入ろうとするときは、徐行して安全を確認しなければならない場合がある。", "correct_answer": true, "explanation": "交通整理のない交差点では状況に応じて徐行し安全確認をする必要がある。", "image_key": null },
-  { "question_text": "徐行とは直ちに停止できるような速度で進行することをいい、その目安はおおむね時速10キロメートル以下とされる。", "correct_answer": true, "explanation": "徐行は直ちに停止できる速度で進行することをいい、目安として時速10キロメートル以下とされる。", "image_key": null },
-  { "question_text": "徐行とは直ちに停止できるような速度で進行することをいい、その目安はおおむね時速20キロメートル以下とされる。", "correct_answer": false, "explanation": "徐行の目安はおおむね時速10キロメートル以下とされ、20キロメートルでは徐行の速度として速すぎる。", "image_key": null },
-  { "question_text": "交差点で右折する車は、その交差点で直進しようとする対向車の進行を妨げてはならない。", "correct_answer": true, "explanation": "右折車は直進する対向車の進行を妨げてはならない。", "image_key": null },
-  { "question_text": "交差点で右折する車は、対向車が直進してきても先に右折してよい。", "correct_answer": false, "explanation": "右折車は直進する対向車に進路を譲らなければならない。", "image_key": null },
-  { "question_text": "路面電車が交差点で進行しようとしているときは、後方の自動車はその進行を妨げてはならない。", "correct_answer": true, "explanation": "路面電車の進行を自動車が妨げてはならない。", "image_key": null },
-  { "question_text": "路面電車が交差点にいても、自動車のほうが先に交差点を通過してよい。", "correct_answer": false, "explanation": "自動車は路面電車の進行を妨げないようにしなければならない。", "image_key": null },
-  { "question_text": "この標識がある交差点は、道路の形が丁字形になっていることを示している。", "correct_answer": true, "explanation": "この標識は前方の交差点がT字形(丁字路)であることを表す警戒標識である。", "image_key": "t-junction" },
-  { "question_text": "この標識は、その先の道路の幅が急に狭くなることを示している。", "correct_answer": false, "explanation": "この標識は前方に十字形の交差点があることを表す警戒標識であり、道幅の変化を示すものではない。", "image_key": "crossroads" },
-  { "question_text": "この標識がある道路の先では、他の道路の車が合流してくることを示している。", "correct_answer": true, "explanation": "この標識は前方で合流交通があることを表す警戒標識である。", "image_key": "merging-traffic" },
-  { "question_text": "この標識がある場所の先には踏切があることを示している。", "correct_answer": true, "explanation": "この標識は前方に踏切があることを表す警戒標識である。", "image_key": "railway-crossing" },
-  { "question_text": "この標識は、その先に踏切があることを示しているが、通過するときに一時停止する必要はないことも意味している。", "correct_answer": false, "explanation": "踏切の標識は前方に踏切があることを示すものであり、一時停止が不要になるわけではない。", "image_key": "railway-crossing" }
+  {
+    "question_text": "交差点で左折するときは、あらかじめできる限り道路の左端に寄り、徐行しながら曲がらなければならない。",
+    "correct_answer": true,
+    "explanation": "左折時はあらかじめ道路の左端に寄り、徐行しながら曲がるのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点で左折するときは、道路の中央に寄って大回りしながら曲がらなければならない。",
+    "correct_answer": false,
+    "explanation": "左折時は道路の左端に寄って小回りするのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点で右折するときは、あらかじめできる限り道路の中央に寄り、交差点の中心のすぐ内側を徐行しながら曲がらなければならない。",
+    "correct_answer": true,
+    "explanation": "右折時はあらかじめ道路の中央に寄り、交差点の中心のすぐ内側を徐行しながら曲がるのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点で右折するときは、道路の左端に寄って徐行しながら曲がらなければならない。",
+    "correct_answer": false,
+    "explanation": "右折時は道路の中央に寄るのが原則であり、左端に寄るのは左折の方法である。",
+    "image_key": null
+  },
+  {
+    "question_text": "一方通行の道路で右折するときは、あらかじめできる限り道路の右端に寄って徐行しながら曲がる。",
+    "correct_answer": true,
+    "explanation": "一方通行路での右折はあらかじめ道路の右端に寄って徐行しながら曲がるのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "一方通行の道路で右折するときも、対面通行の道路と同様に道路の中央に寄らなければならない。",
+    "correct_answer": false,
+    "explanation": "一方通行路では対向車がないため、右折時は道路の右端に寄るのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "右左折するときは、その方向に向かって直進や左折をしようとする自転車などの進行を妨げてはならない。",
+    "correct_answer": true,
+    "explanation": "右左折時は同方向に進行する自転車などの通行を妨げてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "右左折するときに自転車が近くにいても、自動車が先に曲がり終えることができれば自転車の進行を妨げてもかまわない。",
+    "correct_answer": false,
+    "explanation": "自動車が先に曲がり終えられる場合であっても、自転車の進行を妨げてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "交通整理の行われていない交差点で交差する道路の幅がほぼ同じときは、左方から進行してくる車は右方から進行してくる車の進行を妨げてはならない。",
+    "correct_answer": true,
+    "explanation": "同幅員の交差点では右方から進行してくる車が優先される。",
+    "image_key": null
+  },
+  {
+    "question_text": "交通整理の行われていない交差点では、道路の幅にかかわらず、常に左方から進行してくる車が優先される。",
+    "correct_answer": false,
+    "explanation": "同幅員の交差点では右方の車が優先され、左方の車が優先されるわけではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "交通整理の行われていない交差点で、明らかに広い道路を通行している車は、狭い道路から進入しようとする車より優先して進行できる。",
+    "correct_answer": true,
+    "explanation": "明らかに広い道路を通行する車は狭い道路からの車より優先される。",
+    "image_key": null
+  },
+  {
+    "question_text": "交通整理の行われていない交差点では、道路の幅の違いにかかわらず、必ず右方の車が優先される。",
+    "correct_answer": false,
+    "explanation": "道路の幅に明らかな差がある場合は、広い道路を通行する車が優先される。",
+    "image_key": null
+  },
+  {
+    "question_text": "狭い道路から広い道路に入ろうとするときは、徐行しなければならない。",
+    "correct_answer": true,
+    "explanation": "狭い道路から広い道路に入るときは徐行する義務がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "狭い道路から広い道路に入るときであっても、徐行する必要はない。",
+    "correct_answer": false,
+    "explanation": "狭い道路から広い道路に入るときは徐行しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "優先道路を通行している車は、交通整理の行われていない交差点で徐行する義務はない。",
+    "correct_answer": true,
+    "explanation": "優先道路を通行している車には交差点での徐行義務が課されていない。",
+    "image_key": null
+  },
+  {
+    "question_text": "優先道路を通行していれば、見通しの悪い交差点であっても徐行する必要は一切ない。",
+    "correct_answer": false,
+    "explanation": "優先道路を通行していても、見通しの悪い場所では他の交通に注意して安全な速度で進行する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "車両通行帯が片側3つ以上ある道路の交差点で右折しようとする原動機付自転車は、道路標識による指定がなくても二段階右折をしなければならない。",
+    "correct_answer": true,
+    "explanation": "片側3車線以上ある道路の交差点では、標識の指定がなくても原動機付自転車は二段階右折の方法によらなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "車両通行帯が片側2つの道路の交差点であれば、道路標識による指定がなくても原動機付自転車は必ず二段階右折をしなければならない。",
+    "correct_answer": false,
+    "explanation": "片側2車線の交差点では、道路標識により二段階右折が指定されていない限り、通常の方法で右折してよい。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切の直前では、一時停止して目と耳で左右の安全を確認してから進行しなければならない。",
+    "correct_answer": true,
+    "explanation": "踏切の直前では一時停止し、目と耳で安全を確認してから進行するのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切の直前では、周囲に電車が見えなければ一時停止せずに通過してもよい。",
+    "correct_answer": false,
+    "explanation": "踏切の直前では電車が見えるかどうかにかかわらず一時停止しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切に信号機が設けられている場合、その信号が青色を表示していれば、一時停止せずに進行することができる。",
+    "correct_answer": true,
+    "explanation": "踏切用の信号機が青色を表示しているときは一時停止せずに進行できる。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切に信号機が設けられている場合であっても、その信号にかかわらず必ず一時停止しなければならない。",
+    "correct_answer": false,
+    "explanation": "信号機が青色を表示しているときは一時停止せずに進行することができる。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切の遮断機が下り始めているときは、その踏切に入ってはならない。",
+    "correct_answer": true,
+    "explanation": "遮断機が下り始めているときは踏切に入ってはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切の遮断機がまだ完全に下りきっていなければ、多少急いで通過してもよい。",
+    "correct_answer": false,
+    "explanation": "遮断機が下り始めている時点で踏切に入ることは禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切の警報機が鳴っているときは、遮断機が下りていなくてもその踏切に入ってはならない。",
+    "correct_answer": true,
+    "explanation": "警報機が鳴っているときは遮断機の状態にかかわらず踏切に入ってはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切の警報機が鳴っていても、遮断機が下りていなければ通過してもよい。",
+    "correct_answer": false,
+    "explanation": "警報機が鳴っている時点で踏切に入ることは禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切の向こう側が混雑していて渡りきれないおそれがあるときは、たとえ遮断機が上がっていても踏切内に入ってはならない。",
+    "correct_answer": true,
+    "explanation": "踏切内で停止するおそれがあるときは進入してはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切の向こう側が混雑していても、遮断機さえ上がっていれば踏切内に入ってもよい。",
+    "correct_answer": false,
+    "explanation": "踏切内で立ち往生するおそれがあるときは、遮断機が上がっていても進入してはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切を通過するときは、変速操作(ギアチェンジ)をしないで一気に通過するのが基本である。",
+    "correct_answer": true,
+    "explanation": "踏切内でのエンストを防ぐため、変速操作をせずに一気に通過するのが基本である。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切を通過するときは、途中で変速操作をしながらゆっくり進むのがよい。",
+    "correct_answer": false,
+    "explanation": "踏切内での変速操作はエンストの原因となるため避けるべきである。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切内で車両の動きが取れなくなったときは、非常ボタンを押すなどして列車の運転士等に知らせなければならない。",
+    "correct_answer": true,
+    "explanation": "踏切内で動けなくなったときは非常ボタン等で列車に異常を知らせる必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切内で車両が動かなくなったときは、まず自分で修理を試みてから周囲に助けを求めるべきである。",
+    "correct_answer": false,
+    "explanation": "まず非常ボタンなどで列車に知らせ、乗員を安全な場所に避難させることが優先される。",
+    "image_key": null
+  },
+  {
+    "question_text": "複線の踏切で一方の電車が通過した後も、反対側から別の電車が来ないか再度安全を確認しなければならない。",
+    "correct_answer": true,
+    "explanation": "複数の線路がある踏切では反対方向の電車にも注意しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "複線の踏切で一方の電車が通過すれば、反対側の安全確認をしなくても進行してよい。",
+    "correct_answer": false,
+    "explanation": "一方の電車が通過した後も反対側の安全を確認する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切の直前に停止線が設けられているときは、その停止線の直前で一時停止しなければならない。",
+    "correct_answer": true,
+    "explanation": "停止線がある場合はその直前で一時停止するのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切の直前に停止線が設けられていても、踏切のすぐ手前まで進んでから止まればよい。",
+    "correct_answer": false,
+    "explanation": "停止線がある場合はその直前で一時停止しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "前の車に続いて踏切を通過する場合であっても、自分の目と耳で安全を確認しなければならない。",
+    "correct_answer": true,
+    "explanation": "前の車が安全に通過したことは自分の安全確認の代わりにはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "前の車が安全に通過したのを見れば、自分で安全確認をしなくても踏切を通過してよい。",
+    "correct_answer": false,
+    "explanation": "前の車の通過にかかわらず、自分自身で安全を確認する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "交通整理の行われていない交差点に入ろうとするときは、徐行して安全を確認しなければならない場合がある。",
+    "correct_answer": true,
+    "explanation": "交通整理のない交差点では状況に応じて徐行し安全確認をする必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "徐行とは直ちに停止できるような速度で進行することをいい、その目安はおおむね時速10キロメートル以下とされる。",
+    "correct_answer": true,
+    "explanation": "徐行は直ちに停止できる速度で進行することをいい、目安として時速10キロメートル以下とされる。",
+    "image_key": null
+  },
+  {
+    "question_text": "徐行とは直ちに停止できるような速度で進行することをいい、その目安はおおむね時速20キロメートル以下とされる。",
+    "correct_answer": false,
+    "explanation": "徐行の目安はおおむね時速10キロメートル以下とされ、20キロメートルでは徐行の速度として速すぎる。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点で右折する車は、その交差点で直進しようとする対向車の進行を妨げてはならない。",
+    "correct_answer": true,
+    "explanation": "右折車は直進する対向車の進行を妨げてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点で右折する車は、対向車が直進してきても先に右折してよい。",
+    "correct_answer": false,
+    "explanation": "右折車は直進する対向車に進路を譲らなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "路面電車が交差点で進行しようとしているときは、後方の自動車はその進行を妨げてはならない。",
+    "correct_answer": true,
+    "explanation": "路面電車の進行を自動車が妨げてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "路面電車が交差点にいても、自動車のほうが先に交差点を通過してよい。",
+    "correct_answer": false,
+    "explanation": "自動車は路面電車の進行を妨げないようにしなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "この標識がある交差点は、道路の形が丁字形になっていることを示している。",
+    "correct_answer": true,
+    "explanation": "この標識は前方の交差点がT字形(丁字路)であることを表す警戒標識である。",
+    "image_key": "t-junction"
+  },
+  {
+    "question_text": "この標識は、その先の道路の幅が急に狭くなることを示している。",
+    "correct_answer": false,
+    "explanation": "この標識は前方に十字形の交差点があることを表す警戒標識であり、道幅の変化を示すものではない。",
+    "image_key": "crossroads"
+  },
+  {
+    "question_text": "この標識がある道路の先では、他の道路の車が合流してくることを示している。",
+    "correct_answer": true,
+    "explanation": "この標識は前方で合流交通があることを表す警戒標識である。",
+    "image_key": "merging-traffic"
+  },
+  {
+    "question_text": "この標識がある場所の先には踏切があることを示している。",
+    "correct_answer": true,
+    "explanation": "この標識は前方に踏切があることを表す警戒標識である。",
+    "image_key": "railway-crossing"
+  },
+  {
+    "question_text": "この標識は、その先に踏切があることを示しているが、通過するときに一時停止する必要はないことも意味している。",
+    "correct_answer": false,
+    "explanation": "踏切の標識は前方に踏切があることを示すものであり、一時停止が不要になるわけではない。",
+    "image_key": "railway-crossing"
+  },
+  {
+    "question_text": "環状交差点(ラウンドアバウト)に入ろうとする車は、環状交差点内を通行している車の進行を妨げてはならない。",
+    "correct_answer": true,
+    "explanation": "環状交差点に入ろうとする車は、環状交差点内を通行している車の進行を妨げてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "環状交差点に入ろうとする車は、環状交差点内を通行している車より常に優先して進入することができる。",
+    "correct_answer": false,
+    "explanation": "環状交差点に入ろうとする車は、環状交差点内を通行している車の進行を妨げてはならず、優先されるわけではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "環状交差点に入ろうとする車は、徐行しなければならない。",
+    "correct_answer": true,
+    "explanation": "環状交差点に入ろうとする車には徐行義務がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "環状交差点内を通行する車は、その交差点から出ようとする地点の直前で左側の方向指示器による合図を行わなければならない。",
+    "correct_answer": true,
+    "explanation": "環状交差点内を通行する車は、出口の直前で左折の合図を行う必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "環状交差点内を通行する車は、合図を行う必要は一切ない。",
+    "correct_answer": false,
+    "explanation": "環状交差点内を通行する車も、出口の直前で左折の合図を行う必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "「一時停止」の標識がある交差点では、たとえ交差する道路より明らかに広い道路を通行していても、一時停止しなければならない。",
+    "correct_answer": true,
+    "explanation": "一時停止の標識がある場所では、道路の幅にかかわらず一時停止しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差する道路より明らかに広い道路を通行しているときは、「一時停止」の標識があっても一時停止する必要はない。",
+    "correct_answer": false,
+    "explanation": "道路の幅にかかわらず、一時停止の標識がある場所では一時停止しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "遮断機も警報機もない踏切であっても、その直前で一時停止し、安全を確認してから進行しなければならない。",
+    "correct_answer": true,
+    "explanation": "遮断機や警報機の有無にかかわらず、踏切の直前では一時停止して安全確認をしなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "遮断機も警報機もない踏切では、一時停止する必要はなく、そのまま通過してよい。",
+    "correct_answer": false,
+    "explanation": "遮断機や警報機がなくても、踏切の直前では一時停止しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "車両通行帯が片側3つ以上ある交差点であっても、道路標識で小回り右折の方法が指定されている場合は、その指定に従って右折する。",
+    "correct_answer": true,
+    "explanation": "標識により小回り右折の方法が指定されている交差点では、その指定に従って右折する。",
+    "image_key": null
+  },
+  {
+    "question_text": "車両通行帯が片側3つ以上ある交差点では、道路標識の指定にかかわらず、原動機付自転車は必ず二段階右折をしなければならない。",
+    "correct_answer": false,
+    "explanation": "道路標識で小回り右折が指定されている場合は、その指定に従うため必ずしも二段階右折によるとは限らない。",
+    "image_key": null
+  },
+  {
+    "question_text": "交通整理の行われていない交差点で道路の幅がほぼ同じ場合、右方から進行してくる車があるときは、たとえ先に交差点に入っていても、その通行を妨げないようにしなければならない。",
+    "correct_answer": true,
+    "explanation": "同幅員の交差点では、先に交差点に入っていたかどうかにかかわらず、右方から進行してくる車の通行を妨げてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "交通整理の行われていない交差点では、道路の幅にかかわらず、先に交差点に入った車が優先される。",
+    "correct_answer": false,
+    "explanation": "優先されるのは道路の幅や優先道路の指定によるものであり、先に交差点に入ったかどうかで決まるものではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "右折専用の車両通行帯が設けられている交差点で直進しようとする車は、右折専用通行帯を通行してはならない。",
+    "correct_answer": true,
+    "explanation": "右折専用通行帯は右折する車のためのものであり、直進車が通行することはできない。",
+    "image_key": null
+  },
+  {
+    "question_text": "右折専用の車両通行帯が設けられている交差点であっても、空いていれば直進車がその通行帯を走行してもよい。",
+    "correct_answer": false,
+    "explanation": "空いていても、直進車が右折専用通行帯を通行することは認められていない。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切及びその前後の側端からそれぞれ10メートル以内の場所は、危険防止のため駐停車が禁止されている。",
+    "correct_answer": true,
+    "explanation": "踏切の前後10メートル以内は、危険防止のため駐停車が禁止されている場所である。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切の前後の側端からそれぞれ5メートル以内の場所は、駐停車が禁止されている。",
+    "correct_answer": false,
+    "explanation": "駐停車が禁止されるのは踏切の前後10メートル以内であり、5メートルではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点の側端または道路の曲がり角から5メートル以内の部分は、駐停車が禁止されている。",
+    "correct_answer": true,
+    "explanation": "交差点の側端や道路の曲がり角から5メートル以内は駐停車が禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点の側端から3メートル以内の部分に限り、駐停車が禁止されている。",
+    "correct_answer": false,
+    "explanation": "駐停車が禁止されるのは交差点の側端から5メートル以内であり、3メートルではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "この標識がある区間では、見通しのきかない交差点やカーブなどで警音器を鳴らさなければならない場合がある。",
+    "correct_answer": true,
+    "explanation": "警音器鳴らせの標識がある区間では、指定された場所で警音器を鳴らす必要がある。",
+    "image_key": "sound-horn"
+  },
+  {
+    "question_text": "この標識がある道路を通行している車は、交通整理の行われていない交差点であっても、必ず徐行しなければならない。",
+    "correct_answer": false,
+    "explanation": "優先道路の標識がある道路を通行する車は、交通整理の行われていない交差点で徐行する義務が課されない。",
+    "image_key": "priority-road"
+  },
+  {
+    "question_text": "この標識は、前方の道路が二重の急カーブになっていることを示している。",
+    "correct_answer": false,
+    "explanation": "この標識は前方に環状交差点(ラウンドアバウト)があることを示す警戒標識であり、急カーブを示すものではない。",
+    "image_key": "roundabout-ahead"
+  },
+  {
+    "question_text": "この標識は、前方の道路が右方向へ大きくカーブしていることを示している。",
+    "correct_answer": false,
+    "explanation": "この標識は前方の交差点が丁字形(T字形)であることを示す警戒標識であり、カーブを示すものではない。",
+    "image_key": "t-junction-2"
+  },
+  {
+    "question_text": "この標識は、前方で道路が直角に交わる十字路があることを示している。",
+    "correct_answer": false,
+    "explanation": "この標識は前方の道路がY字形に分岐していることを示す警戒標識であり、十字路を示すものではない。",
+    "image_key": "y-junction"
+  },
+  {
+    "question_text": "この標識は、警報機のない踏切であることを特に示している。",
+    "correct_answer": false,
+    "explanation": "この標識は前方に踏切があることを示すものであり、警報機の有無までは示していない。",
+    "image_key": "railway-crossing-2"
+  },
+  {
+    "question_text": "この標識がある踏切の前後10メートル以内は、駐停車が禁止されている区域に含まれる。",
+    "correct_answer": true,
+    "explanation": "踏切の前後10メートル以内は駐停車禁止の場所であり、標識のある踏切もこれに含まれる。",
+    "image_key": "railway-crossing"
+  },
+  {
+    "question_text": "交差点で左折しようとする車は、その左折によって、同じ方向に進行している自転車の進路を急に妨げるおそれがあるときは、自転車が進むのを待つなどしなければならない。",
+    "correct_answer": true,
+    "explanation": "左折時に自転車の進路を急に妨げるおそれがあるときは、自転車の進行を待つなど配慮しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点で左折しようとする車は、自転車より先に交差点に入っていれば、そのまま自転車の前を横切って左折してよい。",
+    "correct_answer": false,
+    "explanation": "先に交差点に入っていても、左折によって自転車の進行を妨げてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "交通整理の行われていない交差点で、優先道路を通行している車がある場合、他の道路から進入する車はその進行を妨げてはならない。",
+    "correct_answer": true,
+    "explanation": "優先道路を通行している車がある交差点では、他の道路から進入する車はその進行を妨げてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "優先道路を通行している車であっても、交差点内で徐行していれば他の道路からの車が優先される。",
+    "correct_answer": false,
+    "explanation": "優先道路を通行する車が徐行していても、他の道路からの車が優先されるわけではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "見通しのきかない交差点に入ろうとするときは、優先道路を通行している場合を除き、徐行しなければならない。",
+    "correct_answer": true,
+    "explanation": "見通しのきかない交差点では、優先道路を通行している場合を除き徐行しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "見通しのきかない交差点であっても、信号機により交通整理が行われている場合は、徐行しなければならないという規定の対象にはならない。",
+    "correct_answer": true,
+    "explanation": "見通しのきかない交差点での徐行義務は、交通整理の行われていない交差点についての規定であり、信号機により交通整理が行われている場合は対象にならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点における右折車と左折車がある場合、それぞれが交差点の中で相手の通行を妨げないよう注意して進行しなければならない。",
+    "correct_answer": true,
+    "explanation": "右折車と左折車が同時にいる場合、互いに相手の通行を妨げないよう注意する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点で右折する車と左折する車がいる場合、右折車が常に優先して通行できる。",
+    "correct_answer": false,
+    "explanation": "右折車が常に優先されるわけではなく、互いに相手の通行を妨げないよう注意する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切の直前で一時停止した後、発進する際も、変速操作を行わずに一気に通過できるよう低速ギアに入れておくことが基本である。",
+    "correct_answer": true,
+    "explanation": "踏切内でのエンストを防ぐため、あらかじめ低速ギアに入れて一気に通過するのが基本である。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切を通過する際は、遮断機が上がっていれば、通過中に停止しても問題ない。",
+    "correct_answer": false,
+    "explanation": "踏切内で停止するおそれがあるときはそもそも踏切に入ってはならず、通過中に停止することは大変危険である。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切内でエンジンが停止してしまった場合、まず車を踏切の外に押し出すなど、安全な場所に移動させることを試みる。",
+    "correct_answer": true,
+    "explanation": "踏切内でエンストした場合は、可能であれば車を踏切の外に移動させることを試みる必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切内でエンジンが停止した場合は、動かそうとせず、その場で修理が終わるまで待つべきである。",
+    "correct_answer": false,
+    "explanation": "踏切内でエンストした場合は、非常ボタンで知らせるとともに、可能な限り車を安全な場所に移動させるべきである。",
+    "image_key": null
+  },
+  {
+    "question_text": "交通整理の行われていない交差点に入ろうとする車は、交差道路を通行する車や歩行者に注意しなければならない。",
+    "correct_answer": true,
+    "explanation": "交通整理の行われていない交差点では、交差道路の車や歩行者に注意して進行する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "交通整理の行われていない交差点では、自分の通行が優先されると判断すれば、周囲を確認せずに進行してよい。",
+    "correct_answer": false,
+    "explanation": "優先されると判断される場合であっても、周囲を確認せずに進行してよいわけではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "環状交差点内を通行しているときに、後から別の車が進入してこようとしている場合、環状交差点内を通行している車が優先される。",
+    "correct_answer": true,
+    "explanation": "環状交差点内を通行している車は、後から進入しようとする車より優先される。",
+    "image_key": null
+  },
+  {
+    "question_text": "環状交差点内を通行している車より、これから進入しようとする車のほうが優先される。",
+    "correct_answer": false,
+    "explanation": "優先されるのは環状交差点内を通行している車であり、これから進入しようとする車ではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切内で車両の運転操作ができなくなったときは、非常ボタンがない場合、発炎筒などを使って列車の運転士等に異常を知らせる方法もある。",
+    "correct_answer": true,
+    "explanation": "非常ボタンがない場合でも、発炎筒などを使って列車に異常を知らせる方法がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "踏切内で車両が動かなくなったときは、非常ボタンがなければ列車に知らせる手段はない。",
+    "correct_answer": false,
+    "explanation": "非常ボタンがない場合でも、発炎筒などを使って列車に知らせる方法がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "複数の線路がある踏切を通過する際は、最初の電車が通過した直後に反対方向から別の電車が接近していないか、あらためて安全を確認する必要がある。",
+    "correct_answer": true,
+    "explanation": "複数の線路がある踏切では、一方の電車が通過した後も反対方向の安全をあらためて確認する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "複数の線路がある踏切では、最初に通過した電車と同じ方向の安全確認だけで十分である。",
+    "correct_answer": false,
+    "explanation": "複数の線路がある踏切では、反対方向の安全もあらためて確認する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点で右折する原動機付自転車のうち、二段階右折の方法によらなければならないものは、道路標識によって特に指定される場合がある。",
+    "correct_answer": true,
+    "explanation": "車両通行帯が片側3つ以上ある場合のほか、道路標識により二段階右折が指定されている交差点でも二段階右折の方法による。",
+    "image_key": null
+  },
+  {
+    "question_text": "二段階右折が必要となるのは、車両通行帯が片側3つ以上ある交差点に限られ、それ以外の指定は存在しない。",
+    "correct_answer": false,
+    "explanation": "車両通行帯が片側3つ以上ある場合のほか、道路標識により二段階右折が指定されている交差点でも二段階右折の方法によらなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "交通整理の行われていない交差点で、道路の幅がほぼ同じであっても、一方に優先道路の指定がある場合はその道路が優先される。",
+    "correct_answer": true,
+    "explanation": "優先道路の指定がある場合、道路の幅がほぼ同じであってもその道路が優先される。",
+    "image_key": null
+  },
+  {
+    "question_text": "優先道路の指定がある道路と、それより明らかに広い道路とが交わる交差点では、必ず道路の幅が広いほうが優先される。",
+    "correct_answer": false,
+    "explanation": "優先道路の指定がある場合はその道路が優先され、道路の幅の広さで決まるわけではない。",
+    "image_key": null
+  }
 ]

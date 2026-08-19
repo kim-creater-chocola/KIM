@@ -58,8 +58,8 @@ for (const file of files) {
     errors.push(`${file}: 配列ではありません`);
     continue;
   }
-  if (data.length !== 50) {
-    errors.push(`${file}: 要素数が50ではありません (${data.length}件)`);
+  if (data.length !== 100) {
+    errors.push(`${file}: 要素数が100ではありません (${data.length}件)`);
   }
 
   const seenText = new Set();

@@ -5,7 +5,7 @@
 
 ## 出力形式（厳守）
 
-各ファイルは、以下の型に沿った **要素数ちょうど50個** のJSON配列のみを出力する。
+各ファイルは、以下の型に沿った **要素数ちょうど100個** のJSON配列のみを出力する。
 説明文やMarkdownのコードフェンスは付けず、ファイルの中身は生のJSON配列だけにすること。
 
 ```ts
@@ -18,7 +18,7 @@ interface QuestionSeed {
 ```
 
 - 有効なJSONのみ（コメント・末尾カンマ禁止）
-- 50問すべて質問文が重複しないこと
+- 100問すべて質問文が重複しないこと
 - correct_answer は true / false をおおむね半々になるように分布させる（true/falseが連続しすぎたり、単元内で偏りすぎないこと）
 
 ## 内容・出典について（重要）
@@ -55,14 +55,18 @@ designated-direction-only, no-vehicle-crossing, weight-limit, height-limit,
 max-width, vehicles-only, time-limited-parking, bicycles-side-by-side,
 parking-allowed, stopping-allowed, stop-line, bicycle-crossing, safety-zone,
 curve-right, lane-reduction, road-narrows, two-way-traffic, steep-grade,
-road-work, crosswind, general-danger
+road-work, crosswind, general-danger, t-junction-2, y-junction,
+roundabout-ahead, curve-right-sharp, s-curve, s-curve-sharp, winding-road,
+railway-crossing-2, rockfall, bumpy-road, steep-grade-up, steep-grade-down
 ```
+
+正確なキー一覧は `src/components/signs/SignIcon.tsx` の `PHOTO_SIGN_KEYS` と `SIGN_REGISTRY` を正としてよい（上記リストが古くなっていた場合はそちらを優先する）。
 
 画像問題の問題文は「この標識がある道路では、時速40キロを超えて運転してはならない。」のように、
 **表示されている標識を見た前提で** 正誤を判断させる文にする（標識名をそのまま問題文に書かない）。
 
-- `kari-03`（標識・標示などに従うこと）は、50問中 **35〜40問程度** を画像問題にする（レジストリのキーをバランス良く使い回してよい）。
-- それ以外の単元は、文脈上自然な場合のみ数問（0〜5問程度）画像問題を混ぜてよい。無理に入れる必要はない。
+- `kari-03`（標識・標示などに従うこと）は、100問中 **70〜80問程度** を画像問題にする（レジストリのキーをバランス良く使い回してよい）。
+- それ以外の単元は、文脈上自然な場合のみ数問（0〜8問程度）画像問題を混ぜてよい。無理に入れる必要はない。
 - 同じ`image_key`を1ファイル内で複数回使い、数値や状況を変えて別の問題にするのは可（例: `max-speed-50`を使った問題を2問作るなど）。
 
 ## 単元名と範囲の目安
@@ -77,4 +81,4 @@ road-work, crosswind, general-danger
 - **数値を使ったひっかけを増やす**: 正しい基準値から少しだけずらす（例: 実際は50km/hなのに問題文は60km/hにして誤りにする）、単位を変える、複数の数値条件を組み合わせて一部だけ間違える、など。
 - **紛らわしい表現を増やす**: 一見正しそうだが例外条件が抜けている／逆に例外まで正しく含んでいて実は正しい、といった作り。「必ず」「絶対に」「すべて」などの極端表現の使用も引き続き活用する。
 - **1問1論点は維持**: 数値を盛り込んでも、論点を複数詰め込みすぎない。
-- リライトの際も、50問ちょうど・重複なし・image_keyはレジストリのキーのみ・correct_answerのtrue/false比率が単元内で偏りすぎない、という既存ルールはすべて維持すること。
+- リライトの際も、100問ちょうど・重複なし・image_keyはレジストリのキーのみ・correct_answerのtrue/false比率が単元内で偏りすぎない、という既存ルールはすべて維持すること。

@@ -1,52 +1,602 @@
 [
-  { "question_text": "緊急自動車とは、消防自動車、救急自動車、パトカーなど政令で定められた自動車で、緊急の用務のため運転中に赤色の警光灯をつけ、サイレンを鳴らしているものをいう。", "correct_answer": true, "explanation": "緊急自動車は政令で定められた車両で、緊急時に赤色灯とサイレンを使用して運転しているものをいう。", "image_key": null },
-  { "question_text": "緊急自動車として扱われるためには、赤色の警光灯を点灯していればよく、サイレンを鳴らしている必要はない。", "correct_answer": false, "explanation": "緊急自動車として扱われるには、原則として赤色灯とサイレンの両方を使用している必要がある。", "image_key": null },
-  { "question_text": "交差点やその付近で緊急自動車が接近してきたときは、交差点を避け、道路の左側に寄って一時停止しなければならない。", "correct_answer": true, "explanation": "交差点付近では交差点を避けて左側に寄り一時停止するのが原則である。", "image_key": null },
-  { "question_text": "交差点やその付近で緊急自動車が接近してきたときは、その場で停止さえすれば、道路のどの位置にいてもよい。", "correct_answer": false, "explanation": "単に停止するだけでなく、交差点を避けて道路の左側に寄る必要がある。", "image_key": null },
-  { "question_text": "一方通行の道路で、左側に寄ることがかえって緊急自動車の妨げになる場合は、道路の右側に寄って一時停止することができる。", "correct_answer": true, "explanation": "一方通行路などで左に寄ることが妨げとなる場合は右側に寄ることが認められている。", "image_key": null },
-  { "question_text": "交差点やその付近以外の場所で緊急自動車が接近してきたときは、必ずその場で一時停止しなければならない。", "correct_answer": false, "explanation": "交差点付近以外では、一時停止までは義務付けられておらず、道路の左側に寄って進路を譲ればよい。", "image_key": null },
-  { "question_text": "交差点やその付近以外の場所で緊急自動車が接近してきたときは、道路の左側に寄って進路を譲らなければならない。", "correct_answer": true, "explanation": "交差点付近以外の場所では左側に寄って進路を譲る義務がある。", "image_key": null },
-  { "question_text": "緊急自動車は、緊急の用務のため運転しているときに限り、法定の最高速度の規定によらずに運転することが認められている。", "correct_answer": true, "explanation": "緊急用務中に限り、指定された条件のもとで最高速度の規定によらず運転できる。", "image_key": null },
-  { "question_text": "緊急自動車について定められた最高速度は、高速自動車国道の本線車道でも一般道路でも同じ時速100キロメートルである。", "correct_answer": false, "explanation": "一般道路における緊急自動車の最高速度は時速80キロメートルであり、高速自動車国道の本線車道の時速100キロメートルとは異なる。", "image_key": null },
-  { "question_text": "緊急自動車について定められた最高速度は、高速自動車国道の本線車道では時速100キロメートル、それ以外の道路では時速80キロメートルである。", "correct_answer": true, "explanation": "緊急自動車の最高速度は、高速自動車国道の本線車道で時速100キロメートル、一般道路で時速80キロメートルと定められている。", "image_key": null },
-  { "question_text": "緊急自動車であっても、他の交通に対する安全運転の注意義務が免除されるわけではない。", "correct_answer": true, "explanation": "一部の規制が除外されても、安全運転の基本的な注意義務は免除されない。", "image_key": null },
-  { "question_text": "緊急自動車が交差点に接近してきたときは、その交差点内で停止して道を譲るのがよい。", "correct_answer": false, "explanation": "交差点内で停止すると他の交通の妨げになるため、交差点を避けて停止するのが原則である。", "image_key": null },
-  { "question_text": "緊急自動車が近づいてきたとき、交差点内を走行中の車はすみやかに交差点外に出てから進路を譲るのがよい。", "correct_answer": true, "explanation": "交差点内での停止は危険なため、交差点外に出てから進路を譲るのが望ましい。", "image_key": null },
-  { "question_text": "追い越しが禁止されている場所であっても、緊急自動車は緊急の用務のためであれば追い越しをすることができる。", "correct_answer": true, "explanation": "緊急用務中の緊急自動車には追い越し禁止の規定が適用されない場合がある。", "image_key": null },
-  { "question_text": "緊急自動車は、緊急の用務のためであっても、追い越し禁止場所で追い越しをすることは一切認められていない。", "correct_answer": false, "explanation": "緊急自動車は緊急用務のため運転しているときに限り、追い越し禁止場所でも追い越しが認められる場合がある。", "image_key": null },
-  { "question_text": "緊急自動車が優先される規定は、パトカーが緊急走行しているときにも適用される。", "correct_answer": true, "explanation": "パトカーも緊急自動車の一つであり、緊急走行時には優先規定が適用される。", "image_key": null },
-  { "question_text": "パトカーであれば、通常のパトロール中であっても常に緊急自動車としての優先が認められる。", "correct_answer": false, "explanation": "緊急自動車としての優先が認められるのは緊急用務のため赤色灯・サイレンを使用して運転しているときに限られる。", "image_key": null },
-  { "question_text": "救急車が患者を搬送中でなく現場に向かっている途中であっても、赤色の警光灯とサイレンを使用していれば緊急自動車として優先される。", "correct_answer": true, "explanation": "緊急自動車としての扱いは運転の状況(赤色灯・サイレンの使用)によるものであり、患者の有無によらない。", "image_key": null },
-  { "question_text": "救急車は、患者を実際に乗せているときに限り、緊急自動車としての優先が認められる。", "correct_answer": false, "explanation": "患者を乗せていなくても、緊急用務のため赤色灯・サイレンを使用していれば緊急自動車として扱われる。", "image_key": null },
-  { "question_text": "緊急自動車に進路を譲らなかった場合、道路交通法違反として罰則の対象となることがある。", "correct_answer": true, "explanation": "進路を譲る義務に違反した場合は罰則の対象となり得る。", "image_key": null },
-  { "question_text": "緊急自動車への進路譲りは、あくまで運転者の任意の判断に任されており、法律上の義務ではない。", "correct_answer": false, "explanation": "緊急自動車への進路譲りは法律上の義務として定められている。", "image_key": null },
-  { "question_text": "見通しの悪い交差点に接近しているときに緊急自動車のサイレンが聞こえた場合は、交差点内で停止しないよう注意しなければならない。", "correct_answer": true, "explanation": "交差点内での停止は交通の妨げとなるため避けなければならない。", "image_key": null },
-  { "question_text": "緊急自動車が接近してきたら、周囲の状況にかかわらず、その場で直ちに急ブレーキをかけて停止しなければならない。", "correct_answer": false, "explanation": "急ブレーキはかえって危険であり、周囲の安全を確認しながら落ち着いて進路を譲るべきである。", "image_key": null },
-  { "question_text": "緊急自動車は、道路標識によって通行が禁止されている道路であっても、緊急の用務のためであれば通行することができる場合がある。", "correct_answer": true, "explanation": "緊急自動車には一部の通行規制の適用が除外される場合がある。", "image_key": null },
-  { "question_text": "緊急自動車には交通ルール上の特例は一切なく、他の車とすべて同じ規制に従わなければならない。", "correct_answer": false, "explanation": "緊急自動車には速度や通行区分などについて一定の特例が認められている。", "image_key": null },
-  { "question_text": "緊急自動車として扱われるのは、道路交通法施行令で定められた消防用自動車、救急用自動車、警察用自動車などに限られる。", "correct_answer": true, "explanation": "緊急自動車として扱われるのは政令等で定められた一定の車両に限られる。", "image_key": null },
-  { "question_text": "一般のトラックに個人が独自に赤色灯を取り付けてサイレンを鳴らせば、緊急自動車として優先を受けることができる。", "correct_answer": false, "explanation": "緊急自動車として認められるのは法令で定められた車両に限られ、個人が勝手に装備しても該当しない。", "image_key": null },
-  { "question_text": "緊急自動車に進路を譲る際、徐行や一時停止をしても交通の危険が生じないよう周囲の安全にも注意しなければならない。", "correct_answer": true, "explanation": "進路を譲る際も周囲の安全確認を怠ってはならない。", "image_key": null },
-  { "question_text": "緊急自動車に進路を譲るためであれば、歩行者や他の車に多少の危険が生じてもかまわない。", "correct_answer": false, "explanation": "進路を譲る際も歩行者や他の車の安全に配慮しなければならない。", "image_key": null },
-  { "question_text": "緊急自動車が対面する信号が赤色であっても、緊急用務のためやむを得ない場合は、徐行して安全を確認しながら交差点を通過することが認められている。", "correct_answer": true, "explanation": "緊急自動車は一定の条件のもとで信号にかかわらず徐行して交差点を通過できる場合がある。", "image_key": null },
-  { "question_text": "緊急自動車は、いかなる交差点でも信号の色にかかわらず速度を落とさず通過してよい。", "correct_answer": false, "explanation": "信号を無視して通過する場合でも徐行するなど安全確認が必要である。", "image_key": null },
-  { "question_text": "路線バスが発車の合図をして停留所から発進しようとしているときは、後方の車はできる限りその進行を妨げないようにしなければならない。", "correct_answer": true, "explanation": "路線バスの発進の合図があったときは、後方の車はできる限り進行を妨げないようにする義務がある。", "image_key": null },
-  { "question_text": "路線バスが発車の合図をしていても、後方の車には進路を譲る義務は一切ない。", "correct_answer": false, "explanation": "発進の合図をした路線バスに対しては、できる限り進行を妨げないようにする義務がある。", "image_key": null },
-  { "question_text": "通学通園バスが停止表示をして児童・幼児の乗降のため停車しているときは、後方から進行する車は徐行するなどして安全を確かめなければならない場面がある。", "correct_answer": true, "explanation": "通学通園バスが停止表示をしているときは、後方の車は徐行するなど安全に配慮する必要がある。", "image_key": null },
-  { "question_text": "通学通園バスが停車中に児童の乗降を行っていても、後方の車は速度を落とさずに通過してよい。", "correct_answer": false, "explanation": "児童の乗降中は安全のため速度を落とすなどの配慮が必要である。", "image_key": null },
-  { "question_text": "緊急自動車が接近してきたときは、周囲の交通状況を確認しながら落ち着いて進路を譲ることが大切である。", "correct_answer": true, "explanation": "あわてず周囲を確認しながら進路を譲ることが安全につながる。", "image_key": null },
-  { "question_text": "緊急自動車が近づいてきたときは、慌てて反対車線に飛び出してでも早く道を譲らなければならない。", "correct_answer": false, "explanation": "反対車線への飛び出しなど危険な行為はかえって事故を招くため避けなければならない。", "image_key": null },
-  { "question_text": "緊急自動車の優先に関する規定に従わなかった一般の運転者は、指導や罰則の対象となり得る。", "correct_answer": true, "explanation": "優先規定に違反した場合は罰則等の対象となることがある。", "image_key": null },
-  { "question_text": "緊急自動車に道を譲る義務があるのは四輪の自動車だけで、原動機付自転車や自転車には適用されない。", "correct_answer": false, "explanation": "緊急自動車への進路譲りの義務は、原動機付自転車や軽車両を含む車両全般に適用される。", "image_key": null },
-  { "question_text": "緊急自動車が後方から接近していることに気づいたときは、早めに周囲の状況を確認して進路を譲る準備をすることが望ましい。", "correct_answer": true, "explanation": "早めに気づいて準備することで安全に進路を譲ることができる。", "image_key": null },
-  { "question_text": "緊急自動車のサイレンが聞こえても、自分の進路に直接関係がなければ何もする必要はない。", "correct_answer": false, "explanation": "サイレンに気づいたら周囲の状況を確認し、必要に応じて進路を譲れるよう備える必要がある。", "image_key": null },
-  { "question_text": "緊急自動車は、一定の要件のもとで、一時停止すべき場所でも徐行して安全を確認すれば通過できる特例が認められている。", "correct_answer": true, "explanation": "緊急自動車には一時停止の規定について一定の特例が認められている。", "image_key": null },
-  { "question_text": "緊急自動車には、駐車や停車に関する規制も含め、あらゆる交通規制がすべて適用されない。", "correct_answer": false, "explanation": "緊急自動車にも適用される交通規制は存在し、すべての規制が除外されるわけではない。", "image_key": null },
-  { "question_text": "交差点の直前で緊急自動車のサイレンに気づいた場合は、交差点を避けて道路の左側に寄り、一時停止するのが基本である。", "correct_answer": true, "explanation": "交差点付近では交差点を避けて左側に寄り一時停止するのが基本の対応である。", "image_key": null },
-  { "question_text": "交差点内を通行中に緊急自動車が接近してきた場合は、その場で急停止するのが最も安全である。", "correct_answer": false, "explanation": "交差点内での急停止は危険であり、交差点外に出てから進路を譲るのが望ましい。", "image_key": null },
-  { "question_text": "緊急自動車が優先される制度は、緊急業務を迅速に遂行できるようにするために設けられている。", "correct_answer": true, "explanation": "緊急自動車の優先制度は迅速な緊急業務の遂行を目的としている。", "image_key": null },
-  { "question_text": "緊急自動車の優先規定は、現場に警察官がいて指示した場合にのみ適用される。", "correct_answer": false, "explanation": "緊急自動車の優先規定は警察官の指示の有無にかかわらず適用される。", "image_key": null },
-  { "question_text": "一般の運転者は、緊急自動車が接近してきたことに気づいたら、できるだけ早く進路を譲れるよう周囲の状況を確認することが求められる。", "correct_answer": true, "explanation": "早期に周囲を確認し進路を譲る準備をすることが求められる。", "image_key": null },
-  { "question_text": "緊急自動車に対する優先規定は、市街地の道路にのみ適用され、郊外の道路や高速道路では適用されない。", "correct_answer": false, "explanation": "緊急自動車の優先規定は道路の種類を問わず適用される。", "image_key": null },
-  { "question_text": "緊急自動車の速度に関する特例は、緊急用務のため運転している間だけに限り認められるものである。", "correct_answer": true, "explanation": "速度などの特例が認められるのは、緊急用務のため運転している間に限られる。", "image_key": null }
+  {
+    "question_text": "緊急自動車とは、消防自動車、救急自動車、パトカーなど政令で定められた自動車で、緊急の用務のため運転中に赤色の警光灯をつけ、サイレンを鳴らしているものをいう。",
+    "correct_answer": true,
+    "explanation": "緊急自動車は政令で定められた車両で、緊急時に赤色灯とサイレンを使用して運転しているものをいう。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車として扱われるためには、赤色の警光灯を点灯していればよく、サイレンを鳴らしている必要はない。",
+    "correct_answer": false,
+    "explanation": "緊急自動車として扱われるには、原則として赤色灯とサイレンの両方を使用している必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点やその付近で緊急自動車が接近してきたときは、交差点を避け、道路の左側に寄って一時停止しなければならない。",
+    "correct_answer": true,
+    "explanation": "交差点付近では交差点を避けて左側に寄り一時停止するのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点やその付近で緊急自動車が接近してきたときは、その場で停止さえすれば、道路のどの位置にいてもよい。",
+    "correct_answer": false,
+    "explanation": "単に停止するだけでなく、交差点を避けて道路の左側に寄る必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "一方通行の道路で、左側に寄ることがかえって緊急自動車の妨げになる場合は、道路の右側に寄って一時停止することができる。",
+    "correct_answer": true,
+    "explanation": "一方通行路などで左に寄ることが妨げとなる場合は右側に寄ることが認められている。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点やその付近以外の場所で緊急自動車が接近してきたときは、必ずその場で一時停止しなければならない。",
+    "correct_answer": false,
+    "explanation": "交差点付近以外では、一時停止までは義務付けられておらず、道路の左側に寄って進路を譲ればよい。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点やその付近以外の場所で緊急自動車が接近してきたときは、道路の左側に寄って進路を譲らなければならない。",
+    "correct_answer": true,
+    "explanation": "交差点付近以外の場所では左側に寄って進路を譲る義務がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車は、緊急の用務のため運転しているときに限り、法定の最高速度の規定によらずに運転することが認められている。",
+    "correct_answer": true,
+    "explanation": "緊急用務中に限り、指定された条件のもとで最高速度の規定によらず運転できる。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車について定められた最高速度は、高速自動車国道の本線車道でも一般道路でも同じ時速100キロメートルである。",
+    "correct_answer": false,
+    "explanation": "一般道路における緊急自動車の最高速度は時速80キロメートルであり、高速自動車国道の本線車道の時速100キロメートルとは異なる。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車について定められた最高速度は、高速自動車国道の本線車道では時速100キロメートル、それ以外の道路では時速80キロメートルである。",
+    "correct_answer": true,
+    "explanation": "緊急自動車の最高速度は、高速自動車国道の本線車道で時速100キロメートル、一般道路で時速80キロメートルと定められている。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車であっても、他の交通に対する安全運転の注意義務が免除されるわけではない。",
+    "correct_answer": true,
+    "explanation": "一部の規制が除外されても、安全運転の基本的な注意義務は免除されない。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が交差点に接近してきたときは、その交差点内で停止して道を譲るのがよい。",
+    "correct_answer": false,
+    "explanation": "交差点内で停止すると他の交通の妨げになるため、交差点を避けて停止するのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が近づいてきたとき、交差点内を走行中の車はすみやかに交差点外に出てから進路を譲るのがよい。",
+    "correct_answer": true,
+    "explanation": "交差点内での停止は危険なため、交差点外に出てから進路を譲るのが望ましい。",
+    "image_key": null
+  },
+  {
+    "question_text": "追い越しが禁止されている場所であっても、緊急自動車は緊急の用務のためであれば追い越しをすることができる。",
+    "correct_answer": true,
+    "explanation": "緊急用務中の緊急自動車には追い越し禁止の規定が適用されない場合がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車は、緊急の用務のためであっても、追い越し禁止場所で追い越しをすることは一切認められていない。",
+    "correct_answer": false,
+    "explanation": "緊急自動車は緊急用務のため運転しているときに限り、追い越し禁止場所でも追い越しが認められる場合がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が優先される規定は、パトカーが緊急走行しているときにも適用される。",
+    "correct_answer": true,
+    "explanation": "パトカーも緊急自動車の一つであり、緊急走行時には優先規定が適用される。",
+    "image_key": null
+  },
+  {
+    "question_text": "パトカーであれば、通常のパトロール中であっても常に緊急自動車としての優先が認められる。",
+    "correct_answer": false,
+    "explanation": "緊急自動車としての優先が認められるのは緊急用務のため赤色灯・サイレンを使用して運転しているときに限られる。",
+    "image_key": null
+  },
+  {
+    "question_text": "救急車が患者を搬送中でなく現場に向かっている途中であっても、赤色の警光灯とサイレンを使用していれば緊急自動車として優先される。",
+    "correct_answer": true,
+    "explanation": "緊急自動車としての扱いは運転の状況(赤色灯・サイレンの使用)によるものであり、患者の有無によらない。",
+    "image_key": null
+  },
+  {
+    "question_text": "救急車は、患者を実際に乗せているときに限り、緊急自動車としての優先が認められる。",
+    "correct_answer": false,
+    "explanation": "患者を乗せていなくても、緊急用務のため赤色灯・サイレンを使用していれば緊急自動車として扱われる。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車に進路を譲らなかった場合、道路交通法違反として罰則の対象となることがある。",
+    "correct_answer": true,
+    "explanation": "進路を譲る義務に違反した場合は罰則の対象となり得る。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車への進路譲りは、あくまで運転者の任意の判断に任されており、法律上の義務ではない。",
+    "correct_answer": false,
+    "explanation": "緊急自動車への進路譲りは法律上の義務として定められている。",
+    "image_key": null
+  },
+  {
+    "question_text": "見通しの悪い交差点に接近しているときに緊急自動車のサイレンが聞こえた場合は、交差点内で停止しないよう注意しなければならない。",
+    "correct_answer": true,
+    "explanation": "交差点内での停止は交通の妨げとなるため避けなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が接近してきたら、周囲の状況にかかわらず、その場で直ちに急ブレーキをかけて停止しなければならない。",
+    "correct_answer": false,
+    "explanation": "急ブレーキはかえって危険であり、周囲の安全を確認しながら落ち着いて進路を譲るべきである。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車は、道路標識によって通行が禁止されている道路であっても、緊急の用務のためであれば通行することができる場合がある。",
+    "correct_answer": true,
+    "explanation": "緊急自動車には一部の通行規制の適用が除外される場合がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車には交通ルール上の特例は一切なく、他の車とすべて同じ規制に従わなければならない。",
+    "correct_answer": false,
+    "explanation": "緊急自動車には速度や通行区分などについて一定の特例が認められている。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車として扱われるのは、道路交通法施行令で定められた消防用自動車、救急用自動車、警察用自動車などに限られる。",
+    "correct_answer": true,
+    "explanation": "緊急自動車として扱われるのは政令等で定められた一定の車両に限られる。",
+    "image_key": null
+  },
+  {
+    "question_text": "一般のトラックに個人が独自に赤色灯を取り付けてサイレンを鳴らせば、緊急自動車として優先を受けることができる。",
+    "correct_answer": false,
+    "explanation": "緊急自動車として認められるのは法令で定められた車両に限られ、個人が勝手に装備しても該当しない。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車に進路を譲る際、徐行や一時停止をしても交通の危険が生じないよう周囲の安全にも注意しなければならない。",
+    "correct_answer": true,
+    "explanation": "進路を譲る際も周囲の安全確認を怠ってはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車に進路を譲るためであれば、歩行者や他の車に多少の危険が生じてもかまわない。",
+    "correct_answer": false,
+    "explanation": "進路を譲る際も歩行者や他の車の安全に配慮しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が対面する信号が赤色であっても、緊急用務のためやむを得ない場合は、徐行して安全を確認しながら交差点を通過することが認められている。",
+    "correct_answer": true,
+    "explanation": "緊急自動車は一定の条件のもとで信号にかかわらず徐行して交差点を通過できる場合がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車は、いかなる交差点でも信号の色にかかわらず速度を落とさず通過してよい。",
+    "correct_answer": false,
+    "explanation": "信号を無視して通過する場合でも徐行するなど安全確認が必要である。",
+    "image_key": null
+  },
+  {
+    "question_text": "路線バスが発車の合図をして停留所から発進しようとしているときは、後方の車はできる限りその進行を妨げないようにしなければならない。",
+    "correct_answer": true,
+    "explanation": "路線バスの発進の合図があったときは、後方の車はできる限り進行を妨げないようにする義務がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "路線バスが発車の合図をしていても、後方の車には進路を譲る義務は一切ない。",
+    "correct_answer": false,
+    "explanation": "発進の合図をした路線バスに対しては、できる限り進行を妨げないようにする義務がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "通学通園バスが停止表示をして児童・幼児の乗降のため停車しているときは、後方から進行する車は徐行するなどして安全を確かめなければならない場面がある。",
+    "correct_answer": true,
+    "explanation": "通学通園バスが停止表示をしているときは、後方の車は徐行するなど安全に配慮する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "通学通園バスが停車中に児童の乗降を行っていても、後方の車は速度を落とさずに通過してよい。",
+    "correct_answer": false,
+    "explanation": "児童の乗降中は安全のため速度を落とすなどの配慮が必要である。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が接近してきたときは、周囲の交通状況を確認しながら落ち着いて進路を譲ることが大切である。",
+    "correct_answer": true,
+    "explanation": "あわてず周囲を確認しながら進路を譲ることが安全につながる。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が近づいてきたときは、慌てて反対車線に飛び出してでも早く道を譲らなければならない。",
+    "correct_answer": false,
+    "explanation": "反対車線への飛び出しなど危険な行為はかえって事故を招くため避けなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車の優先に関する規定に従わなかった一般の運転者は、指導や罰則の対象となり得る。",
+    "correct_answer": true,
+    "explanation": "優先規定に違反した場合は罰則等の対象となることがある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車に道を譲る義務があるのは四輪の自動車だけで、原動機付自転車や自転車には適用されない。",
+    "correct_answer": false,
+    "explanation": "緊急自動車への進路譲りの義務は、原動機付自転車や軽車両を含む車両全般に適用される。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が後方から接近していることに気づいたときは、早めに周囲の状況を確認して進路を譲る準備をすることが望ましい。",
+    "correct_answer": true,
+    "explanation": "早めに気づいて準備することで安全に進路を譲ることができる。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車のサイレンが聞こえても、自分の進路に直接関係がなければ何もする必要はない。",
+    "correct_answer": false,
+    "explanation": "サイレンに気づいたら周囲の状況を確認し、必要に応じて進路を譲れるよう備える必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車は、一定の要件のもとで、一時停止すべき場所でも徐行して安全を確認すれば通過できる特例が認められている。",
+    "correct_answer": true,
+    "explanation": "緊急自動車には一時停止の規定について一定の特例が認められている。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車には、駐車や停車に関する規制も含め、あらゆる交通規制がすべて適用されない。",
+    "correct_answer": false,
+    "explanation": "緊急自動車にも適用される交通規制は存在し、すべての規制が除外されるわけではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点の直前で緊急自動車のサイレンに気づいた場合は、交差点を避けて道路の左側に寄り、一時停止するのが基本である。",
+    "correct_answer": true,
+    "explanation": "交差点付近では交差点を避けて左側に寄り一時停止するのが基本の対応である。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点内を通行中に緊急自動車が接近してきた場合は、その場で急停止するのが最も安全である。",
+    "correct_answer": false,
+    "explanation": "交差点内での急停止は危険であり、交差点外に出てから進路を譲るのが望ましい。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が優先される制度は、緊急業務を迅速に遂行できるようにするために設けられている。",
+    "correct_answer": true,
+    "explanation": "緊急自動車の優先制度は迅速な緊急業務の遂行を目的としている。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車の優先規定は、現場に警察官がいて指示した場合にのみ適用される。",
+    "correct_answer": false,
+    "explanation": "緊急自動車の優先規定は警察官の指示の有無にかかわらず適用される。",
+    "image_key": null
+  },
+  {
+    "question_text": "一般の運転者は、緊急自動車が接近してきたことに気づいたら、できるだけ早く進路を譲れるよう周囲の状況を確認することが求められる。",
+    "correct_answer": true,
+    "explanation": "早期に周囲を確認し進路を譲る準備をすることが求められる。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車に対する優先規定は、市街地の道路にのみ適用され、郊外の道路や高速道路では適用されない。",
+    "correct_answer": false,
+    "explanation": "緊急自動車の優先規定は道路の種類を問わず適用される。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車の速度に関する特例は、緊急用務のため運転している間だけに限り認められるものである。",
+    "correct_answer": true,
+    "explanation": "速度などの特例が認められるのは、緊急用務のため運転している間に限られる。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が交差点に接近してきたときは、交差点内で停止している車も速やかに交差点外に出て進路を譲らなければならない。",
+    "correct_answer": true,
+    "explanation": "交差点内での停止は交通の妨げとなるため、速やかに交差点外に出て進路を譲る必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点内で緊急自動車の接近に気づいたときは、そのままの位置で停止して待つのがよい。",
+    "correct_answer": false,
+    "explanation": "交差点内での停止は危険であり、交差点外に出てから進路を譲るのが望ましい。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車の運転には、運転しようとする車両に応じた運転免許を受けていることに加え、一定の要件を満たす必要がある。",
+    "correct_answer": true,
+    "explanation": "緊急自動車の運転には、対応する免許のほか、一定の要件を満たすことが求められる。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車は、運転免許を受けていれば運転経験の長さにかかわらず、誰でも運転することができる。",
+    "correct_answer": false,
+    "explanation": "緊急自動車の運転には免許のほか一定の要件があり、誰でも運転できるわけではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が緊急用務のため運転しているときの最高速度は、一般道路では時速80キロメートルである。",
+    "correct_answer": true,
+    "explanation": "緊急自動車の一般道路における最高速度は時速80キロメートルと定められている。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が緊急用務のため運転しているときの最高速度は、一般道路・高速自動車国道を問わず時速80キロメートルである。",
+    "correct_answer": false,
+    "explanation": "高速自動車国道の本線車道における緊急自動車の最高速度は時速100キロメートルであり、一般道路とは異なる。",
+    "image_key": null
+  },
+  {
+    "question_text": "高速自動車国道の本線車道を通行する緊急自動車は、時速100キロメートルを超えない範囲で法定速度の規定によらず運転できる。",
+    "correct_answer": true,
+    "explanation": "高速自動車国道の本線車道における緊急自動車の最高速度は時速100キロメートルである。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車の最高速度は、車両の大きさによって異なり、大型の緊急自動車は一般道路で時速70キロメートルに制限される。",
+    "correct_answer": false,
+    "explanation": "緊急自動車の最高速度は車両の大きさにかかわらず、一般道路では時速80キロメートルである。",
+    "image_key": null
+  },
+  {
+    "question_text": "道路維持作業用自動車が点灯する黄色の回転灯は、緊急自動車の赤色警光灯とは異なるものである。",
+    "correct_answer": true,
+    "explanation": "黄色の回転灯は道路維持作業用自動車などが用いるもので、緊急自動車の赤色警光灯とは別のものである。",
+    "image_key": null
+  },
+  {
+    "question_text": "黄色の回転灯を点灯している道路維持作業用自動車は、緊急自動車としての優先を受けることができる。",
+    "correct_answer": false,
+    "explanation": "黄色の回転灯を点灯する道路維持作業用自動車は緊急自動車には該当せず、優先を受けることはできない。",
+    "image_key": null
+  },
+  {
+    "question_text": "自転車の運転者も、緊急自動車が接近してきたときは、できる限り道路の左側に寄って進路を譲らなければならない。",
+    "correct_answer": true,
+    "explanation": "緊急自動車への進路譲りの義務は、自転車を含む車両全般に適用される。",
+    "image_key": null
+  },
+  {
+    "question_text": "自転車は軽車両であるため、緊急自動車が接近してきても進路を譲る必要はない。",
+    "correct_answer": false,
+    "explanation": "自転車を含む軽車両にも、緊急自動車に進路を譲る義務がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が接近してきたときに進路を譲るため停止する場合でも、周囲の状況を確認しながら安全な方法で行わなければならない。",
+    "correct_answer": true,
+    "explanation": "進路を譲る際も、周囲の安全を確認しながら行う必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車に進路を譲るためであれば、対向車線に大きくはみ出して停止してもよい。",
+    "correct_answer": false,
+    "explanation": "対向車線への大きなはみ出しはかえって危険であり、適切な方法とはいえない。",
+    "image_key": null
+  },
+  {
+    "question_text": "夜間、緊急自動車に進路を譲るために道路の左側に寄って停止するときも、前照灯などの灯火を消してはならない。",
+    "correct_answer": true,
+    "explanation": "夜間に停止する場合も、他の車に気づいてもらうため灯火を消してはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "夜間、緊急自動車に進路を譲るときは、他の車に注意を促すため、前照灯を消してハザードランプのみを点灯させなければならない。",
+    "correct_answer": false,
+    "explanation": "夜間に前照灯を消すことはかえって危険であり、そのような義務は定められていない。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が2台以上続けて接近してくることもあるため、1台が通過した後もしばらく周囲の状況に注意する必要がある。",
+    "correct_answer": true,
+    "explanation": "緊急自動車が複数台連続して接近することもあるため、1台通過後も注意を続ける必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が1台通過すれば、その直後から通常の走行に戻ってよく、周囲を確認する必要はない。",
+    "correct_answer": false,
+    "explanation": "1台が通過した後も、別の緊急自動車が接近していないか周囲を確認する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "見通しの悪い場所で緊急自動車のサイレンが聞こえたときは、あわてず、安全な場所まで移動してから停止することが望ましい場合がある。",
+    "correct_answer": true,
+    "explanation": "見通しの悪い場所では、あわてず安全な場所まで移動してから停止することが望ましい場合がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "見通しの悪い場所で緊急自動車のサイレンが聞こえたときは、状況にかかわらずその場で直ちに停止しなければならない。",
+    "correct_answer": false,
+    "explanation": "見通しの悪い場所でその場に直ちに停止することは、かえって危険を招くことがある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車の優先は、緊急業務を迅速に行うために特別に認められているものであり、他の交通に事故が生じてよいという意味ではない。",
+    "correct_answer": true,
+    "explanation": "緊急自動車の優先制度は緊急業務の迅速な遂行のためのものであり、事故を許容する趣旨ではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が優先される場面では、他の車や歩行者との接触事故が生じても運転者の責任は一切問われない。",
+    "correct_answer": false,
+    "explanation": "緊急自動車が優先される場面であっても、事故が生じれば運転者の責任が問われることがある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が近づいていることに気づいた運転者は、他の車にも危険を知らせるよう、慌てず落ち着いて行動することが求められる。",
+    "correct_answer": true,
+    "explanation": "緊急自動車の接近に気づいたら、慌てず落ち着いて周囲に配慮しながら行動することが求められる。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が近づいていることに気づいたら、クラクションを鳴らし続けて周囲に危険を知らせなければならない義務がある。",
+    "correct_answer": false,
+    "explanation": "クラクションを鳴らし続けることが義務付けられているわけではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が緊急用務を終え、赤色灯とサイレンの使用をやめた後は、一般車両と同様の交通規制に従わなければならない。",
+    "correct_answer": true,
+    "explanation": "緊急用務のための赤色灯・サイレンの使用を終えた後は、一般車両と同じ規制に従う。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車は、一度緊急用務のため運転を始めれば、その後赤色灯やサイレンを止めても優先規定の適用を受け続ける。",
+    "correct_answer": false,
+    "explanation": "優先規定の適用を受けるのは赤色灯とサイレンを使用している間に限られる。",
+    "image_key": null
+  },
+  {
+    "question_text": "電力会社や電話会社の応急作業用自動車は、いかなる場合であっても緊急自動車として扱われることはない。",
+    "correct_answer": false,
+    "explanation": "公安委員会の指定を受けた応急作業用自動車は、緊急自動車として扱われる場合がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "電気・ガス・水道などの応急作業用自動車も、公安委員会の指定を受ければ緊急自動車として扱われる場合がある。",
+    "correct_answer": true,
+    "explanation": "応急作業用自動車であっても、公安委員会の指定を受ければ緊急自動車として扱われることがある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車としての指定を受けていない一般の自動車が、赤色灯とサイレンを独自に取り付けて走行しても、緊急自動車としての優先は認められない。",
+    "correct_answer": true,
+    "explanation": "指定を受けていない車両が独自に装備を取り付けても、緊急自動車としての優先は認められない。",
+    "image_key": null
+  },
+  {
+    "question_text": "救急車が出動中に赤色灯を点灯していても、サイレンを一時的に停止した区間があれば、その間は緊急自動車として扱われない。",
+    "correct_answer": true,
+    "explanation": "緊急自動車として扱われるには赤色灯とサイレンの使用が必要であり、一時的にサイレンを止めている間はその要件を満たさない。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が緊急用務のため接近しているのに気付いた運転者は、進路を譲るための行動をとる義務がある。",
+    "correct_answer": true,
+    "explanation": "緊急自動車の接近に気付いた運転者には、進路を譲るための行動をとる義務がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が接近しているのに気付いても、自分の車の速度が遅ければ進路を譲る義務は生じない。",
+    "correct_answer": false,
+    "explanation": "自分の車の速度にかかわらず、緊急自動車には進路を譲らなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点の直前で緊急自動車のサイレンに気付いた場合、対面する信号が青色であっても、交差点を避けて一時停止しなければならない場合がある。",
+    "correct_answer": true,
+    "explanation": "信号が青色であっても、緊急自動車が接近している場合は交差点を避けて一時停止する必要がある場合がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "対面する信号が青色であれば、緊急自動車が接近していても、そのまま交差点を通過してよい。",
+    "correct_answer": false,
+    "explanation": "信号が青色であっても、緊急自動車が接近しているときはそのまま通過してよいわけではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が接近してきたときに一般車両がとるべき行動は、道路の状況(交差点の有無、一方通行かどうかなど)によって異なる。",
+    "correct_answer": true,
+    "explanation": "緊急自動車が接近したときの対応は、交差点の有無や一方通行かどうかなど道路の状況によって異なる。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が接近してきたときにとるべき行動は、道路の状況にかかわらず常に同じである。",
+    "correct_answer": false,
+    "explanation": "とるべき行動は交差点の有無や道路の状況によって異なり、常に同じではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車の優先規定に従わず交通の危険を生じさせた場合、運転者は道路交通法上の責任を問われることがある。",
+    "correct_answer": true,
+    "explanation": "優先規定に従わず危険を生じさせた場合、運転者は責任を問われることがある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車の優先規定に従わなかったことによって事故が起きても、緊急自動車側にのみ責任がある。",
+    "correct_answer": false,
+    "explanation": "優先規定に従わなかった一般車両の運転者にも責任が生じることがある。",
+    "image_key": null
+  },
+  {
+    "question_text": "路線バスの発進合図に対して後方車両が進路を譲らなかった場合も、道路交通法上の規定に反することがある。",
+    "correct_answer": true,
+    "explanation": "路線バスの発進合図に対して進路を譲らないことは、道路交通法上の規定に反する場合がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "路線バスが発進合図をしても、後方の車が急いでいる場合は進路を譲らなくてもよい。",
+    "correct_answer": false,
+    "explanation": "急いでいることを理由に路線バスへの進路譲りを怠ってよいわけではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "通学通園バスが停止表示灯を点灯して停車しているとき、対向車線を通行する車にも注意義務が生じる場合がある。",
+    "correct_answer": true,
+    "explanation": "通学通園バスの停止表示灯は、対向車線を通行する車にも注意を促すものである。",
+    "image_key": null
+  },
+  {
+    "question_text": "通学通園バスの停止表示灯は、後方の車にのみ意味があり、対向車線の車には一切関係がない。",
+    "correct_answer": false,
+    "explanation": "停止表示灯は後方の車だけでなく、対向車線の車にとっても注意すべき合図である。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が緊急用務のため運転しているかどうかは、赤色灯とサイレンの使用状況から一般の運転者が判断することになる。",
+    "correct_answer": true,
+    "explanation": "一般の運転者は、赤色灯とサイレンの使用状況によって緊急自動車の緊急走行を判断する。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が緊急用務のため運転しているかどうかは、車体の色や形だけで判断しなければならない。",
+    "correct_answer": false,
+    "explanation": "車体の色や形だけでなく、赤色灯とサイレンの使用状況によって判断する。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車に対する優先規定に従った結果、通常の交通ルール(一時停止の場所など)から外れる行動をとっても、状況に応じてやむを得ないと認められる場合がある。",
+    "correct_answer": true,
+    "explanation": "緊急自動車に進路を譲るためやむを得ずとった行動については、状況に応じて認められる場合がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車に進路を譲るためであっても、通常の交通ルールから外れる行動は一切認められない。",
+    "correct_answer": false,
+    "explanation": "緊急自動車に進路を譲るためやむを得ない場合は、通常のルールから外れる行動が認められることがある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車の接近に気付いた歩行者も、道路の左右に避けるなどして緊急自動車の通行に協力することが望ましい。",
+    "correct_answer": true,
+    "explanation": "歩行者も緊急自動車の通行に協力することが望ましいとされている。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車の優先規定は運転者だけに関係するものであり、歩行者の行動とは一切関係がない。",
+    "correct_answer": false,
+    "explanation": "緊急自動車の円滑な通行には歩行者の協力も関係する。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が通過した直後の道路は、他の交通の流れが乱れていることがあるため、周囲の状況に注意して運転を再開することが大切である。",
+    "correct_answer": true,
+    "explanation": "緊急自動車通過直後は交通の流れが乱れていることがあるため、注意して運転を再開する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "緊急自動車が通過した直後は、道路状況を確認せず、すぐに通常の速度に戻してよい。",
+    "correct_answer": false,
+    "explanation": "通過直後は周囲の状況を確認してから通常の運転に戻ることが大切である。",
+    "image_key": null
+  }
 ]

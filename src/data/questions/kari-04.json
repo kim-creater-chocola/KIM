@@ -1,52 +1,602 @@
 [
-  { "question_text": "車は、中央線の有無にかかわらず、道路の中央から左の部分を通行するのが原則である。", "correct_answer": true, "explanation": "中央線がない道路でも、車は道路の中央から左側部分を通行するのが原則である。", "image_key": null },
-  { "question_text": "中央線のない道路では、車道の左右どちらの部分を自由に通行してもよい。", "correct_answer": false, "explanation": "中央線がなくても、車は道路の中央から左側部分を通行しなければならない。", "image_key": null },
-  { "question_text": "一方通行に指定された道路では、対向車が来ないため道路の右側部分を通行することができる。", "correct_answer": true, "explanation": "一方通行の道路は対向車が来ないため、右側部分を通行しても差し支えない。", "image_key": null },
-  { "question_text": "歩道のある道路では、車はどんな場合でも自由に歩道内を通行することができる。", "correct_answer": false, "explanation": "歩道は原則として車の通行が禁止されており、道路外の施設に出入りする場合などに限り横切ることができる。", "image_key": null },
-  { "question_text": "道路外の施設に出入りするために歩道を横切るときは、その直前で一時停止しなければならない。", "correct_answer": true, "explanation": "歩道等を横切る直前で一時停止し、歩行者の通行を妨げないようにする必要がある。", "image_key": null },
-  { "question_text": "軽車両である自転車は、路側帯を通行することが一切認められていない。", "correct_answer": false, "explanation": "自転車などの軽車両は路側帯を通行することができる。", "image_key": null },
-  { "question_text": "路側帯の幅が0.75メートルを超える場合、車は歩行者の通行のため0.75メートルの余地を残せば、路側帯に入って駐停車することができる。", "correct_answer": true, "explanation": "路側帯の幅が0.75メートルを超えるときは、歩行者用に0.75メートルの余地を残して路側帯に入り駐停車できる。", "image_key": null },
-  { "question_text": "路側帯の幅が0.75メートル以下であっても、車は自由に路側帯に入って駐車することができる。", "correct_answer": false, "explanation": "路側帯の幅が0.75メートル以下のときは、車は路側帯に入らず、その外側に沿って駐停車しなければならない。", "image_key": null },
-  { "question_text": "歩行者用道路は、原則として車両の通行が禁止されている。", "correct_answer": true, "explanation": "歩行者用道路は歩行者の安全確保のため、車両の通行が原則禁止されている。", "image_key": null },
-  { "question_text": "歩行者用道路の通行を認められた車は、歩行者がいてもそのままの速度で走行してよい。", "correct_answer": false, "explanation": "通行を認められた車であっても、歩行者に特に注意し徐行するなどしなければならない。", "image_key": null },
-  { "question_text": "軌道敷内は、道路を横断する場合など特別な事情があるときを除き、車が通行してはならない。", "correct_answer": true, "explanation": "軌道敷内は原則として車の通行が禁止されている。", "image_key": null },
-  { "question_text": "軌道敷内は、特別な事情がなくても、交通量が少なければ自由に通行してよい。", "correct_answer": false, "explanation": "軌道敷内の通行は道路を横断する場合など特別な事情がある場合に限られる。", "image_key": null },
-  { "question_text": "「軌道敷内通行可」の標示がある区間では、路面電車の進行を妨げない範囲で軌道敷内を通行できる。", "correct_answer": true, "explanation": "標示がある区間では路面電車の進行を妨げない限り軌道敷内を通行できる。", "image_key": null },
-  { "question_text": "軌道敷内を通行している自動車は、後方から路面電車が接近してきたときは、速やかに軌道敷外に出なければならない。", "correct_answer": true, "explanation": "路面電車が接近したときは軌道敷外にすぐ出る必要がある。", "image_key": null },
-  { "question_text": "バス専用通行帯が指定されている区間では、一般の自動車はどんな場合も通行してはならない。", "correct_answer": false, "explanation": "左折等のためその道路に入って30メートル以内であれば、一般車両も専用通行帯を通行できる場合がある。", "image_key": null },
-  { "question_text": "バス専用通行帯であっても、その道路に入って30メートル以内の場所で左折するときは通行することができる。", "correct_answer": true, "explanation": "左折のためやむを得ず通行帯に入る場合は例外的に認められている。", "image_key": null },
-  { "question_text": "バス専用通行帯は、その道路に入って50メートル以内であれば、左折の予定がなくても自由に通行できる。", "correct_answer": false, "explanation": "専用通行帯を通行できる例外は左折等のため道路に入って30メートル以内の場合に限られ、50メートルではない。", "image_key": null },
-  { "question_text": "路肩は車両の通行のために設けられた部分であるから、自動車は自由に走行してよい。", "correct_answer": false, "explanation": "路肩は車道の路面を保護するための部分で、車両の通行を目的としたものではない。", "image_key": null },
-  { "question_text": "道路工事などの障害物があり、やむを得ない場合は道路の右側部分にはみ出して通行することができる。", "correct_answer": true, "explanation": "障害物などでやむを得ない場合は右側部分にはみ出すことが認められている。", "image_key": null },
-  { "question_text": "中央線がある道路であれば、正当な理由がなくても自由に右側部分にはみ出して通行してよい。", "correct_answer": false, "explanation": "正当な理由がない限り、中央線を越えて右側部分にはみ出して通行してはならない。", "image_key": null },
-  { "question_text": "この標識がある道路には、車は進入することができない。", "correct_answer": true, "explanation": "車両進入禁止の標識がある道路には、車は進入することができない。", "image_key": "no-entry" },
-  { "question_text": "この標識は、大型自動車に限り通行できないことを表している。", "correct_answer": false, "explanation": "この標識はすべての車両の通行を禁止するものであり、大型自動車に限られない。", "image_key": "no-vehicles" },
-  { "question_text": "この標識がある道路は、歩行者を含めすべての交通が通行できない。", "correct_answer": true, "explanation": "通行止めの標識は歩行者を含むすべての交通の通行を禁止する。", "image_key": "no-passage" },
-  { "question_text": "この標識がある道路では、指定された方向以外に向かって進行してはならない。", "correct_answer": true, "explanation": "一方通行の標識は指定された方向のみ進行を認めるものである。", "image_key": "one-way" },
-  { "question_text": "この標識がある道路であっても、原動機付自転車は自由に通行できる。", "correct_answer": false, "explanation": "歩行者専用の標識がある道路は、原則として原動機付自転車を含むすべての車両が通行できない。", "image_key": "pedestrian-only" },
-  { "question_text": "自転車道が設けられている区間では、自転車は原則としてその自転車道を通行しなければならない。", "correct_answer": true, "explanation": "自転車道がある区間では自転車はそこを通行するのが原則である。", "image_key": null },
-  { "question_text": "自転車道がある区間でも、自転車は車道の中央寄りを通行しなければならない。", "correct_answer": false, "explanation": "自転車道が設けられている場合は自転車道を通行するのが原則である。", "image_key": null },
-  { "question_text": "路側帯のない道路の路肩を自動車が通行することは、原則として認められていない。", "correct_answer": true, "explanation": "路肩は車両の通行を目的とした部分ではなく、自動車が通行することは原則認められない。", "image_key": null },
-  { "question_text": "車両通行帯が3つ以上ある道路で通行区分が指定されている場合、車はその指定された通行帯を通行しなければならない。", "correct_answer": true, "explanation": "通行区分が指定されている場合、車は指定された通行帯を通行しなければならない。", "image_key": null },
-  { "question_text": "車両通行帯のある道路では、どの通行帯を走行するかは常に運転者が自由に選んでよい。", "correct_answer": false, "explanation": "通行区分が指定されている場合や車両の種類によって通行できる通行帯が定められている場合がある。", "image_key": null },
-  { "question_text": "高速自動車国道や自動車専用道路には、原動機付自転車や軽車両は通行することができない。", "correct_answer": true, "explanation": "高速自動車国道や自動車専用道路は自動車のための道路であり、原動機付自転車や軽車両(自転車等)は通行できない。", "image_key": null },
-  { "question_text": "自動車専用道路の標識がある道路でも、軽車両である自転車は通行することができる。", "correct_answer": false, "explanation": "自動車専用道路には自転車などの軽車両は通行できない。", "image_key": null },
-  { "question_text": "道路の損壊や工事などのためやむを得ない場合、車は歩道や路側帯を通行することができる。", "correct_answer": true, "explanation": "やむを得ない事情がある場合に限り、歩道や路側帯を通行することが認められる。", "image_key": null },
-  { "question_text": "対面通行で中央線がある道路では、追い越しの際は理由を問わず反対車線に大きくはみ出してよい。", "correct_answer": false, "explanation": "追い越しの際も、安全確認や禁止場所の規制など一定の条件を満たさなければならない。", "image_key": null },
-  { "question_text": "車が道路外の施設に出入りするために歩道等を横切るときは、歩行者の通行を妨げてはならない。", "correct_answer": true, "explanation": "歩道等を横切る車は歩行者の通行を妨げないようにしなければならない。", "image_key": null },
-  { "question_text": "路側帯には、幅にかかわらず駐停車のために車が入ることは一切認められていない。", "correct_answer": false, "explanation": "路側帯の幅が0.75メートルを超える場合など、条件を満たせば駐停車のために路側帯へ入ることが認められる。", "image_key": null },
-  { "question_text": "中央線が黄色の実線である区間では、その線を越えて右側部分にはみ出して通行してはならない。", "correct_answer": true, "explanation": "黄色の実線の中央線がある区間は、はみ出し通行や追い越しのためのはみ出しが禁止されている。", "image_key": null },
-  { "question_text": "中央線が黄色の実線であっても、追い越しのためであれば自由に越えて通行してよい。", "correct_answer": false, "explanation": "黄色の実線区間は追い越しのためのはみ出し通行も禁止されている。", "image_key": null },
-  { "question_text": "車両通行帯が設けられていない道路では、車道の幅が広いときでも、車は道路の左寄りを通行しなければならない。", "correct_answer": true, "explanation": "通行帯がない道路では、道路の左側に寄って通行するのが原則である。", "image_key": null },
-  { "question_text": "車道の幅が広い道路では、車両通行帯がなければ運転者が道路のどの位置でも自由に通行してよい。", "correct_answer": false, "explanation": "通行帯がなくても道路の左寄りを通行しなければならない。", "image_key": null },
-  { "question_text": "「専用通行帯」の標識により通行区分が指定されている道路では、対象車両以外はその通行帯を通行してはならない。", "correct_answer": true, "explanation": "専用通行帯は対象となる車両以外の通行が制限されている。", "image_key": null },
-  { "question_text": "路側帯は、車が最も優先的に走行するために設けられた部分である。", "correct_answer": false, "explanation": "路側帯は主に歩行者の通行のために設けられた部分であり、車が優先的に走行する場所ではない。", "image_key": null },
-  { "question_text": "中央線のない道路であっても、交通量が少ないことを理由に道路の右側部分を通行してよいわけではない。", "correct_answer": true, "explanation": "交通量の多寡にかかわらず、車は道路の中央から左側部分を通行するのが原則である。", "image_key": null },
-  { "question_text": "二輪の自動車は、歩道や路側帯であればどこでも自由に走行できる。", "correct_answer": false, "explanation": "二輪の自動車も歩道や路側帯を自由に走行することはできない。", "image_key": null },
-  { "question_text": "車は、道路標識によって通行を禁止されている車両の種類に該当する場合、その道路を通行してはならない。", "correct_answer": true, "explanation": "標識により通行が禁止されている車両の種類に該当する場合は通行できない。", "image_key": null },
-  { "question_text": "通行止めの標識がある道路でも、急いでいる場合は一般の自動車が自由に通行してよい。", "correct_answer": false, "explanation": "通行止めの標識がある道路は、急いでいても通行することはできない。", "image_key": null },
-  { "question_text": "歩道のない道路の路側帯を通行するときは、歩行者の通行を妨げないようにしなければならない。", "correct_answer": true, "explanation": "路側帯を通行する際も歩行者の通行を妨げてはならない。", "image_key": null },
-  { "question_text": "路側帯が設けられている道路では、車は道路の右側に寄って通行することができる。", "correct_answer": false, "explanation": "路側帯があっても車は道路の左側部分を通行するのが原則である。", "image_key": null },
-  { "question_text": "軌道敷内でも、危険を防止するためやむを得ないときは通行することができる。", "correct_answer": true, "explanation": "危険を避けるためやむを得ない場合は軌道敷内を通行することが認められる。", "image_key": null },
-  { "question_text": "歩行者用道路の指定時間内であっても、通行を許可された車は徐行の必要が一切ない。", "correct_answer": false, "explanation": "通行を許可された車であっても歩行者に注意し徐行しなければならない。", "image_key": null }
+  {
+    "question_text": "車は、中央線の有無にかかわらず、道路の中央から左の部分を通行するのが原則である。",
+    "correct_answer": true,
+    "explanation": "中央線がない道路でも、車は道路の中央から左側部分を通行するのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "中央線のない道路では、車道の左右どちらの部分を自由に通行してもよい。",
+    "correct_answer": false,
+    "explanation": "中央線がなくても、車は道路の中央から左側部分を通行しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "一方通行に指定された道路では、対向車が来ないため道路の右側部分を通行することができる。",
+    "correct_answer": true,
+    "explanation": "一方通行の道路は対向車が来ないため、右側部分を通行しても差し支えない。",
+    "image_key": null
+  },
+  {
+    "question_text": "歩道のある道路では、車はどんな場合でも自由に歩道内を通行することができる。",
+    "correct_answer": false,
+    "explanation": "歩道は原則として車の通行が禁止されており、道路外の施設に出入りする場合などに限り横切ることができる。",
+    "image_key": null
+  },
+  {
+    "question_text": "道路外の施設に出入りするために歩道を横切るときは、その直前で一時停止しなければならない。",
+    "correct_answer": true,
+    "explanation": "歩道等を横切る直前で一時停止し、歩行者の通行を妨げないようにする必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "軽車両である自転車は、路側帯を通行することが一切認められていない。",
+    "correct_answer": false,
+    "explanation": "自転車などの軽車両は路側帯を通行することができる。",
+    "image_key": null
+  },
+  {
+    "question_text": "路側帯の幅が0.75メートルを超える場合、車は歩行者の通行のため0.75メートルの余地を残せば、路側帯に入って駐停車することができる。",
+    "correct_answer": true,
+    "explanation": "路側帯の幅が0.75メートルを超えるときは、歩行者用に0.75メートルの余地を残して路側帯に入り駐停車できる。",
+    "image_key": null
+  },
+  {
+    "question_text": "路側帯の幅が0.75メートル以下であっても、車は自由に路側帯に入って駐車することができる。",
+    "correct_answer": false,
+    "explanation": "路側帯の幅が0.75メートル以下のときは、車は路側帯に入らず、その外側に沿って駐停車しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "歩行者用道路は、原則として車両の通行が禁止されている。",
+    "correct_answer": true,
+    "explanation": "歩行者用道路は歩行者の安全確保のため、車両の通行が原則禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "歩行者用道路の通行を認められた車は、歩行者がいてもそのままの速度で走行してよい。",
+    "correct_answer": false,
+    "explanation": "通行を認められた車であっても、歩行者に特に注意し徐行するなどしなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "軌道敷内は、道路を横断する場合など特別な事情があるときを除き、車が通行してはならない。",
+    "correct_answer": true,
+    "explanation": "軌道敷内は原則として車の通行が禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "軌道敷内は、特別な事情がなくても、交通量が少なければ自由に通行してよい。",
+    "correct_answer": false,
+    "explanation": "軌道敷内の通行は道路を横断する場合など特別な事情がある場合に限られる。",
+    "image_key": null
+  },
+  {
+    "question_text": "「軌道敷内通行可」の標示がある区間では、路面電車の進行を妨げない範囲で軌道敷内を通行できる。",
+    "correct_answer": true,
+    "explanation": "標示がある区間では路面電車の進行を妨げない限り軌道敷内を通行できる。",
+    "image_key": null
+  },
+  {
+    "question_text": "軌道敷内を通行している自動車は、後方から路面電車が接近してきたときは、速やかに軌道敷外に出なければならない。",
+    "correct_answer": true,
+    "explanation": "路面電車が接近したときは軌道敷外にすぐ出る必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "バス専用通行帯が指定されている区間では、一般の自動車はどんな場合も通行してはならない。",
+    "correct_answer": false,
+    "explanation": "左折等のためその道路に入って30メートル以内であれば、一般車両も専用通行帯を通行できる場合がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "バス専用通行帯であっても、その道路に入って30メートル以内の場所で左折するときは通行することができる。",
+    "correct_answer": true,
+    "explanation": "左折のためやむを得ず通行帯に入る場合は例外的に認められている。",
+    "image_key": null
+  },
+  {
+    "question_text": "バス専用通行帯は、その道路に入って50メートル以内であれば、左折の予定がなくても自由に通行できる。",
+    "correct_answer": false,
+    "explanation": "専用通行帯を通行できる例外は左折等のため道路に入って30メートル以内の場合に限られ、50メートルではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "路肩は車両の通行のために設けられた部分であるから、自動車は自由に走行してよい。",
+    "correct_answer": false,
+    "explanation": "路肩は車道の路面を保護するための部分で、車両の通行を目的としたものではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "道路工事などの障害物があり、やむを得ない場合は道路の右側部分にはみ出して通行することができる。",
+    "correct_answer": true,
+    "explanation": "障害物などでやむを得ない場合は右側部分にはみ出すことが認められている。",
+    "image_key": null
+  },
+  {
+    "question_text": "中央線がある道路であれば、正当な理由がなくても自由に右側部分にはみ出して通行してよい。",
+    "correct_answer": false,
+    "explanation": "正当な理由がない限り、中央線を越えて右側部分にはみ出して通行してはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "この標識がある道路には、車は進入することができない。",
+    "correct_answer": true,
+    "explanation": "車両進入禁止の標識がある道路には、車は進入することができない。",
+    "image_key": "no-entry"
+  },
+  {
+    "question_text": "この標識は、大型自動車に限り通行できないことを表している。",
+    "correct_answer": false,
+    "explanation": "この標識はすべての車両の通行を禁止するものであり、大型自動車に限られない。",
+    "image_key": "no-vehicles"
+  },
+  {
+    "question_text": "この標識がある道路は、歩行者を含めすべての交通が通行できない。",
+    "correct_answer": true,
+    "explanation": "通行止めの標識は歩行者を含むすべての交通の通行を禁止する。",
+    "image_key": "no-passage"
+  },
+  {
+    "question_text": "この標識がある道路では、指定された方向以外に向かって進行してはならない。",
+    "correct_answer": true,
+    "explanation": "一方通行の標識は指定された方向のみ進行を認めるものである。",
+    "image_key": "one-way"
+  },
+  {
+    "question_text": "この標識がある道路であっても、原動機付自転車は自由に通行できる。",
+    "correct_answer": false,
+    "explanation": "歩行者専用の標識がある道路は、原則として原動機付自転車を含むすべての車両が通行できない。",
+    "image_key": "pedestrian-only"
+  },
+  {
+    "question_text": "自転車道が設けられている区間では、自転車は原則としてその自転車道を通行しなければならない。",
+    "correct_answer": true,
+    "explanation": "自転車道がある区間では自転車はそこを通行するのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "自転車道がある区間でも、自転車は車道の中央寄りを通行しなければならない。",
+    "correct_answer": false,
+    "explanation": "自転車道が設けられている場合は自転車道を通行するのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "路側帯のない道路の路肩を自動車が通行することは、原則として認められていない。",
+    "correct_answer": true,
+    "explanation": "路肩は車両の通行を目的とした部分ではなく、自動車が通行することは原則認められない。",
+    "image_key": null
+  },
+  {
+    "question_text": "車両通行帯が3つ以上ある道路で通行区分が指定されている場合、車はその指定された通行帯を通行しなければならない。",
+    "correct_answer": true,
+    "explanation": "通行区分が指定されている場合、車は指定された通行帯を通行しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "車両通行帯のある道路では、どの通行帯を走行するかは常に運転者が自由に選んでよい。",
+    "correct_answer": false,
+    "explanation": "通行区分が指定されている場合や車両の種類によって通行できる通行帯が定められている場合がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "高速自動車国道や自動車専用道路には、原動機付自転車や軽車両は通行することができない。",
+    "correct_answer": true,
+    "explanation": "高速自動車国道や自動車専用道路は自動車のための道路であり、原動機付自転車や軽車両(自転車等)は通行できない。",
+    "image_key": null
+  },
+  {
+    "question_text": "自動車専用道路の標識がある道路でも、軽車両である自転車は通行することができる。",
+    "correct_answer": false,
+    "explanation": "自動車専用道路には自転車などの軽車両は通行できない。",
+    "image_key": null
+  },
+  {
+    "question_text": "道路の損壊や工事などのためやむを得ない場合、車は歩道や路側帯を通行することができる。",
+    "correct_answer": true,
+    "explanation": "やむを得ない事情がある場合に限り、歩道や路側帯を通行することが認められる。",
+    "image_key": null
+  },
+  {
+    "question_text": "対面通行で中央線がある道路では、追い越しの際は理由を問わず反対車線に大きくはみ出してよい。",
+    "correct_answer": false,
+    "explanation": "追い越しの際も、安全確認や禁止場所の規制など一定の条件を満たさなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "車が道路外の施設に出入りするために歩道等を横切るときは、歩行者の通行を妨げてはならない。",
+    "correct_answer": true,
+    "explanation": "歩道等を横切る車は歩行者の通行を妨げないようにしなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "路側帯には、幅にかかわらず駐停車のために車が入ることは一切認められていない。",
+    "correct_answer": false,
+    "explanation": "路側帯の幅が0.75メートルを超える場合など、条件を満たせば駐停車のために路側帯へ入ることが認められる。",
+    "image_key": null
+  },
+  {
+    "question_text": "中央線が黄色の実線である区間では、その線を越えて右側部分にはみ出して通行してはならない。",
+    "correct_answer": true,
+    "explanation": "黄色の実線の中央線がある区間は、はみ出し通行や追い越しのためのはみ出しが禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "中央線が黄色の実線であっても、追い越しのためであれば自由に越えて通行してよい。",
+    "correct_answer": false,
+    "explanation": "黄色の実線区間は追い越しのためのはみ出し通行も禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "車両通行帯が設けられていない道路では、車道の幅が広いときでも、車は道路の左寄りを通行しなければならない。",
+    "correct_answer": true,
+    "explanation": "通行帯がない道路では、道路の左側に寄って通行するのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "車道の幅が広い道路では、車両通行帯がなければ運転者が道路のどの位置でも自由に通行してよい。",
+    "correct_answer": false,
+    "explanation": "通行帯がなくても道路の左寄りを通行しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "「専用通行帯」の標識により通行区分が指定されている道路では、対象車両以外はその通行帯を通行してはならない。",
+    "correct_answer": true,
+    "explanation": "専用通行帯は対象となる車両以外の通行が制限されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "路側帯は、車が最も優先的に走行するために設けられた部分である。",
+    "correct_answer": false,
+    "explanation": "路側帯は主に歩行者の通行のために設けられた部分であり、車が優先的に走行する場所ではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "中央線のない道路であっても、交通量が少ないことを理由に道路の右側部分を通行してよいわけではない。",
+    "correct_answer": true,
+    "explanation": "交通量の多寡にかかわらず、車は道路の中央から左側部分を通行するのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "二輪の自動車は、歩道や路側帯であればどこでも自由に走行できる。",
+    "correct_answer": false,
+    "explanation": "二輪の自動車も歩道や路側帯を自由に走行することはできない。",
+    "image_key": null
+  },
+  {
+    "question_text": "車は、道路標識によって通行を禁止されている車両の種類に該当する場合、その道路を通行してはならない。",
+    "correct_answer": true,
+    "explanation": "標識により通行が禁止されている車両の種類に該当する場合は通行できない。",
+    "image_key": null
+  },
+  {
+    "question_text": "通行止めの標識がある道路でも、急いでいる場合は一般の自動車が自由に通行してよい。",
+    "correct_answer": false,
+    "explanation": "通行止めの標識がある道路は、急いでいても通行することはできない。",
+    "image_key": null
+  },
+  {
+    "question_text": "歩道のない道路の路側帯を通行するときは、歩行者の通行を妨げないようにしなければならない。",
+    "correct_answer": true,
+    "explanation": "路側帯を通行する際も歩行者の通行を妨げてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "路側帯が設けられている道路では、車は道路の右側に寄って通行することができる。",
+    "correct_answer": false,
+    "explanation": "路側帯があっても車は道路の左側部分を通行するのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "軌道敷内でも、危険を防止するためやむを得ないときは通行することができる。",
+    "correct_answer": true,
+    "explanation": "危険を避けるためやむを得ない場合は軌道敷内を通行することが認められる。",
+    "image_key": null
+  },
+  {
+    "question_text": "歩行者用道路の指定時間内であっても、通行を許可された車は徐行の必要が一切ない。",
+    "correct_answer": false,
+    "explanation": "通行を許可された車であっても歩行者に注意し徐行しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "路側帯の幅が1メートルある道路では、車は歩行者用に0.75メートルの余地を残せば路側帯に入って駐停車することができる。",
+    "correct_answer": true,
+    "explanation": "路側帯の幅が0.75メートルを超える場合、歩行者用に0.75メートルの余地を残せば路側帯に入って駐停車できる。",
+    "image_key": null
+  },
+  {
+    "question_text": "路側帯の幅が0.6メートルしかない道路でも、車は0.75メートルの余地を残せば路側帯に入って駐停車することができる。",
+    "correct_answer": false,
+    "explanation": "路側帯の幅が0.75メートル以下のときは、車は路側帯に入らず、その外側に沿って駐停車しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "「駐停車禁止路側帯」に指定されている区間では、車は路側帯内で駐車や停車をすることができない。",
+    "correct_answer": true,
+    "explanation": "駐停車禁止路側帯は通行することはできるが、駐車や停車をすることは禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "「駐停車禁止路側帯」であっても、路側帯の幅が0.75メートルを超えていれば駐停車することができる。",
+    "correct_answer": false,
+    "explanation": "駐停車禁止路側帯は幅にかかわらず駐停車が禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "「歩行者用路側帯」に指定されている区間には、道路外の施設に出入りする場合を除き、車は入ることができない。",
+    "correct_answer": true,
+    "explanation": "歩行者用路側帯は歩行者の安全確保のため、車が入ることは原則として認められていない。",
+    "image_key": null
+  },
+  {
+    "question_text": "「歩行者用路側帯」であっても、路側帯の幅が1メートル以上あれば車が駐停車のために入ることができる。",
+    "correct_answer": false,
+    "explanation": "歩行者用路側帯は幅にかかわらず、車が駐停車のために入ることはできない。",
+    "image_key": null
+  },
+  {
+    "question_text": "自転車は道路交通法上の軽車両に分類されるが、原動機付自転車は軽車両には分類されない。",
+    "correct_answer": true,
+    "explanation": "原動機付自転車は原動機を有するため、軽車両ではなく別の車両区分として扱われる。",
+    "image_key": null
+  },
+  {
+    "question_text": "原動機付自転車は、車両の分類上、軽車両に含まれる。",
+    "correct_answer": false,
+    "explanation": "原動機付自転車は軽車両ではなく、独自の車両区分として扱われる。",
+    "image_key": null
+  },
+  {
+    "question_text": "荷車やそりなど、原動機を持たない乗り物は軽車両に分類される。",
+    "correct_answer": true,
+    "explanation": "原動機を持たない荷車やそりなどは軽車両に含まれる。",
+    "image_key": null
+  },
+  {
+    "question_text": "「普通自転車通行指定部分」の標識がある歩道では、普通自転車はその指定された部分を通行することができる。",
+    "correct_answer": true,
+    "explanation": "標識により指定された部分がある歩道では、普通自転車はその部分を通行できる。",
+    "image_key": null
+  },
+  {
+    "question_text": "普通自転車が歩道を通行するときは、歩行者の有無にかかわらず車道寄りをそのままの速度で走行してよい。",
+    "correct_answer": false,
+    "explanation": "歩道を通行する普通自転車は徐行し、歩行者の通行を妨げるときは一時停止しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "13歳未満の子供が運転する普通自転車は、標識による指定がなくても歩道を通行することができる。",
+    "correct_answer": true,
+    "explanation": "児童・幼児が運転する普通自転車は、標識の指定がなくても歩道を通行できる。",
+    "image_key": null
+  },
+  {
+    "question_text": "70歳以上の高齢者が運転する普通自転車は、標識による指定がある区間に限り歩道を通行することができる。",
+    "correct_answer": false,
+    "explanation": "70歳以上の高齢者が運転する場合は、標識の指定がなくても歩道を通行できる。",
+    "image_key": null
+  },
+  {
+    "question_text": "普通自転車が歩道を通行する際、歩行者の通行を妨げるおそれがあるときは一時停止しなければならない。",
+    "correct_answer": true,
+    "explanation": "歩道通行中の普通自転車は、歩行者の通行を妨げるおそれがあるときは一時停止する義務がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "普通自転車が歩道を通行するときは、車道の中央寄りの部分を徐行しなければならない。",
+    "correct_answer": false,
+    "explanation": "歩道の中央から車道寄りの部分を徐行するのが正しく、車道の中央寄りではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "車両通行帯が3つある道路で通行区分が指定されていないときは、車はその速度に応じた適当な通行帯を通行することができる。",
+    "correct_answer": true,
+    "explanation": "通行区分の指定がない場合、車はおおむねその速度に応じた適当な通行帯を選んで通行できる。",
+    "image_key": null
+  },
+  {
+    "question_text": "車両通行帯が黄色の線で区画されている場所では、その線を越えて進路変更してはならない。",
+    "correct_answer": true,
+    "explanation": "黄色の線で区画された通行帯の境界線を越えての進路変更は原則禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "車両通行帯を区画する線が黄色であっても、危険を避けるためであれば自由に越えて進路変更してよい。",
+    "correct_answer": false,
+    "explanation": "黄色の線を越える進路変更は原則禁止されており、危険防止のためやむを得ない場合に限り例外的に認められる。「自由に」越えてよいわけではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "中央線が黄色の実線である区間でも、右折のため右側部分にはみ出すことは禁止されていない。",
+    "correct_answer": true,
+    "explanation": "黄色の実線は追い越しのためのはみ出し通行を禁止するものであり、右折等のためのはみ出しまで禁止するものではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "中央線が黄色の実線である区間では、右折のためであっても中央線を越えてはならない。",
+    "correct_answer": false,
+    "explanation": "黄色の実線があっても、右折のために中央線を越えることは禁止されていない。",
+    "image_key": null
+  },
+  {
+    "question_text": "「停止禁止部分」の標示がある区域は、通行することはできるが、その中で停止してはならない。",
+    "correct_answer": true,
+    "explanation": "停止禁止部分は通行はできるが、その中で停止することは禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "「停止禁止部分」の標示がある区域では、混雑時であれば一時的に停止してもよい。",
+    "correct_answer": false,
+    "explanation": "停止禁止部分は混雑時であっても、その中で停止することは認められない。",
+    "image_key": null
+  },
+  {
+    "question_text": "安全地帯に歩行者がいるときは、その側方を通過する車は徐行しなければならない。",
+    "correct_answer": true,
+    "explanation": "安全地帯に歩行者がいる場合、その側方を通る車は徐行する義務がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "安全地帯に歩行者がいない場合であれば、車は安全地帯の中に進入して通行することができる。",
+    "correct_answer": false,
+    "explanation": "安全地帯は歩行者の有無にかかわらず、車が中に入って通行することはできない。",
+    "image_key": null
+  },
+  {
+    "question_text": "この標識がある道路では、道路外の施設に入るために道路を横断することはできないが、交差点で右折することまで禁止されているわけではない。",
+    "correct_answer": true,
+    "explanation": "車両横断禁止の標識は道路外の施設に出入りするための横断を禁止するもので、交差点での右折を禁止するものではない。",
+    "image_key": "no-vehicle-crossing"
+  },
+  {
+    "question_text": "この標識がある道路は、自動車のみが通行でき、原動機付自転車や軽車両は通行することができない。",
+    "correct_answer": true,
+    "explanation": "自動車専用の標識がある道路は自動車のみが通行でき、原動機付自転車や軽車両は通行できない。",
+    "image_key": "vehicles-only"
+  },
+  {
+    "question_text": "この標識がある道路では、車両総重量が5.5トンを超える車は通行することができない。",
+    "correct_answer": true,
+    "explanation": "重量制限の標識は表示された重量(5.5トン)を超える車の通行を禁止するものである。",
+    "image_key": "weight-limit"
+  },
+  {
+    "question_text": "この標識は、車両総重量6トンを超える車の通行を禁止することを示している。",
+    "correct_answer": false,
+    "explanation": "この標識が示す重量制限は5.5トンであり、6トンではない。",
+    "image_key": "weight-limit"
+  },
+  {
+    "question_text": "この標識がある道路では、高さ3.3メートルを超える車は通行することができない。",
+    "correct_answer": true,
+    "explanation": "高さ制限の標識は表示された高さ(3.3メートル)を超える車の通行を禁止するものである。",
+    "image_key": "height-limit"
+  },
+  {
+    "question_text": "この標識は、高さ3.5メートルを超える車の通行を禁止することを示している。",
+    "correct_answer": false,
+    "explanation": "この標識が示す高さ制限は3.3メートルであり、3.5メートルではない。",
+    "image_key": "height-limit"
+  },
+  {
+    "question_text": "この標識がある道路では、幅2.2メートルを超える車は通行することができない。",
+    "correct_answer": true,
+    "explanation": "最大幅の標識は表示された幅(2.2メートル)を超える車の通行を禁止するものである。",
+    "image_key": "max-width"
+  },
+  {
+    "question_text": "この標識は、幅2メートルを超える車の通行を禁止することを示している。",
+    "correct_answer": false,
+    "explanation": "この標識が示す幅の制限は2.2メートルであり、2メートルではない。",
+    "image_key": "max-width"
+  },
+  {
+    "question_text": "一方通行の道路では対向車が来ないため、道路のどの部分でも自由に通行してよく、歩道に入ることも認められる。",
+    "correct_answer": false,
+    "explanation": "一方通行の道路であっても、歩道は原則として車の通行が禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "工事区間を迂回するため対面通行の道路の右側部分にはみ出すときは、はみ出す区間をできる限り短くしなければならない。",
+    "correct_answer": true,
+    "explanation": "やむを得ずはみ出して通行する場合も、はみ出す区間や時間はできる限り短くする必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "バス専用通行帯において、専用通行帯の対象車両でなくても、その道路に入って60メートル以内であれば左折のため通行できる。",
+    "correct_answer": false,
+    "explanation": "例外が認められるのは道路に入って30メートル以内であり、60メートルではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "路線バス等優先通行帯が指定されている区間で、後方から路線バスが接近してきたときは、一般車両はその通行帯からできる限り出なければならない場合がある。",
+    "correct_answer": true,
+    "explanation": "優先通行帯を通行中の一般車両は、路線バスが接近してきたときはできる限りその通行帯から出る必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "路線バス等優先通行帯は、専用通行帯と同様に一般車両の通行が全面的に禁止されている。",
+    "correct_answer": false,
+    "explanation": "優先通行帯は原則として一般車両も通行できる点で、通行が禁止される専用通行帯とは異なる。",
+    "image_key": null
+  },
+  {
+    "question_text": "軌道敷内に「軌道敷内通行可」の標示がある区間では、路面電車の運行時間帯を問わず自由に通行できる。",
+    "correct_answer": false,
+    "explanation": "標示がある区間でも、路面電車の進行を妨げないようにしなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "道路交通法上の「道路」には、道路法上の道路のほか、一般交通の用に供するその他の場所も含まれる。",
+    "correct_answer": true,
+    "explanation": "道路交通法上の「道路」は道路法上の道路に限られず、一般交通の用に供する場所を広く含む。",
+    "image_key": null
+  },
+  {
+    "question_text": "私道は、一般の交通の用に供されている場合であっても、道路交通法上の「道路」には該当しない。",
+    "correct_answer": false,
+    "explanation": "一般交通の用に供されている私道等も道路交通法上の「道路」に含まれる場合がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "自動車専用道路には、原則として自動車以外の歩行者、軽車両、原動機付自転車は通行することができない。",
+    "correct_answer": true,
+    "explanation": "自動車専用道路は自動車のための道路であり、歩行者や軽車両、原動機付自転車は通行できない。",
+    "image_key": null
+  },
+  {
+    "question_text": "自動車専用道路は、高速自動車国道とは異なり、原動機付自転車も通行することができる。",
+    "correct_answer": false,
+    "explanation": "自動車専用道路も高速自動車国道と同様に、原動機付自転車は通行できない。",
+    "image_key": null
+  },
+  {
+    "question_text": "路肩は車道の外側に設けられた部分で、車道の路面を保護し、道路の主要構造を保全するためのものである。",
+    "correct_answer": true,
+    "explanation": "路肩は道路の構造を保全するために設けられた部分であり、車両の通行を目的としたものではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "路肩の幅が広い道路では、車は路肩を通行帯の一部として自由に走行することができる。",
+    "correct_answer": false,
+    "explanation": "路肩は幅が広くても、車が通行帯の一部として走行することは認められていない。",
+    "image_key": null
+  },
+  {
+    "question_text": "歩行者用道路で、車両の通行が許可される時間帯が指定されている場合、その時間帯以外は通行することができない。",
+    "correct_answer": true,
+    "explanation": "通行を許可される時間帯が指定されている場合、その時間帯以外は車が通行することはできない。",
+    "image_key": null
+  },
+  {
+    "question_text": "歩行者用道路は、通行を許可されている車であれば、指定された時間帯以外でも通行することができる。",
+    "correct_answer": false,
+    "explanation": "通行を許可された車であっても、指定された時間帯以外は通行することができない。",
+    "image_key": null
+  },
+  {
+    "question_text": "道路の左側に設けられた自転車道がある区間では、自動車は自転車道を通行してはならない。",
+    "correct_answer": true,
+    "explanation": "自転車道が設けられている区間では、自動車は自転車道を通行することができない。",
+    "image_key": null
+  },
+  {
+    "question_text": "自転車道が設けられている区間でも、渋滞しているときは自動車が自転車道を通行してよい。",
+    "correct_answer": false,
+    "explanation": "渋滞していることを理由に、自動車が自転車道を通行することは認められない。",
+    "image_key": null
+  },
+  {
+    "question_text": "車両通行帯が設けられている道路では、みだりに通行帯を変えて通行してはならない。",
+    "correct_answer": true,
+    "explanation": "車両通行帯のある道路で、みだりに通行帯を変えながら通行することは禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "車両通行帯を通行する車は、安全であれば頻繁に通行帯を変えながら走行してもよい。",
+    "correct_answer": false,
+    "explanation": "車両通行帯のある道路で、みだりに通行帯を変えて通行することは禁止されている。",
+    "image_key": null
+  }
 ]
