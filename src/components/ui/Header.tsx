@@ -5,9 +5,13 @@ import { useRouter } from "next/navigation";
 export function Header({
   title,
   isPreview,
+  referenceUrl,
+  referenceLabel,
 }: {
   title: string;
   isPreview?: boolean;
+  referenceUrl?: string;
+  referenceLabel?: string;
 }) {
   const router = useRouter();
 
@@ -25,10 +29,22 @@ export function Header({
         </div>
       )}
       <div className="flex items-center justify-between px-4 py-3">
-        <h1 className="text-lg font-bold text-slate-900">{title}</h1>
+        <div className="min-w-0">
+          <h1 className="text-lg font-bold text-slate-900">{title}</h1>
+          {referenceUrl && (
+            <a
+              href={referenceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-blue-500 underline underline-offset-2"
+            >
+              参考: {referenceLabel ?? "公式資料"} ↗
+            </a>
+          )}
+        </div>
         <button
           onClick={handleLogout}
-          className="text-sm text-slate-400 active:text-slate-600"
+          className="shrink-0 text-sm text-slate-400 active:text-slate-600"
         >
           ログアウト
         </button>

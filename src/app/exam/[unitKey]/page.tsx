@@ -24,7 +24,12 @@ export default async function UnitExamPage({
 
   return (
     <div className="pb-10">
-      <Header title={unit.name} isPreview={isPreview} />
+      <Header
+        title={unit.name}
+        isPreview={isPreview}
+        referenceUrl={unit.referenceUrl}
+        referenceLabel={unit.referenceLabel}
+      />
       <QuizRunner questions={questions} isPreview={isPreview} />
     </div>
   );

@@ -5,13 +5,23 @@ export interface Unit {
   examType: ExamType;
   order: number;
   name: string;
+  /** 単元の内容に関連する公式資料へのリンク（任意） */
+  referenceUrl?: string;
+  referenceLabel?: string;
 }
 
 // 仮免 = 教習所テキスト第1段階 項目1〜14
 export const KARI_UNITS: Unit[] = [
   { key: "kari-01", examType: "kari", order: 1, name: "運転者の心得" },
   { key: "kari-02", examType: "kari", order: 2, name: "信号に従うこと" },
-  { key: "kari-03", examType: "kari", order: 3, name: "標識・標示などに従うこと" },
+  {
+    key: "kari-03",
+    examType: "kari",
+    order: 3,
+    name: "標識・標示などに従うこと",
+    referenceUrl: "https://www.mlit.go.jp/road/sign/sign/douro/ichiran.pdf",
+    referenceLabel: "国土交通省「道路標識一覧」",
+  },
   {
     key: "kari-04",
     examType: "kari",
