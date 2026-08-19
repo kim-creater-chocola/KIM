@@ -206,6 +206,11 @@ export function QuizRunner({
                 key={i}
                 className="rounded-xl bg-white p-4 text-sm shadow-sm ring-1 ring-red-100"
               >
+                {q.image_key && (
+                  <div className="mx-auto mb-3 h-24 w-24">
+                    <SignIcon signKey={q.image_key as SignKey} />
+                  </div>
+                )}
                 <p className="font-medium text-slate-900">{q.question_text}</p>
                 <p className="mt-1 text-red-600">
                   正解: {q.correct_answer ? "○" : "×"} / あなたの解答: {a ? "○" : "×"}
