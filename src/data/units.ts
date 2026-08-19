@@ -16,17 +16,17 @@ export const KARI_UNITS: Unit[] = [
     key: "kari-04",
     examType: "kari",
     order: 4,
-    name: "車が通行するところ・車が通行してはいけないところ",
+    name: "車が通行するところ、車が通行してはいけないところ",
   },
   { key: "kari-05", examType: "kari", order: 5, name: "緊急自動車などの優先" },
-  { key: "kari-06", examType: "kari", order: 6, name: "交差点などの通行・踏切" },
+  { key: "kari-06", examType: "kari", order: 6, name: "交差点などの通行、踏切" },
   { key: "kari-07", examType: "kari", order: 7, name: "安全な速度と車間距離" },
   { key: "kari-08", examType: "kari", order: 8, name: "歩行者の保護など" },
   {
     key: "kari-09",
     examType: "kari",
     order: 9,
-    name: "安全の確認と合図・警音器の使用",
+    name: "安全の確認と合図、警音器の使用",
   },
   { key: "kari-10", examType: "kari", order: 10, name: "進路変更など" },
   { key: "kari-11", examType: "kari", order: 11, name: "追い越し" },
@@ -35,9 +35,9 @@ export const KARI_UNITS: Unit[] = [
     key: "kari-13",
     examType: "kari",
     order: 13,
-    name: "運転免許制度・交通反則通告制度",
+    name: "運転免許制度、交通反則通告制度",
   },
-  { key: "kari-14", examType: "kari", order: 14, name: "オートマチック車などの運転" },
+  { key: "kari-14", examType: "kari", order: 14, name: "AT自動車などの運転" },
 ];
 
 export const ALL_UNITS: Unit[] = [...KARI_UNITS];
