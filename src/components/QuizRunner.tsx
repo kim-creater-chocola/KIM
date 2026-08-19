@@ -244,26 +244,18 @@ export function QuizRunner({
   const currentAnswer = answers[index];
   const showFeedback = feedbackMode === "immediate" && currentAnswer !== null;
 
-  function numberButtonClass(i: number): string {
-    const isCurrent = i === index;
+  function optionLabel(i: number): string {
     const a = answers[i];
-    let base = "bg-slate-100 text-slate-500";
-    if (a !== null) {
-      if (feedbackMode === "immediate") {
-        base =
-          a === questions[i].correct_answer
-            ? "bg-emerald-100 text-emerald-700"
-            : "bg-red-100 text-red-700";
-      } else {
-        base = "bg-blue-100 text-blue-700";
-      }
+    if (a === null) return `${i + 1}問目`;
+    if (feedbackMode === "immediate") {
+      return `${i + 1}問目（${a === questions[i].correct_answer ? "○正解" : "×不正解"}）`;
     }
-    return `${base} ${isCurrent ? "ring-2 ring-blue-500" : ""}`;
+    return `${i + 1}問目（回答済み）`;
   }
 
   return (
-    <div className="mx-auto max-w-md px-4 py-6">
-      <div className="mb-3 flex items-center justify-between text-sm text-slate-500">
+    <div className="mx-auto flex max-w-md flex-col px-4 py-4">
+      <div className="mb-2 flex items-center justify-between text-sm text-slate-500">
         <span>
           回答済み {answeredCount} / {total} 問
         </span>
@@ -276,21 +268,22 @@ export function QuizRunner({
         </button>
       </div>
 
-      <div className="mb-4 grid grid-cols-10 gap-1.5">
+      <select
+        aria-label="問題番号を選択"
+        value={index}
+        onChange={(e) => goTo(Number(e.target.value))}
+        className="mb-3 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm font-medium text-slate-700"
+      >
         {questions.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => goTo(i)}
-            className={`aspect-square rounded-md text-[11px] font-bold transition ${numberButtonClass(i)}`}
-          >
-            {i + 1}
-          </button>
+          <option key={i} value={i}>
+            {optionLabel(i)}
+          </option>
         ))}
-      </div>
+      </select>
 
-      <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
+      <div className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
         {current.image_key && (
-          <div className="mx-auto mb-4 h-32 w-32">
+          <div className="mx-auto mb-3 h-28 w-28">
             <SignIcon signKey={current.image_key as SignKey} />
           </div>
         )}
@@ -299,10 +292,10 @@ export function QuizRunner({
         </p>
       </div>
 
-      <div className="mt-5 grid grid-cols-2 gap-4">
+      <div className="mt-3 grid grid-cols-2 gap-3">
         <button
           onClick={() => handleSelect(true)}
-          className={`rounded-2xl py-6 text-3xl font-extrabold transition active:scale-95 ${
+          className={`rounded-2xl py-4 text-3xl font-extrabold transition active:scale-95 ${
             currentAnswer === true
               ? showFeedback
                 ? current.correct_answer
@@ -316,7 +309,7 @@ export function QuizRunner({
         </button>
         <button
           onClick={() => handleSelect(false)}
-          className={`rounded-2xl py-6 text-3xl font-extrabold transition active:scale-95 ${
+          className={`rounded-2xl py-4 text-3xl font-extrabold transition active:scale-95 ${
             currentAnswer === false
               ? showFeedback
                 ? !current.correct_answer
@@ -331,7 +324,7 @@ export function QuizRunner({
       </div>
 
       {showFeedback && (
-        <div className="mt-5 rounded-2xl bg-slate-100 p-4">
+        <div className="mt-3 rounded-2xl bg-slate-100 p-3">
           <p
             className={`font-bold ${
               currentAnswer === current.correct_answer
@@ -343,12 +336,12 @@ export function QuizRunner({
             （正解: {current.correct_answer ? "○" : "×"}）
           </p>
           {current.explanation && (
-            <p className="mt-2 text-sm text-slate-600">{current.explanation}</p>
+            <p className="mt-1 text-sm text-slate-600">{current.explanation}</p>
           )}
         </div>
       )}
 
-      <div className="mt-6 flex gap-3">
+      <div className="mt-3 flex gap-3">
         <button
           onClick={() => goTo(index - 1)}
           disabled={index === 0}
