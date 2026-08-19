@@ -52,7 +52,7 @@ export default async function DashboardPage() {
 
         <section>
           <h2 className="mb-3 text-sm font-semibold text-slate-500">
-            単元別演習（全14項目・各50問）
+            単元別演習（全14項目・各100問）
           </h2>
           <div className="space-y-3">
             {unitStats.map((stat) => (
