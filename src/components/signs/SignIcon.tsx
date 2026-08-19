@@ -657,6 +657,192 @@ export function SignGeneralDanger(p: IconProps) {
   );
 }
 
+/**
+ * 道路標示（路面のペイント表示）アイコン集。
+ * 標識（看板）とは別カテゴリのため、アスファルト色の背景で統一し、
+ * 真上から見た路面として表現するオリジナル図案。
+ */
+function RoadSvg({ children, ...props }: IconProps & { children: React.ReactNode }) {
+  return (
+    <svg
+      viewBox={`0 0 ${base} ${base}`}
+      width="100%"
+      height="100%"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <rect x="0" y="0" width={base} height={base} fill="#4b4b4d" />
+      {children}
+    </svg>
+  );
+}
+
+/** 規制標示: 黄色の中央線（追越しのためのはみ出し通行禁止） */
+export function MarkingCenterLineYellow(p: IconProps) {
+  return (
+    <RoadSvg {...p}>
+      <rect x="46" y="0" width="8" height="100" fill="#f5c400" />
+    </RoadSvg>
+  );
+}
+
+/** 規制標示: 白色の中央線 */
+export function MarkingCenterLineWhite(p: IconProps) {
+  return (
+    <RoadSvg {...p}>
+      <rect x="46" y="0" width="8" height="100" fill="#fff" />
+    </RoadSvg>
+  );
+}
+
+/** 車両通行帯: 白破線（進路変更・はみ出し可） */
+export function MarkingLaneDashed(p: IconProps) {
+  return (
+    <RoadSvg {...p}>
+      <rect x="46" y="4" width="8" height="14" fill="#fff" />
+      <rect x="46" y="26" width="8" height="14" fill="#fff" />
+      <rect x="46" y="48" width="8" height="14" fill="#fff" />
+      <rect x="46" y="70" width="8" height="14" fill="#fff" />
+      <rect x="46" y="92" width="8" height="8" fill="#fff" />
+    </RoadSvg>
+  );
+}
+
+/** 路側帯: 実線1本 */
+export function MarkingRoadsideSingle(p: IconProps) {
+  return (
+    <RoadSvg {...p}>
+      <rect x="0" y="0" width="30" height="100" fill="#6b6b6d" />
+      <rect x="26" y="0" width="6" height="100" fill="#fff" />
+    </RoadSvg>
+  );
+}
+
+/** 路側帯: 実線2本（駐停車禁止） */
+export function MarkingRoadsideDouble(p: IconProps) {
+  return (
+    <RoadSvg {...p}>
+      <rect x="0" y="0" width="30" height="100" fill="#6b6b6d" />
+      <rect x="18" y="0" width="5" height="100" fill="#fff" />
+      <rect x="29" y="0" width="5" height="100" fill="#fff" />
+    </RoadSvg>
+  );
+}
+
+/** 路側帯: 実線＋破線（歩行者用路側帯） */
+export function MarkingRoadsideDashedExtra(p: IconProps) {
+  return (
+    <RoadSvg {...p}>
+      <rect x="0" y="0" width="30" height="100" fill="#6b6b6d" />
+      <rect x="27" y="0" width="5" height="100" fill="#fff" />
+      <rect x="14" y="4" width="5" height="14" fill="#fff" />
+      <rect x="14" y="26" width="5" height="14" fill="#fff" />
+      <rect x="14" y="48" width="5" height="14" fill="#fff" />
+      <rect x="14" y="70" width="5" height="14" fill="#fff" />
+    </RoadSvg>
+  );
+}
+
+/** 規制標示: 駐停車禁止（黄色破線） */
+export function MarkingNoStoppingZone(p: IconProps) {
+  return (
+    <RoadSvg {...p}>
+      <path
+        d="M15 95 L30 75 L45 95 L60 75 L75 95 L90 75"
+        stroke="#f5c400"
+        strokeWidth="7"
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </RoadSvg>
+  );
+}
+
+/** 規制標示: 駐車禁止（黄色破線・粗め） */
+export function MarkingNoParkingZone(p: IconProps) {
+  return (
+    <RoadSvg {...p}>
+      <path
+        d="M12 90 L88 90"
+        stroke="#f5c400"
+        strokeWidth="7"
+        strokeDasharray="16 10"
+        strokeLinecap="round"
+      />
+    </RoadSvg>
+  );
+}
+
+/** 指示標示: 横断歩道 */
+export function MarkingCrosswalk(p: IconProps) {
+  return (
+    <RoadSvg {...p}>
+      <rect x="10" y="10" width="12" height="80" fill="#fff" />
+      <rect x="30" y="10" width="12" height="80" fill="#fff" />
+      <rect x="50" y="10" width="12" height="80" fill="#fff" />
+      <rect x="70" y="10" width="12" height="80" fill="#fff" />
+    </RoadSvg>
+  );
+}
+
+/** 指示標示: 自転車横断帯 */
+export function MarkingBicycleCrossing(p: IconProps) {
+  return (
+    <RoadSvg {...p}>
+      <rect x="14" y="12" width="72" height="16" fill="#fff" />
+      <rect x="14" y="72" width="72" height="16" fill="#fff" />
+      <circle cx="30" cy="50" r="8" fill="none" stroke="#fff" strokeWidth="4" />
+      <circle cx="60" cy="50" r="8" fill="none" stroke="#fff" strokeWidth="4" />
+      <path d="M30 50 L42 34 H54 M42 34 L38 50 M54 34 L46 50" stroke="#fff" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    </RoadSvg>
+  );
+}
+
+/** 指示標示: 停止線 */
+export function MarkingStopLine(p: IconProps) {
+  return (
+    <RoadSvg {...p}>
+      <rect x="10" y="45" width="80" height="10" fill="#fff" />
+    </RoadSvg>
+  );
+}
+
+/** 指示標示: 導流帯（ゼブラゾーン） */
+export function MarkingChannelizing(p: IconProps) {
+  return (
+    <RoadSvg {...p}>
+      <polygon points="50,6 90,94 10,94" fill="none" stroke="#fff" strokeWidth="4" />
+      <line x1="50" y1="20" x2="30" y2="80" stroke="#fff" strokeWidth="5" />
+      <line x1="50" y1="35" x2="45" y2="80" stroke="#fff" strokeWidth="5" />
+      <line x1="55" y1="20" x2="70" y2="80" stroke="#fff" strokeWidth="5" />
+    </RoadSvg>
+  );
+}
+
+/** 規制標示: 立入禁止部分 */
+export function MarkingNoEntryZone(p: IconProps) {
+  return (
+    <RoadSvg {...p}>
+      <rect x="10" y="10" width="80" height="80" fill="none" stroke="#f5c400" strokeWidth="4" />
+      <line x1="14" y1="14" x2="86" y2="86" stroke="#f5c400" strokeWidth="4" />
+      <line x1="14" y1="38" x2="62" y2="86" stroke="#f5c400" strokeWidth="4" />
+      <line x1="14" y1="62" x2="38" y2="86" stroke="#f5c400" strokeWidth="4" />
+      <line x1="38" y1="14" x2="86" y2="62" stroke="#f5c400" strokeWidth="4" />
+      <line x1="62" y1="14" x2="86" y2="38" stroke="#f5c400" strokeWidth="4" />
+    </RoadSvg>
+  );
+}
+
+/** 指示標示: 安全地帯（路面） */
+export function MarkingSafetyZone(p: IconProps) {
+  return (
+    <RoadSvg {...p}>
+      <polygon points="50,10 90,50 50,90 10,50" fill="none" stroke="#f5c400" strokeWidth="5" />
+    </RoadSvg>
+  );
+}
+
 export const SIGN_REGISTRY = {
   "max-speed-30": (p: IconProps) => <SignMaxSpeed value={30} {...p} />,
   "max-speed-40": (p: IconProps) => <SignMaxSpeed value={40} {...p} />,
@@ -712,6 +898,20 @@ export const SIGN_REGISTRY = {
   "road-work": SignRoadWork,
   crosswind: SignCrosswind,
   "general-danger": SignGeneralDanger,
+  "marking-center-line-yellow": MarkingCenterLineYellow,
+  "marking-center-line-white": MarkingCenterLineWhite,
+  "marking-lane-dashed": MarkingLaneDashed,
+  "marking-roadside-single": MarkingRoadsideSingle,
+  "marking-roadside-double": MarkingRoadsideDouble,
+  "marking-roadside-dashed-extra": MarkingRoadsideDashedExtra,
+  "marking-no-stopping-zone": MarkingNoStoppingZone,
+  "marking-no-parking-zone": MarkingNoParkingZone,
+  "marking-crosswalk": MarkingCrosswalk,
+  "marking-bicycle-crossing": MarkingBicycleCrossing,
+  "marking-stop-line": MarkingStopLine,
+  "marking-channelizing": MarkingChannelizing,
+  "marking-no-entry-zone": MarkingNoEntryZone,
+  "marking-safety-zone": MarkingSafetyZone,
 } satisfies Record<string, (p: IconProps) => React.ReactElement>;
 
 /**

@@ -23,6 +23,11 @@ const SIGN_KEYS = new Set([
   "t-junction-2", "y-junction", "roundabout-ahead", "curve-right-sharp", "s-curve",
   "s-curve-sharp", "winding-road", "railway-crossing-2", "rockfall", "bumpy-road",
   "steep-grade-up", "steep-grade-down",
+  "marking-center-line-yellow", "marking-center-line-white", "marking-lane-dashed",
+  "marking-roadside-single", "marking-roadside-double", "marking-roadside-dashed-extra",
+  "marking-no-stopping-zone", "marking-no-parking-zone", "marking-crosswalk",
+  "marking-bicycle-crossing", "marking-stop-line", "marking-channelizing",
+  "marking-no-entry-zone", "marking-safety-zone",
 ]);
 
 function sqlEscape(str) {

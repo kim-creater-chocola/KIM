@@ -39,10 +39,11 @@ interface QuestionSeed {
   - 逆に、一見厳しそうな記述だが実際には正しい規定（引っかかりそうで実は○）も混ぜる
 - 1問1論点。複数の論点を1文に詰め込みすぎない。
 
-## 標識画像問題について
+## 標識・標示画像問題について
 
 `image_key` には、以下のレジストリに存在するキーのみを指定できる（存在しないキーは使用禁止）。
 
+**標識（看板）**:
 ```
 max-speed-30, max-speed-40, max-speed-50, max-speed-60, min-speed-30,
 stop, slow, no-entry, no-passage, no-vehicles, no-parking,
@@ -60,13 +61,22 @@ roundabout-ahead, curve-right-sharp, s-curve, s-curve-sharp, winding-road,
 railway-crossing-2, rockfall, bumpy-road, steep-grade-up, steep-grade-down
 ```
 
+**標示（路面のペイント表示）** — 標識とは別カテゴリ。アスファルト色の背景で描かれたアイコン:
+```
+marking-center-line-yellow, marking-center-line-white, marking-lane-dashed,
+marking-roadside-single, marking-roadside-double, marking-roadside-dashed-extra,
+marking-no-stopping-zone, marking-no-parking-zone, marking-crosswalk,
+marking-bicycle-crossing, marking-stop-line, marking-channelizing,
+marking-no-entry-zone, marking-safety-zone
+```
+
 正確なキー一覧は `src/components/signs/SignIcon.tsx` の `PHOTO_SIGN_KEYS` と `SIGN_REGISTRY` を正としてよい（上記リストが古くなっていた場合はそちらを優先する）。
 
 画像問題の問題文は「この標識がある道路では、時速40キロを超えて運転してはならない。」のように、
-**表示されている標識を見た前提で** 正誤を判断させる文にする（標識名をそのまま問題文に書かない）。
+**表示されている標識・標示を見た前提で** 正誤を判断させる文にする（標識・標示の名称をそのまま問題文に書かない）。標示の場合は「この路面表示がある区間では〜」のような書き方にする。
 
-- `kari-03`（標識・標示などに従うこと）は、100問中 **70〜80問程度** を画像問題にする（レジストリのキーをバランス良く使い回してよい）。
-- それ以外の単元は、文脈上自然な場合のみ数問（0〜8問程度）画像問題を混ぜてよい。無理に入れる必要はない。
+- `kari-03`（標識・標示などに従うこと）は、100問中 **70〜80問程度** を画像問題にする。このうち**標示（marking-*）も最低10問前後**は必ず含め、標識だけに偏らないようにする（単元名に「標示」が含まれている通り、標示も出題範囲）。
+- それ以外の単元は、文脈上自然な場合のみ数問（0〜8問程度）画像問題を混ぜてよい。無理に入れる必要はない。特にkari-04（通行区分）やkari-10（進路変更）は中央線・車両通行帯・路側帯などの標示と相性が良い。
 - 同じ`image_key`を1ファイル内で複数回使い、数値や状況を変えて別の問題にするのは可（例: `max-speed-50`を使った問題を2問作るなど）。
 
 ## 単元名と範囲の目安
