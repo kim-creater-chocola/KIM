@@ -174,12 +174,6 @@
     "image_key": null
   },
   {
-    "question_text": "車両通行帯のある道路では、どの通行帯を走行するかは常に運転者が自由に選んでよい。",
-    "correct_answer": false,
-    "explanation": "通行区分が指定されている場合や車両の種類によって通行できる通行帯が定められている場合がある。",
-    "image_key": null
-  },
-  {
     "question_text": "高速自動車国道や自動車専用道路には、原動機付自転車や軽車両は通行することができない。",
     "correct_answer": true,
     "explanation": "高速自動車国道や自動車専用道路は自動車のための道路であり、原動機付自転車や軽車両(自転車等)は通行できない。",
@@ -213,12 +207,6 @@
     "question_text": "路側帯には、幅にかかわらず駐停車のために車が入ることは一切認められていない。",
     "correct_answer": false,
     "explanation": "路側帯の幅が0.75メートルを超える場合など、条件を満たせば駐停車のために路側帯へ入ることが認められる。",
-    "image_key": null
-  },
-  {
-    "question_text": "中央線が黄色の実線である区間では、その線を越えて右側部分にはみ出して通行してはならない。",
-    "correct_answer": true,
-    "explanation": "黄色の実線の中央線がある区間は、はみ出し通行や追い越しのためのはみ出しが禁止されている。",
     "image_key": null
   },
   {
@@ -282,12 +270,6 @@
     "image_key": null
   },
   {
-    "question_text": "路側帯が設けられている道路では、車は道路の右側に寄って通行することができる。",
-    "correct_answer": false,
-    "explanation": "路側帯があっても車は道路の左側部分を通行するのが原則である。",
-    "image_key": null
-  },
-  {
     "question_text": "軌道敷内でも、危険を防止するためやむを得ないときは通行することができる。",
     "correct_answer": true,
     "explanation": "危険を避けるためやむを得ない場合は軌道敷内を通行することが認められる。",
@@ -309,12 +291,6 @@
     "question_text": "路側帯の幅が0.6メートルしかない道路でも、車は0.75メートルの余地を残せば路側帯に入って駐停車することができる。",
     "correct_answer": false,
     "explanation": "路側帯の幅が0.75メートル以下のときは、車は路側帯に入らず、その外側に沿って駐停車しなければならない。",
-    "image_key": null
-  },
-  {
-    "question_text": "「駐停車禁止路側帯」に指定されている区間では、車は路側帯内で駐車や停車をすることができない。",
-    "correct_answer": true,
-    "explanation": "駐停車禁止路側帯は通行することはできるが、駐車や停車をすることは禁止されている。",
     "image_key": null
   },
   {
@@ -598,5 +574,29 @@
     "correct_answer": false,
     "explanation": "車両通行帯のある道路で、みだりに通行帯を変えて通行することは禁止されている。",
     "image_key": null
+  },
+  {
+    "question_text": "この路面表示がある区間では、その線を越えて右側部分にはみ出して通行してはならない。",
+    "correct_answer": true,
+    "explanation": "黄色の実線の中央線を示す道路標示がある区間は、右側部分へのはみ出し通行が禁止されている。",
+    "image_key": "marking-center-line-yellow"
+  },
+  {
+    "question_text": "この路面表示がある道路では、車は道路の右側に寄って通行することができる。",
+    "correct_answer": false,
+    "explanation": "路側帯を示す道路標示があっても、車は道路の左側部分に寄って通行するのが原則である。",
+    "image_key": "marking-roadside-single"
+  },
+  {
+    "question_text": "この路面表示で区画された車両通行帯がある道路で、通行区分の指定がないときは、運転者は速度に応じた適当な通行帯を選んで通行することができる。",
+    "correct_answer": true,
+    "explanation": "白の破線で区画された車両通行帯を示す道路標示であり、通行区分の指定がない場合、車はおおむね速度に応じた適当な通行帯を選んで通行できる。",
+    "image_key": "marking-lane-dashed"
+  },
+  {
+    "question_text": "この路面表示がある区間では、車は路側帯内で駐車や停車をすることができない。",
+    "correct_answer": true,
+    "explanation": "実線が2本引かれた路側帯を示す道路標示であり、駐停車禁止路側帯として車が中で駐車や停車をすることができない。",
+    "image_key": "marking-roadside-double"
   }
 ]

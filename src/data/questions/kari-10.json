@@ -1,102 +1,602 @@
 [
-  { "question_text": "進路変更をしようとするときは、その行為をしようとする約3秒前に合図をしなければならない。", "correct_answer": true, "explanation": "進路変更の合図は、行為の約3秒前に出すよう定められている。", "image_key": null },
-  { "question_text": "進路変更の合図は、進路変更を始める約1秒前に出せば十分である。", "correct_answer": false, "explanation": "進路変更の合図は約3秒前に出す必要があり、1秒前では遅すぎる。", "image_key": null },
-  { "question_text": "進路変更の合図は、ハンドルを切り始めると同時に出せば足りる。", "correct_answer": false, "explanation": "合図は進路変更を始める前(約3秒前)に出す必要があり、同時では遅い。", "image_key": null },
-  { "question_text": "進路変更の合図は、実際に進もうとする方向を正しく示さなければならない。", "correct_answer": true, "explanation": "合図は変更する方向を正確に示す必要がある。", "image_key": null },
-  { "question_text": "進路変更が終わったら、すみやかに方向指示器の合図をやめなければならない。", "correct_answer": true, "explanation": "変更後に合図を出し続けると周囲に誤解を与えるため、すみやかにやめる。", "image_key": null },
-  { "question_text": "進路変更する際、ミラーで後方を確認すれば、目視による確認は省略してよい。", "correct_answer": false, "explanation": "ミラーには死角があるため、目視でも確認する必要がある。", "image_key": null },
-  { "question_text": "後続車が急ブレーキや急ハンドルの操作を必要とするような進路変更をしてはならない。", "correct_answer": true, "explanation": "道路交通法で、後続車に急な操作を強いる進路変更は禁止されている。", "image_key": null },
-  { "question_text": "黄色の線で区画された車両通行帯の境界線は、越えて進路変更してもよい。", "correct_answer": false, "explanation": "黄色の区画線は、その線を越えての進路変更が禁止されていることを示す。", "image_key": null },
-  { "question_text": "白の破線で区画された車両通行帯の境界線は、安全を確認すれば越えて進路変更してもよい。", "correct_answer": true, "explanation": "白の破線は変更が認められる区画線であり、安全確認をした上で越えることができる。", "image_key": null },
-  { "question_text": "右左折をするときの合図は、右左折しようとする地点の30メートル手前に達したときに出す。", "correct_answer": true, "explanation": "右左折の合図は、その地点の30メートル手前で出すと定められている。", "image_key": null },
-  { "question_text": "右左折をするときの合図は、右左折しようとする地点の50メートル手前に達したときに出す。", "correct_answer": false, "explanation": "右左折の合図の基準は30メートル手前であり、50メートルではない。", "image_key": null },
-  { "question_text": "進路変更の合図(約3秒前)と、右左折の合図(30メートル手前)は、出すタイミングの基準が同じである。", "correct_answer": false, "explanation": "進路変更は時間基準(約3秒前)、右左折は距離基準(30メートル手前)であり、基準が異なる。", "image_key": null },
-  { "question_text": "転回をするときも、右左折と同じく、その地点の30メートル手前で合図を出す。", "correct_answer": true, "explanation": "転回の合図基準は右左折と同様、30メートル手前である。", "image_key": null },
-  { "question_text": "転回の合図は、進路変更するときと同様に約3秒前でよい。", "correct_answer": false, "explanation": "転回の合図基準は約3秒前ではなく、右左折と同じ30メートル手前である。", "image_key": null },
-  { "question_text": "この標識がある区間内では、転回(Uターン)をしてはならない。", "correct_answer": true, "explanation": "転回禁止の標識がある区間内では、Uターンをしてはならない。", "image_key": "no-u-turn" },
-  { "question_text": "この標識がある区間内であっても、周囲に他の車が1台もいなければ転回(Uターン)をしてもよい。", "correct_answer": false, "explanation": "転回禁止の標識は他の車の有無にかかわらず効力があり、車がいなくても転回してはならない。", "image_key": "no-u-turn" },
-  { "question_text": "橋の上は、原則として転回が禁止されている。", "correct_answer": true, "explanation": "橋の上は、法令上、転回が禁止されている場所の一つである。", "image_key": null },
-  { "question_text": "交差点の側端から前後5メートル以内の部分は、原則として転回してはならない。", "correct_answer": true, "explanation": "交差点の側端から前後5メートル以内も、転回禁止の場所とされている。", "image_key": null },
-  { "question_text": "交差点の側端から前後10メートル以内の部分は、転回してはならない。", "correct_answer": false, "explanation": "転回禁止となるのは交差点の側端から前後5メートル以内であり、10メートルではない。", "image_key": null },
-  { "question_text": "見通しのきかない道路の曲がり角付近では、時速10キロ以下に速度を落とせば転回してもよい。", "correct_answer": false, "explanation": "見通しのきかない曲がり角付近は、速度を落としても転回が禁止されている場所である。", "image_key": null },
-  { "question_text": "こう配の急な坂では、転回してはならない。", "correct_answer": true, "explanation": "こう配の急な坂も、転回が禁止されている場所である。", "image_key": null },
-  { "question_text": "転回禁止の場所以外であれば、他の交通の妨げとなっても転回してよい。", "correct_answer": false, "explanation": "禁止場所でなくても、他の交通の妨げとなるおそれがあるときは転回してはならない。", "image_key": null },
-  { "question_text": "転回するときは、あらかじめできるだけ道路の中央に寄ってから行うのが原則である。", "correct_answer": true, "explanation": "転回は、あらかじめできるだけ道路の中央に寄って行うのが原則である。", "image_key": null },
-  { "question_text": "進路変更するときは、変更先を走る車の速度や間隔を考慮し、無理に割り込んではならない。", "correct_answer": true, "explanation": "変更先の車両通行帯を走る車の状況を考え、無理な割り込みをしてはならない。", "image_key": null },
-  { "question_text": "安全であれば、2つの車両通行帯を一度に越えて進路変更してもよい。", "correct_answer": false, "explanation": "進路変更は一つの車両通行帯ずつ行うのが基本であり、一気に複数の通行帯を越えるべきではない。", "image_key": null },
-  { "question_text": "進路変更禁止を示す黄色の線がある区間でも、危険を防止するためやむを得ない場合は、線を越えて進路変更してもよい。", "correct_answer": true, "explanation": "危険防止のためやむを得ない場合は、黄色の区画線を越えて進路変更することが認められている。", "image_key": null },
-  { "question_text": "進路変更禁止の車両通行帯の区画線は、道路工事などの障害物を避けるためであっても、絶対に越えてはならない。", "correct_answer": false, "explanation": "道路工事などを避けるためやむを得ない場合は、区画線を越えて進路変更することが認められている。", "image_key": null },
-  { "question_text": "進路変更する前には、後続車との距離や速度を確認し、安全な間隔があることを確かめる必要がある。", "correct_answer": true, "explanation": "進路変更前には、後続車との距離や速度を確認し、安全な間隔を確保する必要がある。", "image_key": null },
-  { "question_text": "方向指示器が故障している車は、合図をしなくても進路変更してよい。", "correct_answer": false, "explanation": "方向指示器が故障している場合は、手による合図など別の方法で合図をしなければならない。", "image_key": null },
-  { "question_text": "進路変更の合図には、方向指示器(ウインカー)を使用するのが正しい方法である。", "correct_answer": true, "explanation": "進路変更の合図には、方向指示器を使用する。", "image_key": null },
-  { "question_text": "進路変更の合図には、非常点滅表示灯(ハザードランプ)を使用するのが正しい方法である。", "correct_answer": false, "explanation": "ハザードランプは駐停車時や後続車への注意喚起などに使うものであり、進路変更の合図ではない。", "image_key": null },
-  { "question_text": "高速道路の加速車線から本線車道に合流するときも、あらかじめ合図をしなければならない。", "correct_answer": true, "explanation": "本線への合流も進路変更にあたるため、合図が必要である。", "image_key": null },
-  { "question_text": "高速道路の本線車道から時速50キロ以下に減速して流出路(出口)へ向かうときは、合図をしなくてもよい。", "correct_answer": false, "explanation": "出口へ向かうときも進路変更にあたるため、速度にかかわらず合図をしなければならない。", "image_key": null },
-  { "question_text": "進路変更した後は、周囲に紛らわしいので方向指示器をすみやかに消さなければならない。", "correct_answer": true, "explanation": "方向指示器を消し忘れると周囲に誤解を与えるため、変更後はすみやかに消す必要がある。", "image_key": null },
-  { "question_text": "進路変更の合図は、進路変更をやめた場合でも出し続けなければならない。", "correct_answer": false, "explanation": "進路変更を中止したときは、合図もあわせてやめなければならない。", "image_key": null },
-  { "question_text": "進路変更しようとした際に後続車が急に接近してきたときは、無理に進路変更せず中止するべきである。", "correct_answer": true, "explanation": "後続車が急接近しているときに無理に進路変更すると、接触事故の危険が高まる。", "image_key": null },
-  { "question_text": "合図さえ出していれば、後続車の状況にかかわらず進路変更を強行してよい。", "correct_answer": false, "explanation": "合図を出していても、後続車の状況次第では進路変更を控える必要がある。", "image_key": null },
-  { "question_text": "進路変更するときの安全確認は、ミラーだけでなく、目視によって死角も確認することが必要である。", "correct_answer": true, "explanation": "ミラーには死角があるため、目視での確認も欠かせない。", "image_key": null },
-  { "question_text": "転回するときは、対向車の有無を確認する必要はなく、後方の安全だけ確認すればよい。", "correct_answer": false, "explanation": "転回するときは、後方だけでなく対向車の有無も確認する必要がある。", "image_key": null },
-  { "question_text": "警察官が転回を指示した場合は、通常は転回禁止の場所であっても、その指示に従うことができる。", "correct_answer": true, "explanation": "警察官の指示がある場合は、通常の禁止規定よりもその指示が優先されることがある。", "image_key": null },
-  { "question_text": "転回禁止の道路標識は、こう配の急な坂に限って設置される。", "correct_answer": false, "explanation": "転回禁止の標識は坂に限らず、交差点付近やトンネル、橋の上など様々な場所に設置される。", "image_key": null },
-  { "question_text": "進路変更の合図は、変更先の通行帯に他の車がいるかどうかにかかわらず出す必要がある。", "correct_answer": true, "explanation": "他の車の有無にかかわらず、進路変更するときは合図を出す必要がある。", "image_key": null },
-  { "question_text": "進路変更禁止の区間で緊急自動車に進路を譲る場合であっても、絶対に区画線を越えてはならない。", "correct_answer": false, "explanation": "緊急自動車に道を譲る場合など、危険防止のためやむを得ないときは区画線を越えることが認められている。", "image_key": null },
-  { "question_text": "進路変更の合図は、進路変更が完了した後に出しても、法律上問題はない。", "correct_answer": false, "explanation": "合図は進路変更を始める前に出す必要があり、完了後に出しても意味をなさない。", "image_key": null },
-  { "question_text": "進路変更や右左折の合図を出した後であっても、周囲の状況によっては、その行為を中止することがある。", "correct_answer": true, "explanation": "合図を出した後でも、危険を感じれば行為を中止することがある。", "image_key": null },
-  { "question_text": "進路変更する車は、そのまま直進する後続車の進行を妨げてはならない。", "correct_answer": true, "explanation": "進路変更する車は、直進する後続車の進行を妨げてはならない。", "image_key": null },
-  { "question_text": "進路変更は、必ずしも合図が義務付けられているわけではなく、任意で行うものである。", "correct_answer": false, "explanation": "進路変更の際の合図は法律上の義務であり、任意ではない。", "image_key": null },
-  { "question_text": "バス専用の表示がある通行帯には、原則として指定された車両以外は通行できない。", "correct_answer": true, "explanation": "バス専用の表示がある通行帯は、原則として指定された車両以外は通行できない。", "image_key": null },
-  { "question_text": "バス専用通行帯であっても、空いていればどの車も自由に走行してよい。", "correct_answer": false, "explanation": "空いていても、指定された車両以外は原則として通行できない。", "image_key": null },
-  { "question_text": "進路変更するときは、変更先の車両通行帯の交通状況に応じて、速度を調整しながら行う必要がある。", "correct_answer": true, "explanation": "変更先の交通状況に応じて、速度を調整しながら進路変更する必要がある。", "image_key": null },
-  { "question_text": "進路変更の合図は、変更行為を終えるまで出し続け、終えたらすみやかにやめなければならない。", "correct_answer": true, "explanation": "合図は進路変更を終えるまで継続し、終了後はすみやかにやめる。", "image_key": null },
-  { "question_text": "進路変更が終わった後も、後続車への注意喚起のため、合図を20秒程度は出し続けるべきである。", "correct_answer": false, "explanation": "合図は進路変更が終わればすみやかにやめる必要があり、20秒も継続する必要はない。", "image_key": null },
-  { "question_text": "右左折の合図は、右左折を終えるまで継続して出す必要がある。", "correct_answer": true, "explanation": "右左折の合図は、行為を終えるまで出し続ける必要がある。", "image_key": null },
-  { "question_text": "右左折の合図は、地点の30メートル手前で一度点灯させれば、その後すぐに消してもよい。", "correct_answer": false, "explanation": "合図は右左折を終えるまで継続する必要があり、途中で消してはならない。", "image_key": null },
-  { "question_text": "方向指示器が故障したときは、腕を車体の外に出すなどの方法で進路変更の合図をすることができる。", "correct_answer": true, "explanation": "方向指示器が使用できない場合は、腕による合図など他の方法で意思を示すことができる。", "image_key": null },
-  { "question_text": "方向指示器が故障した車は、修理が終わるまでの間、一切車線変更をしてはならない。", "correct_answer": false, "explanation": "方向指示器が故障していても、腕による合図など別の方法で合図をすれば進路変更できる。", "image_key": null },
-  { "question_text": "進路変更するときは、ルームミラーで後方が見えれば、サイドミラーでの確認は省略してよい。", "correct_answer": false, "explanation": "ルームミラーだけでは死角が生じるため、サイドミラーや目視でも確認する必要がある。", "image_key": null },
-  { "question_text": "進路変更するときは、ミラーに映らない部分を目視で確認することが安全確認として重要である。", "correct_answer": true, "explanation": "ミラーには死角があるため、目視での確認も欠かせない。", "image_key": null },
-  { "question_text": "トンネルの中は、車両通行帯の有無にかかわらず、転回してはならない。", "correct_answer": true, "explanation": "トンネルの中は、車両通行帯があるかどうかにかかわらず転回が禁止されている。", "image_key": null },
-  { "question_text": "車両通行帯のあるトンネルの中であれば、転回してもよい。", "correct_answer": false, "explanation": "トンネルの中は車両通行帯の有無にかかわらず転回が禁止されている。", "image_key": null },
-  { "question_text": "上り坂の頂上付近は、見通しがきかないため転回してはならない。", "correct_answer": true, "explanation": "上り坂の頂上付近は見通しが悪く、転回が禁止されている場所の一つである。", "image_key": null },
-  { "question_text": "上り坂の頂上付近であっても、見通しが十分にきけば転回してもよい。", "correct_answer": false, "explanation": "上り坂の頂上付近は転回が禁止されている場所であり、見通しの良し悪しにかかわらず転回してはならない。", "image_key": null },
-  { "question_text": "「転回禁止」の道路標識がある区間では、その区間内のどこであっても転回してはならない。", "correct_answer": true, "explanation": "転回禁止の標識がある区間内では、場所を問わず転回が禁止される。", "image_key": null },
-  { "question_text": "「転回禁止」の道路標識がある区間でも、区間の端であれば転回してもよい。", "correct_answer": false, "explanation": "転回禁止の標識がある区間内は、端であっても転回してはならない。", "image_key": null },
-  { "question_text": "転回するときは、後方だけでなく対向車線の安全も確認しなければならない。", "correct_answer": true, "explanation": "転回は対向車線を横切る動作であるため、対向車の安全確認も必要である。", "image_key": null },
-  { "question_text": "転回するときは、自車の後方さえ安全であれば、対向車線を確認しなくてもよい。", "correct_answer": false, "explanation": "転回は対向車線を横切るため、対向車の安全も確認しなければならない。", "image_key": null },
-  { "question_text": "転回は、他の交通に急ブレーキや急ハンドルを強いることのないよう、安全な状況で行わなければならない。", "correct_answer": true, "explanation": "転回によって他の車に急な操作を強いてはならない。", "image_key": null },
-  { "question_text": "転回は、自車が先に行動を始めていれば、他の車が急ブレーキを踏むことになってもかまわない。", "correct_answer": false, "explanation": "転回によって他の車に急ブレーキなど急な操作を強いてはならない。", "image_key": null },
-  { "question_text": "路線バス等の優先通行帯を普通乗用車が通行しているとき、後方から路線バスが接近してきた場合は、すみやかにその通行帯の外に出なければならない。", "correct_answer": true, "explanation": "路線バス等優先通行帯を走行中に路線バスが接近したときは、すみやかにその通行帯の外に出る必要がある。", "image_key": null },
-  { "question_text": "路線バス等の優先通行帯は、路線バスが接近してこない限り、普通乗用車がどれだけ長く走行してもよい。", "correct_answer": false, "explanation": "優先通行帯は路線バスなどの通行を優先するためのものであり、バスが接近すれば速やかに出る必要がある。", "image_key": null },
-  { "question_text": "路線バス等優先通行帯であることは、道路標識・道路標示により指定される。", "correct_answer": true, "explanation": "路線バス等優先通行帯は、道路標識や道路標示によって指定された区間に適用される。", "image_key": null },
-  { "question_text": "路線バス専用通行帯は、標識がなくても、バス停留所付近であれば自動的に適用される。", "correct_answer": false, "explanation": "専用・優先通行帯は、道路標識等により指定された区間についてのみ適用される。", "image_key": null },
-  { "question_text": "高速道路の加速車線から本線車道に入るときは、あらかじめ十分に速度を上げて本線の流れに合わせる必要がある。", "correct_answer": true, "explanation": "本線合流時は、あらかじめ加速して本線を走る車の速度に近づける必要がある。", "image_key": null },
-  { "question_text": "高速道路の加速車線から本線車道に入るときは、速度を上げずに一時停止してから入るのが正しい方法である。", "correct_answer": false, "explanation": "加速車線では停止せず、加速しながら本線の流れに合わせて合流するのが正しい方法である。", "image_key": null },
-  { "question_text": "高速道路の本線車道から流出路(出口)へ向かうときも、あらかじめ合図をしなければならない。", "correct_answer": true, "explanation": "出口へ向かう行為も進路変更にあたるため、合図が必要である。", "image_key": null },
-  { "question_text": "高速道路の本線車道から流出路(出口)へ向かうときは、減速中であれば合図を省略してもよい。", "correct_answer": false, "explanation": "減速中であっても、進路変更にあたるため合図を省略することはできない。", "image_key": null },
-  { "question_text": "進路変更するときは、すでにその車両通行帯を走行している車の進行を妨げてはならない。", "correct_answer": true, "explanation": "進路変更する車は、既にその通行帯を走行している車の進行を妨げてはならない。", "image_key": null },
-  { "question_text": "進路変更するときは、変更先の通行帯を走る車より自車が速く走れるなら、進路を妨げてもかまわない。", "correct_answer": false, "explanation": "自車の方が速くても、既にその通行帯を走行している車の進行を妨げてはならない。", "image_key": null },
-  { "question_text": "工事などにより自分の車両通行帯が塞がれているときは、合図をして隣の通行帯に進路変更することができる。", "correct_answer": true, "explanation": "道路工事などのやむを得ない事情があるときは、合図のうえ進路変更することができる。", "image_key": null },
-  { "question_text": "工事などにより自分の車両通行帯が塞がれていても、黄色の区画線がある場合は絶対に隣の通行帯に移ってはならない。", "correct_answer": false, "explanation": "危険防止のためやむを得ない場合は、黄色の区画線がある区間でも進路変更することが認められている。", "image_key": null },
-  { "question_text": "3つ以上の車両通行帯がある道路で進路変更するときは、一つの通行帯ずつ順番に移動するのが原則である。", "correct_answer": true, "explanation": "進路変更は一つの車両通行帯ずつ行うのが原則であり、複数の通行帯を一度に越えるべきではない。", "image_key": null },
-  { "question_text": "3つ以上の車両通行帯がある道路では、安全確認さえすれば一度に2つの通行帯を越えて進路変更してよい。", "correct_answer": false, "explanation": "進路変更は一つの車両通行帯ずつ行うのが原則である。", "image_key": null },
-  { "question_text": "道路の幅が十分でない場合、転回のために一時的に後退が必要になることがある。", "correct_answer": true, "explanation": "道路の幅が十分でない場合は、後退を交えて転回することもある。", "image_key": null },
-  { "question_text": "転回は、道路の幅にかかわらず、前進だけで一回の操作で完了させなければならない。", "correct_answer": false, "explanation": "道路の幅が十分でない場合は、後退を交えて転回することもある。", "image_key": null },
-  { "question_text": "転回する際は、あらかじめできるだけ道路の中央(一方通行の道路では右側端)に寄って行うのが原則である。", "correct_answer": true, "explanation": "転回はあらかじめ道路の中央(一方通行路では右側端)に寄って行うのが原則である。", "image_key": null },
-  { "question_text": "一方通行の道路で転回するときも、あらかじめ道路の左側端に寄ってから行うのが正しい方法である。", "correct_answer": false, "explanation": "一方通行路で転回するときは、道路の右側端に寄ってから行うのが原則である。", "image_key": null },
-  { "question_text": "この標識がある道路では、指定された方向以外に進路を変えてはならない。", "correct_answer": true, "explanation": "指定方向外進行禁止の標識がある道路では、指定された方向以外へ進行してはならない。", "image_key": "designated-direction-only" },
-  { "question_text": "この標識がある道路では、対向車線が空いていれば指定された方向以外にも進路を変えてよい。", "correct_answer": false, "explanation": "指定方向外進行禁止の標識は、対向車線の状況にかかわらず指定方向以外への進行を禁止している。", "image_key": "designated-direction-only" },
-  { "question_text": "この標識がある道路は一方通行であり、逆方向に進路を変えて進入することはできない。", "correct_answer": true, "explanation": "一方通行の標識がある道路では、逆方向への進行は禁止されている。", "image_key": "one-way" },
-  { "question_text": "この標識がある道路であっても、短距離であれば逆方向に進入して転回してもよい。", "correct_answer": false, "explanation": "一方通行の道路では、距離の長短にかかわらず逆方向への進入は禁止されている。", "image_key": "one-way" },
-  { "question_text": "車両横断禁止の場所では、道路を斜めに横断するように進路を変えてはならない。", "correct_answer": true, "explanation": "車両横断禁止の場所では、道路を横断する形の進路変更をしてはならない。", "image_key": null },
-  { "question_text": "車両横断禁止の場所であっても、沿道の施設に入る場合に限り、道路を横断する形で進路を変えてもよい。", "correct_answer": false, "explanation": "車両横断禁止の場所では、目的にかかわらず道路を横断する形の進路変更が禁止されている。", "image_key": null },
-  { "question_text": "転回禁止の道路標識に区間を示す補助標識が付いている場合、その標識は区間内で効力が継続する。", "correct_answer": true, "explanation": "区間を示す補助標識がある場合、転回禁止の標識は指定された区間全体に効力を持つ。", "image_key": null },
-  { "question_text": "転回禁止の道路標識は、それが設置されている地点だけで効力があり、数メートル先では効力を持たない。", "correct_answer": false, "explanation": "区間を示す補助標識がある場合、標識は地点だけでなく指定区間全体に効力を持つ。", "image_key": null },
-  { "question_text": "進路変更するときは、変更先の車両通行帯を走る自転車の有無にも注意しなければならない。", "correct_answer": true, "explanation": "車両通行帯を走行する自転車がいる場合もあるため、その有無にも注意する必要がある。", "image_key": null },
-  { "question_text": "車道の左端に自転車が走行していても、自動車の進路変更には関係がないため無視してよい。", "correct_answer": false, "explanation": "自転車の動きにも注意を払い、安全を確認したうえで進路変更する必要がある。", "image_key": null },
-  { "question_text": "夜間に進路変更するときも、昼間と同様に合図と安全確認を行わなければならない。", "correct_answer": true, "explanation": "夜間であっても、進路変更の際の合図・安全確認義務は昼間と変わらない。", "image_key": null },
-  { "question_text": "夜間は周囲から見えにくいため、進路変更の際の合図は昼間より簡略化してもよい。", "correct_answer": false, "explanation": "夜間であっても合図の義務は昼間と同様であり、簡略化は認められない。", "image_key": null },
-  { "question_text": "急な進路変更は、後続車に急ブレーキなど危険な操作を強いるおそれがあるため避けなければならない。", "correct_answer": true, "explanation": "急な進路変更は後続車に急ブレーキ等の危険な操作を強いるおそれがあるため避けるべきである。", "image_key": null },
-  { "question_text": "後続車との車間距離が十分あいていなくても、合図さえ出せば急な進路変更をしてよい。", "correct_answer": false, "explanation": "合図を出していても、後続車に急な操作を強いるような進路変更をしてはならない。", "image_key": null }
+  {
+    "question_text": "進路変更をしようとするときは、その行為をしようとする約3秒前に合図をしなければならない。",
+    "correct_answer": true,
+    "explanation": "進路変更の合図は、行為の約3秒前に出すよう定められている。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更の合図は、進路変更を始める約1秒前に出せば十分である。",
+    "correct_answer": false,
+    "explanation": "進路変更の合図は約3秒前に出す必要があり、1秒前では遅すぎる。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更の合図は、ハンドルを切り始めると同時に出せば足りる。",
+    "correct_answer": false,
+    "explanation": "合図は進路変更を始める前(約3秒前)に出す必要があり、同時では遅い。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更の合図は、実際に進もうとする方向を正しく示さなければならない。",
+    "correct_answer": true,
+    "explanation": "合図は変更する方向を正確に示す必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更が終わったら、すみやかに方向指示器の合図をやめなければならない。",
+    "correct_answer": true,
+    "explanation": "変更後に合図を出し続けると周囲に誤解を与えるため、すみやかにやめる。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更する際、ミラーで後方を確認すれば、目視による確認は省略してよい。",
+    "correct_answer": false,
+    "explanation": "ミラーには死角があるため、目視でも確認する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "後続車が急ブレーキや急ハンドルの操作を必要とするような進路変更をしてはならない。",
+    "correct_answer": true,
+    "explanation": "道路交通法で、後続車に急な操作を強いる進路変更は禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "右左折をするときの合図は、右左折しようとする地点の30メートル手前に達したときに出す。",
+    "correct_answer": true,
+    "explanation": "右左折の合図は、その地点の30メートル手前で出すと定められている。",
+    "image_key": null
+  },
+  {
+    "question_text": "右左折をするときの合図は、右左折しようとする地点の50メートル手前に達したときに出す。",
+    "correct_answer": false,
+    "explanation": "右左折の合図の基準は30メートル手前であり、50メートルではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更の合図(約3秒前)と、右左折の合図(30メートル手前)は、出すタイミングの基準が同じである。",
+    "correct_answer": false,
+    "explanation": "進路変更は時間基準(約3秒前)、右左折は距離基準(30メートル手前)であり、基準が異なる。",
+    "image_key": null
+  },
+  {
+    "question_text": "転回をするときも、右左折と同じく、その地点の30メートル手前で合図を出す。",
+    "correct_answer": true,
+    "explanation": "転回の合図基準は右左折と同様、30メートル手前である。",
+    "image_key": null
+  },
+  {
+    "question_text": "転回の合図は、進路変更するときと同様に約3秒前でよい。",
+    "correct_answer": false,
+    "explanation": "転回の合図基準は約3秒前ではなく、右左折と同じ30メートル手前である。",
+    "image_key": null
+  },
+  {
+    "question_text": "この標識がある区間内では、転回(Uターン)をしてはならない。",
+    "correct_answer": true,
+    "explanation": "転回禁止の標識がある区間内では、Uターンをしてはならない。",
+    "image_key": "no-u-turn"
+  },
+  {
+    "question_text": "この標識がある区間内であっても、周囲に他の車が1台もいなければ転回(Uターン)をしてもよい。",
+    "correct_answer": false,
+    "explanation": "転回禁止の標識は他の車の有無にかかわらず効力があり、車がいなくても転回してはならない。",
+    "image_key": "no-u-turn"
+  },
+  {
+    "question_text": "橋の上は、原則として転回が禁止されている。",
+    "correct_answer": true,
+    "explanation": "橋の上は、法令上、転回が禁止されている場所の一つである。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点の側端から前後5メートル以内の部分は、原則として転回してはならない。",
+    "correct_answer": true,
+    "explanation": "交差点の側端から前後5メートル以内も、転回禁止の場所とされている。",
+    "image_key": null
+  },
+  {
+    "question_text": "交差点の側端から前後10メートル以内の部分は、転回してはならない。",
+    "correct_answer": false,
+    "explanation": "転回禁止となるのは交差点の側端から前後5メートル以内であり、10メートルではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "見通しのきかない道路の曲がり角付近では、時速10キロ以下に速度を落とせば転回してもよい。",
+    "correct_answer": false,
+    "explanation": "見通しのきかない曲がり角付近は、速度を落としても転回が禁止されている場所である。",
+    "image_key": null
+  },
+  {
+    "question_text": "こう配の急な坂では、転回してはならない。",
+    "correct_answer": true,
+    "explanation": "こう配の急な坂も、転回が禁止されている場所である。",
+    "image_key": null
+  },
+  {
+    "question_text": "転回禁止の場所以外であれば、他の交通の妨げとなっても転回してよい。",
+    "correct_answer": false,
+    "explanation": "禁止場所でなくても、他の交通の妨げとなるおそれがあるときは転回してはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "転回するときは、あらかじめできるだけ道路の中央に寄ってから行うのが原則である。",
+    "correct_answer": true,
+    "explanation": "転回は、あらかじめできるだけ道路の中央に寄って行うのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更するときは、変更先を走る車の速度や間隔を考慮し、無理に割り込んではならない。",
+    "correct_answer": true,
+    "explanation": "変更先の車両通行帯を走る車の状況を考え、無理な割り込みをしてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "安全であれば、2つの車両通行帯を一度に越えて進路変更してもよい。",
+    "correct_answer": false,
+    "explanation": "進路変更は一つの車両通行帯ずつ行うのが基本であり、一気に複数の通行帯を越えるべきではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更禁止の車両通行帯の区画線は、道路工事などの障害物を避けるためであっても、絶対に越えてはならない。",
+    "correct_answer": false,
+    "explanation": "道路工事などを避けるためやむを得ない場合は、区画線を越えて進路変更することが認められている。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更する前には、後続車との距離や速度を確認し、安全な間隔があることを確かめる必要がある。",
+    "correct_answer": true,
+    "explanation": "進路変更前には、後続車との距離や速度を確認し、安全な間隔を確保する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "方向指示器が故障している車は、合図をしなくても進路変更してよい。",
+    "correct_answer": false,
+    "explanation": "方向指示器が故障している場合は、手による合図など別の方法で合図をしなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更の合図には、方向指示器(ウインカー)を使用するのが正しい方法である。",
+    "correct_answer": true,
+    "explanation": "進路変更の合図には、方向指示器を使用する。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更の合図には、非常点滅表示灯(ハザードランプ)を使用するのが正しい方法である。",
+    "correct_answer": false,
+    "explanation": "ハザードランプは駐停車時や後続車への注意喚起などに使うものであり、進路変更の合図ではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "高速道路の加速車線から本線車道に合流するときも、あらかじめ合図をしなければならない。",
+    "correct_answer": true,
+    "explanation": "本線への合流も進路変更にあたるため、合図が必要である。",
+    "image_key": null
+  },
+  {
+    "question_text": "高速道路の本線車道から時速50キロ以下に減速して流出路(出口)へ向かうときは、合図をしなくてもよい。",
+    "correct_answer": false,
+    "explanation": "出口へ向かうときも進路変更にあたるため、速度にかかわらず合図をしなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更した後は、周囲に紛らわしいので方向指示器をすみやかに消さなければならない。",
+    "correct_answer": true,
+    "explanation": "方向指示器を消し忘れると周囲に誤解を与えるため、変更後はすみやかに消す必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更の合図は、進路変更をやめた場合でも出し続けなければならない。",
+    "correct_answer": false,
+    "explanation": "進路変更を中止したときは、合図もあわせてやめなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更しようとした際に後続車が急に接近してきたときは、無理に進路変更せず中止するべきである。",
+    "correct_answer": true,
+    "explanation": "後続車が急接近しているときに無理に進路変更すると、接触事故の危険が高まる。",
+    "image_key": null
+  },
+  {
+    "question_text": "合図さえ出していれば、後続車の状況にかかわらず進路変更を強行してよい。",
+    "correct_answer": false,
+    "explanation": "合図を出していても、後続車の状況次第では進路変更を控える必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更するときの安全確認は、ミラーだけでなく、目視によって死角も確認することが必要である。",
+    "correct_answer": true,
+    "explanation": "ミラーには死角があるため、目視での確認も欠かせない。",
+    "image_key": null
+  },
+  {
+    "question_text": "転回するときは、対向車の有無を確認する必要はなく、後方の安全だけ確認すればよい。",
+    "correct_answer": false,
+    "explanation": "転回するときは、後方だけでなく対向車の有無も確認する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "警察官が転回を指示した場合は、通常は転回禁止の場所であっても、その指示に従うことができる。",
+    "correct_answer": true,
+    "explanation": "警察官の指示がある場合は、通常の禁止規定よりもその指示が優先されることがある。",
+    "image_key": null
+  },
+  {
+    "question_text": "転回禁止の道路標識は、こう配の急な坂に限って設置される。",
+    "correct_answer": false,
+    "explanation": "転回禁止の標識は坂に限らず、交差点付近やトンネル、橋の上など様々な場所に設置される。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更の合図は、変更先の通行帯に他の車がいるかどうかにかかわらず出す必要がある。",
+    "correct_answer": true,
+    "explanation": "他の車の有無にかかわらず、進路変更するときは合図を出す必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更禁止の区間で緊急自動車に進路を譲る場合であっても、絶対に区画線を越えてはならない。",
+    "correct_answer": false,
+    "explanation": "緊急自動車に道を譲る場合など、危険防止のためやむを得ないときは区画線を越えることが認められている。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更の合図は、進路変更が完了した後に出しても、法律上問題はない。",
+    "correct_answer": false,
+    "explanation": "合図は進路変更を始める前に出す必要があり、完了後に出しても意味をなさない。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更や右左折の合図を出した後であっても、周囲の状況によっては、その行為を中止することがある。",
+    "correct_answer": true,
+    "explanation": "合図を出した後でも、危険を感じれば行為を中止することがある。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更する車は、そのまま直進する後続車の進行を妨げてはならない。",
+    "correct_answer": true,
+    "explanation": "進路変更する車は、直進する後続車の進行を妨げてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更は、必ずしも合図が義務付けられているわけではなく、任意で行うものである。",
+    "correct_answer": false,
+    "explanation": "進路変更の際の合図は法律上の義務であり、任意ではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "バス専用の表示がある通行帯には、原則として指定された車両以外は通行できない。",
+    "correct_answer": true,
+    "explanation": "バス専用の表示がある通行帯は、原則として指定された車両以外は通行できない。",
+    "image_key": null
+  },
+  {
+    "question_text": "バス専用通行帯であっても、空いていればどの車も自由に走行してよい。",
+    "correct_answer": false,
+    "explanation": "空いていても、指定された車両以外は原則として通行できない。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更するときは、変更先の車両通行帯の交通状況に応じて、速度を調整しながら行う必要がある。",
+    "correct_answer": true,
+    "explanation": "変更先の交通状況に応じて、速度を調整しながら進路変更する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更の合図は、変更行為を終えるまで出し続け、終えたらすみやかにやめなければならない。",
+    "correct_answer": true,
+    "explanation": "合図は進路変更を終えるまで継続し、終了後はすみやかにやめる。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更が終わった後も、後続車への注意喚起のため、合図を20秒程度は出し続けるべきである。",
+    "correct_answer": false,
+    "explanation": "合図は進路変更が終わればすみやかにやめる必要があり、20秒も継続する必要はない。",
+    "image_key": null
+  },
+  {
+    "question_text": "右左折の合図は、右左折を終えるまで継続して出す必要がある。",
+    "correct_answer": true,
+    "explanation": "右左折の合図は、行為を終えるまで出し続ける必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "右左折の合図は、地点の30メートル手前で一度点灯させれば、その後すぐに消してもよい。",
+    "correct_answer": false,
+    "explanation": "合図は右左折を終えるまで継続する必要があり、途中で消してはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "方向指示器が故障したときは、腕を車体の外に出すなどの方法で進路変更の合図をすることができる。",
+    "correct_answer": true,
+    "explanation": "方向指示器が使用できない場合は、腕による合図など他の方法で意思を示すことができる。",
+    "image_key": null
+  },
+  {
+    "question_text": "方向指示器が故障した車は、修理が終わるまでの間、一切車線変更をしてはならない。",
+    "correct_answer": false,
+    "explanation": "方向指示器が故障していても、腕による合図など別の方法で合図をすれば進路変更できる。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更するときは、ルームミラーで後方が見えれば、サイドミラーでの確認は省略してよい。",
+    "correct_answer": false,
+    "explanation": "ルームミラーだけでは死角が生じるため、サイドミラーや目視でも確認する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更するときは、ミラーに映らない部分を目視で確認することが安全確認として重要である。",
+    "correct_answer": true,
+    "explanation": "ミラーには死角があるため、目視での確認も欠かせない。",
+    "image_key": null
+  },
+  {
+    "question_text": "トンネルの中は、車両通行帯の有無にかかわらず、転回してはならない。",
+    "correct_answer": true,
+    "explanation": "トンネルの中は、車両通行帯があるかどうかにかかわらず転回が禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "車両通行帯のあるトンネルの中であれば、転回してもよい。",
+    "correct_answer": false,
+    "explanation": "トンネルの中は車両通行帯の有無にかかわらず転回が禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "上り坂の頂上付近は、見通しがきかないため転回してはならない。",
+    "correct_answer": true,
+    "explanation": "上り坂の頂上付近は見通しが悪く、転回が禁止されている場所の一つである。",
+    "image_key": null
+  },
+  {
+    "question_text": "上り坂の頂上付近であっても、見通しが十分にきけば転回してもよい。",
+    "correct_answer": false,
+    "explanation": "上り坂の頂上付近は転回が禁止されている場所であり、見通しの良し悪しにかかわらず転回してはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "「転回禁止」の道路標識がある区間では、その区間内のどこであっても転回してはならない。",
+    "correct_answer": true,
+    "explanation": "転回禁止の標識がある区間内では、場所を問わず転回が禁止される。",
+    "image_key": null
+  },
+  {
+    "question_text": "「転回禁止」の道路標識がある区間でも、区間の端であれば転回してもよい。",
+    "correct_answer": false,
+    "explanation": "転回禁止の標識がある区間内は、端であっても転回してはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "転回するときは、後方だけでなく対向車線の安全も確認しなければならない。",
+    "correct_answer": true,
+    "explanation": "転回は対向車線を横切る動作であるため、対向車の安全確認も必要である。",
+    "image_key": null
+  },
+  {
+    "question_text": "転回するときは、自車の後方さえ安全であれば、対向車線を確認しなくてもよい。",
+    "correct_answer": false,
+    "explanation": "転回は対向車線を横切るため、対向車の安全も確認しなければならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "転回は、他の交通に急ブレーキや急ハンドルを強いることのないよう、安全な状況で行わなければならない。",
+    "correct_answer": true,
+    "explanation": "転回によって他の車に急な操作を強いてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "転回は、自車が先に行動を始めていれば、他の車が急ブレーキを踏むことになってもかまわない。",
+    "correct_answer": false,
+    "explanation": "転回によって他の車に急ブレーキなど急な操作を強いてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "路線バス等の優先通行帯を普通乗用車が通行しているとき、後方から路線バスが接近してきた場合は、すみやかにその通行帯の外に出なければならない。",
+    "correct_answer": true,
+    "explanation": "路線バス等優先通行帯を走行中に路線バスが接近したときは、すみやかにその通行帯の外に出る必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "路線バス等の優先通行帯は、路線バスが接近してこない限り、普通乗用車がどれだけ長く走行してもよい。",
+    "correct_answer": false,
+    "explanation": "優先通行帯は路線バスなどの通行を優先するためのものであり、バスが接近すれば速やかに出る必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "路線バス等優先通行帯であることは、道路標識・道路標示により指定される。",
+    "correct_answer": true,
+    "explanation": "路線バス等優先通行帯は、道路標識や道路標示によって指定された区間に適用される。",
+    "image_key": null
+  },
+  {
+    "question_text": "路線バス専用通行帯は、標識がなくても、バス停留所付近であれば自動的に適用される。",
+    "correct_answer": false,
+    "explanation": "専用・優先通行帯は、道路標識等により指定された区間についてのみ適用される。",
+    "image_key": null
+  },
+  {
+    "question_text": "高速道路の加速車線から本線車道に入るときは、あらかじめ十分に速度を上げて本線の流れに合わせる必要がある。",
+    "correct_answer": true,
+    "explanation": "本線合流時は、あらかじめ加速して本線を走る車の速度に近づける必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "高速道路の加速車線から本線車道に入るときは、速度を上げずに一時停止してから入るのが正しい方法である。",
+    "correct_answer": false,
+    "explanation": "加速車線では停止せず、加速しながら本線の流れに合わせて合流するのが正しい方法である。",
+    "image_key": null
+  },
+  {
+    "question_text": "高速道路の本線車道から流出路(出口)へ向かうときも、あらかじめ合図をしなければならない。",
+    "correct_answer": true,
+    "explanation": "出口へ向かう行為も進路変更にあたるため、合図が必要である。",
+    "image_key": null
+  },
+  {
+    "question_text": "高速道路の本線車道から流出路(出口)へ向かうときは、減速中であれば合図を省略してもよい。",
+    "correct_answer": false,
+    "explanation": "減速中であっても、進路変更にあたるため合図を省略することはできない。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更するときは、すでにその車両通行帯を走行している車の進行を妨げてはならない。",
+    "correct_answer": true,
+    "explanation": "進路変更する車は、既にその通行帯を走行している車の進行を妨げてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更するときは、変更先の通行帯を走る車より自車が速く走れるなら、進路を妨げてもかまわない。",
+    "correct_answer": false,
+    "explanation": "自車の方が速くても、既にその通行帯を走行している車の進行を妨げてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "工事などにより自分の車両通行帯が塞がれているときは、合図をして隣の通行帯に進路変更することができる。",
+    "correct_answer": true,
+    "explanation": "道路工事などのやむを得ない事情があるときは、合図のうえ進路変更することができる。",
+    "image_key": null
+  },
+  {
+    "question_text": "工事などにより自分の車両通行帯が塞がれていても、黄色の区画線がある場合は絶対に隣の通行帯に移ってはならない。",
+    "correct_answer": false,
+    "explanation": "危険防止のためやむを得ない場合は、黄色の区画線がある区間でも進路変更することが認められている。",
+    "image_key": null
+  },
+  {
+    "question_text": "3つ以上の車両通行帯がある道路で進路変更するときは、一つの通行帯ずつ順番に移動するのが原則である。",
+    "correct_answer": true,
+    "explanation": "進路変更は一つの車両通行帯ずつ行うのが原則であり、複数の通行帯を一度に越えるべきではない。",
+    "image_key": null
+  },
+  {
+    "question_text": "3つ以上の車両通行帯がある道路では、安全確認さえすれば一度に2つの通行帯を越えて進路変更してよい。",
+    "correct_answer": false,
+    "explanation": "進路変更は一つの車両通行帯ずつ行うのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "道路の幅が十分でない場合、転回のために一時的に後退が必要になることがある。",
+    "correct_answer": true,
+    "explanation": "道路の幅が十分でない場合は、後退を交えて転回することもある。",
+    "image_key": null
+  },
+  {
+    "question_text": "転回は、道路の幅にかかわらず、前進だけで一回の操作で完了させなければならない。",
+    "correct_answer": false,
+    "explanation": "道路の幅が十分でない場合は、後退を交えて転回することもある。",
+    "image_key": null
+  },
+  {
+    "question_text": "転回する際は、あらかじめできるだけ道路の中央(一方通行の道路では右側端)に寄って行うのが原則である。",
+    "correct_answer": true,
+    "explanation": "転回はあらかじめ道路の中央(一方通行路では右側端)に寄って行うのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "一方通行の道路で転回するときも、あらかじめ道路の左側端に寄ってから行うのが正しい方法である。",
+    "correct_answer": false,
+    "explanation": "一方通行路で転回するときは、道路の右側端に寄ってから行うのが原則である。",
+    "image_key": null
+  },
+  {
+    "question_text": "この標識がある道路では、指定された方向以外に進路を変えてはならない。",
+    "correct_answer": true,
+    "explanation": "指定方向外進行禁止の標識がある道路では、指定された方向以外へ進行してはならない。",
+    "image_key": "designated-direction-only"
+  },
+  {
+    "question_text": "この標識がある道路では、対向車線が空いていれば指定された方向以外にも進路を変えてよい。",
+    "correct_answer": false,
+    "explanation": "指定方向外進行禁止の標識は、対向車線の状況にかかわらず指定方向以外への進行を禁止している。",
+    "image_key": "designated-direction-only"
+  },
+  {
+    "question_text": "この標識がある道路は一方通行であり、逆方向に進路を変えて進入することはできない。",
+    "correct_answer": true,
+    "explanation": "一方通行の標識がある道路では、逆方向への進行は禁止されている。",
+    "image_key": "one-way"
+  },
+  {
+    "question_text": "この標識がある道路であっても、短距離であれば逆方向に進入して転回してもよい。",
+    "correct_answer": false,
+    "explanation": "一方通行の道路では、距離の長短にかかわらず逆方向への進入は禁止されている。",
+    "image_key": "one-way"
+  },
+  {
+    "question_text": "車両横断禁止の場所では、道路を斜めに横断するように進路を変えてはならない。",
+    "correct_answer": true,
+    "explanation": "車両横断禁止の場所では、道路を横断する形の進路変更をしてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "車両横断禁止の場所であっても、沿道の施設に入る場合に限り、道路を横断する形で進路を変えてもよい。",
+    "correct_answer": false,
+    "explanation": "車両横断禁止の場所では、目的にかかわらず道路を横断する形の進路変更が禁止されている。",
+    "image_key": null
+  },
+  {
+    "question_text": "転回禁止の道路標識に区間を示す補助標識が付いている場合、その標識は区間内で効力が継続する。",
+    "correct_answer": true,
+    "explanation": "区間を示す補助標識がある場合、転回禁止の標識は指定された区間全体に効力を持つ。",
+    "image_key": null
+  },
+  {
+    "question_text": "転回禁止の道路標識は、それが設置されている地点だけで効力があり、数メートル先では効力を持たない。",
+    "correct_answer": false,
+    "explanation": "区間を示す補助標識がある場合、標識は地点だけでなく指定区間全体に効力を持つ。",
+    "image_key": null
+  },
+  {
+    "question_text": "進路変更するときは、変更先の車両通行帯を走る自転車の有無にも注意しなければならない。",
+    "correct_answer": true,
+    "explanation": "車両通行帯を走行する自転車がいる場合もあるため、その有無にも注意する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "車道の左端に自転車が走行していても、自動車の進路変更には関係がないため無視してよい。",
+    "correct_answer": false,
+    "explanation": "自転車の動きにも注意を払い、安全を確認したうえで進路変更する必要がある。",
+    "image_key": null
+  },
+  {
+    "question_text": "夜間に進路変更するときも、昼間と同様に合図と安全確認を行わなければならない。",
+    "correct_answer": true,
+    "explanation": "夜間であっても、進路変更の際の合図・安全確認義務は昼間と変わらない。",
+    "image_key": null
+  },
+  {
+    "question_text": "夜間は周囲から見えにくいため、進路変更の際の合図は昼間より簡略化してもよい。",
+    "correct_answer": false,
+    "explanation": "夜間であっても合図の義務は昼間と同様であり、簡略化は認められない。",
+    "image_key": null
+  },
+  {
+    "question_text": "急な進路変更は、後続車に急ブレーキなど危険な操作を強いるおそれがあるため避けなければならない。",
+    "correct_answer": true,
+    "explanation": "急な進路変更は後続車に急ブレーキ等の危険な操作を強いるおそれがあるため避けるべきである。",
+    "image_key": null
+  },
+  {
+    "question_text": "後続車との車間距離が十分あいていなくても、合図さえ出せば急な進路変更をしてよい。",
+    "correct_answer": false,
+    "explanation": "合図を出していても、後続車に急な操作を強いるような進路変更をしてはならない。",
+    "image_key": null
+  },
+  {
+    "question_text": "この路面表示がある区間で、追い越しのために線を越えて進路変更をしてもよい。",
+    "correct_answer": false,
+    "explanation": "黄色の実線の中央線を示す道路標示がある区間は、追い越しのために線を越えて進路変更することが禁止されている。",
+    "image_key": "marking-center-line-yellow"
+  },
+  {
+    "question_text": "この路面表示で区画された車両通行帯の境界線は、安全を確認すれば越えて進路変更することができる。",
+    "correct_answer": true,
+    "explanation": "白の破線で区画された車両通行帯の境界線を示す道路標示であり、進路変更が認められている区画線である。",
+    "image_key": "marking-lane-dashed"
+  },
+  {
+    "question_text": "この路面表示がある区間でも、危険を防止するためやむを得ない場合は、線を越えて進路変更してもよい。",
+    "correct_answer": true,
+    "explanation": "黄色の実線の中央線を示す道路標示がある区間であっても、危険防止のためやむを得ない場合は線を越えて進路変更することが認められている。",
+    "image_key": "marking-center-line-yellow"
+  }
 ]
