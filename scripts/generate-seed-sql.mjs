@@ -14,6 +14,15 @@ const SIGN_KEYS = new Set([
   "one-way", "pedestrian-only", "priority-road", "crosswalk", "school-zone",
   "railway-crossing", "traffic-light-ahead", "slippery", "animal-crossing",
   "t-junction", "crossroads", "merging-traffic", "sound-horn", "no-pedestrian-crossing",
+  "no-cars-except-motorcycles", "no-large-trucks", "no-large-buses", "no-motorcycles",
+  "designated-direction-only", "no-vehicle-crossing", "weight-limit", "height-limit",
+  "max-width", "vehicles-only", "time-limited-parking", "bicycles-side-by-side",
+  "parking-allowed", "stopping-allowed", "stop-line", "bicycle-crossing", "safety-zone",
+  "curve-right", "lane-reduction", "road-narrows", "two-way-traffic", "steep-grade",
+  "road-work", "crosswind", "general-danger",
+  "t-junction-2", "y-junction", "roundabout-ahead", "curve-right-sharp", "s-curve",
+  "s-curve-sharp", "winding-road", "railway-crossing-2", "rockfall", "bumpy-road",
+  "steep-grade-up", "steep-grade-down",
 ]);
 
 function sqlEscape(str) {
