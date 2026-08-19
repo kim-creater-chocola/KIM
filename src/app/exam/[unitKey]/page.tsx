@@ -29,6 +29,7 @@ export default async function UnitExamPage({
         isPreview={isPreview}
         referenceUrl={unit.referenceUrl}
         referenceLabel={unit.referenceLabel}
+        showHomeLink
       />
       <QuizRunner questions={questions} isPreview={isPreview} />
     </div>

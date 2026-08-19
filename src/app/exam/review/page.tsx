@@ -14,7 +14,7 @@ export default async function ReviewExamPage() {
 
   return (
     <div className="pb-10">
-      <Header title="間違えた問題の復習" isPreview={isPreview} />
+      <Header title="間違えた問題の復習" isPreview={isPreview} showHomeLink />
       <QuizRunner questions={questions} isPreview={isPreview} />
     </div>
   );

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export function Header({
@@ -7,11 +8,13 @@ export function Header({
   isPreview,
   referenceUrl,
   referenceLabel,
+  showHomeLink,
 }: {
   title: string;
   isPreview?: boolean;
   referenceUrl?: string;
   referenceLabel?: string;
+  showHomeLink?: boolean;
 }) {
   const router = useRouter();
 
@@ -26,6 +29,16 @@ export function Header({
       {isPreview && (
         <div className="bg-amber-400 px-4 py-1 text-center text-xs font-bold text-amber-950">
           プレビューモード（回答は保存されません）
+        </div>
+      )}
+      {showHomeLink && (
+        <div className="border-b border-slate-100 px-4 py-1.5">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-1 text-sm text-slate-500 active:text-slate-700"
+          >
+            ← ホームに戻る
+          </Link>
         </div>
       )}
       <div className="flex items-center justify-between px-4 py-3">

@@ -21,7 +21,7 @@ export default async function MockExamPage({
   if (!count) {
     return (
       <div className="pb-10">
-        <Header title="模擬試験" isPreview={isPreview} />
+        <Header title="模擬試験" isPreview={isPreview} showHomeLink />
         <MockExamCountPicker />
       </div>
     );
@@ -32,7 +32,7 @@ export default async function MockExamPage({
 
   return (
     <div className="pb-10">
-      <Header title="模擬試験" isPreview={isPreview} />
+      <Header title="模擬試験" isPreview={isPreview} showHomeLink />
       <QuizRunner
         questions={questions}
         passThreshold={passThreshold}
