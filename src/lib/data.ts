@@ -34,7 +34,10 @@ async function fetchAnswerLogs(): Promise<AnswerLogRow[]> {
   const { data, error } = await supabase
     .from("answer_logs")
     .select("id, question_id, is_correct, answered_at, questions(unit_key, exam_type)")
-    .order("answered_at", { ascending: false });
+    .order("answered_at", { ascending: false })
+    // Supabase/PostgREST はデフォルトで1000件までしか返さないため、
+    // 明示的に大きめのlimitを指定して取りこぼしを防ぐ。
+    .limit(20000);
   if (error) throw error;
   return (data ?? []) as unknown as AnswerLogRow[];
 }
@@ -115,7 +118,11 @@ export async function getMockQuestions(
   const { data, error } = await supabase
     .from("questions")
     .select(QUESTION_COLUMNS)
-    .eq("exam_type", examType);
+    .eq("exam_type", examType)
+    // Supabase/PostgREST はデフォルトで1000件までしか返さないため、
+    // 明示的に大きめのlimitを指定して取りこぼしを防ぐ（以前この上限に
+    // 引っかかり、後半の単元が丸ごと欠落して指定数に満たない不具合があった）。
+    .limit(20000);
   if (error) throw error;
   const all = (data ?? []) as unknown as Question[];
 
@@ -127,17 +134,27 @@ export async function getMockQuestions(
   }
 
   const unitKeys = shuffle([...byUnit.keys()]);
-  if (unitKeys.length === 0) return [];
+  const target = Math.min(count, all.length);
+  if (unitKeys.length === 0 || target === 0) return [];
 
-  const base = Math.floor(count / unitKeys.length);
-  const remainder = count % unitKeys.length;
+  const base = Math.floor(target / unitKeys.length);
+  const remainder = target % unitKeys.length;
 
   const picked: Question[] = [];
+  const leftoverPools: Question[][] = [];
   unitKeys.forEach((key, i) => {
     const quota = base + (i < remainder ? 1 : 0);
     const pool = shuffle(byUnit.get(key) ?? []);
     picked.push(...pool.slice(0, quota));
+    if (pool.length > quota) leftoverPools.push(pool.slice(quota));
   });
+
+  // 単元によって在庫が偏っていて割り当て数に届かなかった場合、
+  // 他の単元の余りから補充して指定数ちょうどになるようにする。
+  if (picked.length < target) {
+    const leftover = shuffle(leftoverPools.flat());
+    picked.push(...leftover.slice(0, target - picked.length));
+  }
 
   return shuffle(picked);
 }
