@@ -714,13 +714,88 @@ export const SIGN_REGISTRY = {
   "general-danger": SignGeneralDanger,
 } satisfies Record<string, (p: IconProps) => React.ReactElement>;
 
-export type SignKey = keyof typeof SIGN_REGISTRY;
+/**
+ * 国土交通省公表の「道路標識一覧」を参照元に、標識部分だけを切り出し・トリムした
+ * オリジナル画像（public/signs/*.png）。実物の形状・配色に忠実。
+ * 用意できているキーのみ列挙し、それ以外は上記の独自SVGで代替する。
+ */
+export const PHOTO_SIGN_KEYS = [
+  "animal-crossing",
+  "bicycle-crossing",
+  "bicycles-side-by-side",
+  "bumpy-road",
+  "crossroads",
+  "crosswalk",
+  "crosswind",
+  "curve-right",
+  "curve-right-sharp",
+  "designated-direction-only",
+  "general-danger",
+  "height-limit",
+  "lane-reduction",
+  "max-width",
+  "merging-traffic",
+  "no-cars-except-motorcycles",
+  "no-center-line-crossing",
+  "no-entry",
+  "no-large-buses",
+  "no-large-trucks",
+  "no-motorcycles",
+  "no-parking",
+  "no-passage",
+  "no-stopping-or-parking",
+  "no-u-turn",
+  "no-vehicles",
+  "one-way",
+  "parking-allowed",
+  "priority-road",
+  "railway-crossing",
+  "railway-crossing-2",
+  "road-narrows",
+  "road-work",
+  "rockfall",
+  "roundabout-ahead",
+  "s-curve",
+  "s-curve-sharp",
+  "safety-zone",
+  "school-zone",
+  "slippery",
+  "slow",
+  "sound-horn",
+  "steep-grade-down",
+  "steep-grade-up",
+  "stop",
+  "stopping-allowed",
+  "t-junction",
+  "t-junction-2",
+  "time-limited-parking",
+  "traffic-light-ahead",
+  "two-way-traffic",
+  "vehicles-only",
+  "weight-limit",
+  "winding-road",
+  "y-junction",
+] as const;
+
+const PHOTO_SIGN_KEY_SET: ReadonlySet<string> = new Set(PHOTO_SIGN_KEYS);
+
+export type SignKey = keyof typeof SIGN_REGISTRY | (typeof PHOTO_SIGN_KEYS)[number];
 
 export function SignIcon({
   signKey,
   ...props
 }: IconProps & { signKey: SignKey }) {
-  const Comp = SIGN_REGISTRY[signKey];
+  if (PHOTO_SIGN_KEY_SET.has(signKey)) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={`/signs/${signKey}.png`}
+        alt=""
+        className="h-full w-full object-contain"
+      />
+    );
+  }
+  const Comp = SIGN_REGISTRY[signKey as keyof typeof SIGN_REGISTRY];
   if (!Comp) return null;
   return <Comp {...props} />;
 }
